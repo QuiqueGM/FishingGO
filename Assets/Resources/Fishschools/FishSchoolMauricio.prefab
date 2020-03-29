@@ -1,0 +1,1033 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1865721898714120}
+  m_IsPrefabParent: 1
+--- !u!1 &1209535527485442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4681191324546762}
+  - component: {fileID: 114553626258631146}
+  m_Layer: 10
+  m_Name: PriacanthusHamrur
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1266293902367542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4373537437099698}
+  - component: {fileID: 114704313113441570}
+  m_Layer: 10
+  m_Name: AmblyglyphidodonAureus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1271059956810552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4956618555342416}
+  - component: {fileID: 114802202322264416}
+  m_Layer: 10
+  m_Name: AbudefdufNotatus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1276864857359018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4139737365059236}
+  - component: {fileID: 114264139765786132}
+  m_Layer: 10
+  m_Name: VariolaLouti
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1287830202934734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4066778408783870}
+  - component: {fileID: 114352909747313108}
+  m_Layer: 10
+  m_Name: HeteropriacanthusCruentatus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1421460475574626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4003491494517482}
+  - component: {fileID: 114269138503873182}
+  m_Layer: 10
+  m_Name: PseudanthiasPleurotaenia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1451618269338132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4260525561935226}
+  - component: {fileID: 114835475824683574}
+  m_Layer: 10
+  m_Name: ParanthiasColonus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1829130399969724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4755991676784826}
+  - component: {fileID: 114461891368226908}
+  m_Layer: 10
+  m_Name: PlectropomusLaevis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1865721898714120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4392580965351186}
+  m_Layer: 10
+  m_Name: FishSchoolMauricio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4003491494517482
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1421460475574626}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.334, y: 0.675, z: -0.018}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4392580965351186}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4066778408783870
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1287830202934734}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.675, z: 0.828}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4392580965351186}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4139737365059236
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1276864857359018}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.334, y: 0.675, z: 0.634}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4392580965351186}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4260525561935226
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1451618269338132}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.675, z: -0.018}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4392580965351186}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4373537437099698
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1266293902367542}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.675, z: 0.828}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4392580965351186}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4392580965351186
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1865721898714120}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4956618555342416}
+  - {fileID: 4373537437099698}
+  - {fileID: 4066778408783870}
+  - {fileID: 4681191324546762}
+  - {fileID: 4260525561935226}
+  - {fileID: 4755991676784826}
+  - {fileID: 4003491494517482}
+  - {fileID: 4139737365059236}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4681191324546762
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1209535527485442}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.675, z: 0.828}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4392580965351186}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4755991676784826
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1829130399969724}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.913, y: 0.675, z: -0.018}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4392580965351186}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4956618555342416
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1271059956810552}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.675, z: -0.891}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4392580965351186}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114264139765786132
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1276864857359018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd308086043c5446a9c6d26a0f8e42c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isObjective: 0
+  _childPrefab:
+  - {fileID: 114072011270167854, guid: 844e0866a504dfe46bfb9e5c8e6311c1, type: 2}
+  _groupChildToNewTransform: 0
+  _groupTransform: {fileID: 0}
+  _groupName: 
+  _groupChildToSchool: 1
+  _childAmount: 8
+  _spawnSphere: 0.1
+  _spawnSphereDepth: 0.1
+  _spawnSphereHeight: 0.1
+  _childSpeedMultipler: 0.71
+  _minSpeed: 0.3
+  _maxSpeed: 0.6
+  _speedCurveMultiplier:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0.0018929662
+      value: 0.5007333
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.8876724
+      value: 0.50154257
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.8947088
+      value: 0.8969612
+      inSlope: 1.8519163
+      outSlope: 1.8519163
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: -0.08889813
+      outSlope: -0.08889813
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _minScale: 0.08
+  _maxScale: 0.1
+  _minDamping: 0.75
+  _maxDamping: 1
+  _waypointDistance: 0.05
+  _minAnimationSpeed: 1.5
+  _maxAnimationSpeed: 3
+  _randomPositionTimerMax: 8
+  _randomPositionTimerMin: 4
+  _acceleration: 0.07
+  _brake: 0.01
+  _positionSphere: 1
+  _positionSphereDepth: 1
+  _positionSphereHeight: 0.5
+  _childTriggerPos: 1
+  _forceChildWaypoints: 1
+  _autoRandomPosition: 0
+  _forcedRandomDelay: 0
+  _schoolSpeed: 0
+  _roamers: []
+  _posBuffer: {x: -1.126, y: 1.435, z: -0.055999994}
+  _posOffset: {x: -1.46, y: 0.76, z: -0.69}
+  _avoidance: 1
+  _avoidAngle: 0.574
+  _avoidDistance: 0.1
+  _avoidSpeed: 125
+  _stopDistance: 0.1
+  _stopSpeedMultiplier: 2
+  _avoidanceMask:
+    serializedVersion: 2
+    m_Bits: 1792
+  _push: 1
+  _pushDistance: 0.1
+  _pushForce: 0.025
+  _bubbles: {fileID: 0}
+  _updateDivisor: 1
+  _newDelta: 0
+  _updateCounter: 0
+  _activeChildren: 0
+--- !u!114 &114269138503873182
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1421460475574626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd308086043c5446a9c6d26a0f8e42c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isObjective: 0
+  _childPrefab:
+  - {fileID: 114927573326028044, guid: 9699b29c52665204e90a7b2712bb67cd, type: 2}
+  _groupChildToNewTransform: 0
+  _groupTransform: {fileID: 0}
+  _groupName: 
+  _groupChildToSchool: 1
+  _childAmount: 8
+  _spawnSphere: 0.1
+  _spawnSphereDepth: 0.1
+  _spawnSphereHeight: 0.1
+  _childSpeedMultipler: 0.71
+  _minSpeed: 0.3
+  _maxSpeed: 0.6
+  _speedCurveMultiplier:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0.0018929662
+      value: 0.5007333
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.8876724
+      value: 0.50154257
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.8947088
+      value: 0.8969612
+      inSlope: 1.8519163
+      outSlope: 1.8519163
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: -0.08889813
+      outSlope: -0.08889813
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _minScale: 0.08
+  _maxScale: 0.1
+  _minDamping: 0.75
+  _maxDamping: 1
+  _waypointDistance: 0.05
+  _minAnimationSpeed: 1.5
+  _maxAnimationSpeed: 3
+  _randomPositionTimerMax: 8
+  _randomPositionTimerMin: 4
+  _acceleration: 0.07
+  _brake: 0.01
+  _positionSphere: 1
+  _positionSphereDepth: 1
+  _positionSphereHeight: 0.5
+  _childTriggerPos: 1
+  _forceChildWaypoints: 1
+  _autoRandomPosition: 0
+  _forcedRandomDelay: 0
+  _schoolSpeed: 0
+  _roamers: []
+  _posBuffer: {x: -1.126, y: 1.435, z: -0.708}
+  _posOffset: {x: -1.46, y: 0.76, z: -0.69}
+  _avoidance: 1
+  _avoidAngle: 0.574
+  _avoidDistance: 0.1
+  _avoidSpeed: 125
+  _stopDistance: 0.1
+  _stopSpeedMultiplier: 2
+  _avoidanceMask:
+    serializedVersion: 2
+    m_Bits: 1792
+  _push: 1
+  _pushDistance: 0.1
+  _pushForce: 0.025
+  _bubbles: {fileID: 0}
+  _updateDivisor: 1
+  _newDelta: 0
+  _updateCounter: 0
+  _activeChildren: 0
+--- !u!114 &114352909747313108
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1287830202934734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd308086043c5446a9c6d26a0f8e42c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isObjective: 0
+  _childPrefab:
+  - {fileID: 114692108765070810, guid: 10ebfad5edc43c742a2f3d1da07a30a3, type: 2}
+  _groupChildToNewTransform: 0
+  _groupTransform: {fileID: 0}
+  _groupName: 
+  _groupChildToSchool: 1
+  _childAmount: 4
+  _spawnSphere: 0.1
+  _spawnSphereDepth: 0.1
+  _spawnSphereHeight: 0.1
+  _childSpeedMultipler: 0.71
+  _minSpeed: 0.25
+  _maxSpeed: 0.5
+  _speedCurveMultiplier:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0.0018929662
+      value: 0.5007333
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.8876724
+      value: 0.50154257
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.8947088
+      value: 0.8969612
+      inSlope: 1.8519163
+      outSlope: 1.8519163
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: -0.08889813
+      outSlope: -0.08889813
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _minScale: 0.08
+  _maxScale: 0.1
+  _minDamping: 0.75
+  _maxDamping: 1
+  _waypointDistance: 0.05
+  _minAnimationSpeed: 1.5
+  _maxAnimationSpeed: 3
+  _randomPositionTimerMax: 8
+  _randomPositionTimerMin: 4
+  _acceleration: 0.07
+  _brake: 0.01
+  _positionSphere: 2
+  _positionSphereDepth: 1.81
+  _positionSphereHeight: 0.5
+  _childTriggerPos: 1
+  _forceChildWaypoints: 1
+  _autoRandomPosition: 0
+  _forcedRandomDelay: 0
+  _schoolSpeed: 0
+  _roamers: []
+  _posBuffer: {x: -0.74, y: 0.845, z: 0.828}
+  _posOffset: {x: -0.74, y: 0.17, z: 0}
+  _avoidance: 1
+  _avoidAngle: 0.574
+  _avoidDistance: 0.1
+  _avoidSpeed: 125
+  _stopDistance: 0.1
+  _stopSpeedMultiplier: 2
+  _avoidanceMask:
+    serializedVersion: 2
+    m_Bits: 1792
+  _push: 1
+  _pushDistance: 0.1
+  _pushForce: 0.025
+  _bubbles: {fileID: 0}
+  _updateDivisor: 1
+  _newDelta: 0
+  _updateCounter: 0
+  _activeChildren: 0
+--- !u!114 &114461891368226908
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1829130399969724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd308086043c5446a9c6d26a0f8e42c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isObjective: 0
+  _childPrefab:
+  - {fileID: 114752831633690610, guid: 486aa922b4e3b5544a2cb4b7c1c7a2d7, type: 2}
+  _groupChildToNewTransform: 0
+  _groupTransform: {fileID: 0}
+  _groupName: 
+  _groupChildToSchool: 1
+  _childAmount: 8
+  _spawnSphere: 0.1
+  _spawnSphereDepth: 0.1
+  _spawnSphereHeight: 0.1
+  _childSpeedMultipler: 0.71
+  _minSpeed: 0.3
+  _maxSpeed: 0.6
+  _speedCurveMultiplier:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0.0018929662
+      value: 0.5007333
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.8876724
+      value: 0.50154257
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.8947088
+      value: 0.8969612
+      inSlope: 1.8519163
+      outSlope: 1.8519163
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: -0.08889813
+      outSlope: -0.08889813
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _minScale: 0.08
+  _maxScale: 0.1
+  _minDamping: 0.75
+  _maxDamping: 1
+  _waypointDistance: 0.05
+  _minAnimationSpeed: 1.5
+  _maxAnimationSpeed: 3
+  _randomPositionTimerMax: 8
+  _randomPositionTimerMin: 4
+  _acceleration: 0.07
+  _brake: 0.01
+  _positionSphere: 1
+  _positionSphereDepth: 1
+  _positionSphereHeight: 0.5
+  _childTriggerPos: 1
+  _forceChildWaypoints: 1
+  _autoRandomPosition: 0
+  _forcedRandomDelay: 0
+  _schoolSpeed: 0
+  _roamers: []
+  _posBuffer: {x: -2.3730001, y: 1.435, z: -0.708}
+  _posOffset: {x: -1.46, y: 0.76, z: -0.69}
+  _avoidance: 1
+  _avoidAngle: 0.574
+  _avoidDistance: 0.1
+  _avoidSpeed: 125
+  _stopDistance: 0.1
+  _stopSpeedMultiplier: 2
+  _avoidanceMask:
+    serializedVersion: 2
+    m_Bits: 1792
+  _push: 1
+  _pushDistance: 0.1
+  _pushForce: 0.025
+  _bubbles: {fileID: 0}
+  _updateDivisor: 1
+  _newDelta: 0
+  _updateCounter: 0
+  _activeChildren: 0
+--- !u!114 &114553626258631146
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1209535527485442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd308086043c5446a9c6d26a0f8e42c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isObjective: 0
+  _childPrefab:
+  - {fileID: 114688733342529280, guid: 89bd881c477df07448c7af1a444c54d7, type: 2}
+  _groupChildToNewTransform: 0
+  _groupTransform: {fileID: 0}
+  _groupName: 
+  _groupChildToSchool: 1
+  _childAmount: 4
+  _spawnSphere: 0.1
+  _spawnSphereDepth: 0.1
+  _spawnSphereHeight: 0.1
+  _childSpeedMultipler: 0.71
+  _minSpeed: 0.18
+  _maxSpeed: 0.22
+  _speedCurveMultiplier:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0.0018929662
+      value: 0.5007333
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.8876724
+      value: 0.50154257
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.8947088
+      value: 0.8969612
+      inSlope: 1.8519163
+      outSlope: 1.8519163
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: -0.08889813
+      outSlope: -0.08889813
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _minScale: 0.08
+  _maxScale: 0.1
+  _minDamping: 0.75
+  _maxDamping: 1
+  _waypointDistance: 0.05
+  _minAnimationSpeed: 1.5
+  _maxAnimationSpeed: 3
+  _randomPositionTimerMax: 8
+  _randomPositionTimerMin: 4
+  _acceleration: 0.07
+  _brake: 0.01
+  _positionSphere: 2
+  _positionSphereDepth: 1.81
+  _positionSphereHeight: 0.5
+  _childTriggerPos: 1
+  _forceChildWaypoints: 1
+  _autoRandomPosition: 0
+  _forcedRandomDelay: 0
+  _schoolSpeed: 0
+  _roamers: []
+  _posBuffer: {x: -0.08, y: 0.875, z: -1.092}
+  _posOffset: {x: -0.08, y: 0.2, z: -1.92}
+  _avoidance: 1
+  _avoidAngle: 0.574
+  _avoidDistance: 0.1
+  _avoidSpeed: 125
+  _stopDistance: 0.1
+  _stopSpeedMultiplier: 2
+  _avoidanceMask:
+    serializedVersion: 2
+    m_Bits: 1792
+  _push: 1
+  _pushDistance: 0.1
+  _pushForce: 0.025
+  _bubbles: {fileID: 0}
+  _updateDivisor: 1
+  _newDelta: 0
+  _updateCounter: 0
+  _activeChildren: 0
+--- !u!114 &114704313113441570
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1266293902367542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd308086043c5446a9c6d26a0f8e42c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isObjective: 0
+  _childPrefab:
+  - {fileID: 114274163923528894, guid: 8682a11e620eb5442a093bbaaa1b86f9, type: 2}
+  _groupChildToNewTransform: 0
+  _groupTransform: {fileID: 0}
+  _groupName: 
+  _groupChildToSchool: 1
+  _childAmount: 10
+  _spawnSphere: 0.2
+  _spawnSphereDepth: 0.2
+  _spawnSphereHeight: 0.2
+  _childSpeedMultipler: 0.71
+  _minSpeed: 0.25
+  _maxSpeed: 0.5
+  _speedCurveMultiplier:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0.0018929662
+      value: 0.5007333
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.8876724
+      value: 0.50154257
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.8947088
+      value: 0.8969612
+      inSlope: 1.8519163
+      outSlope: 1.8519163
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: -0.08889813
+      outSlope: -0.08889813
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _minScale: 0.15
+  _maxScale: 0.2
+  _minDamping: 0.75
+  _maxDamping: 1
+  _waypointDistance: 0.05
+  _minAnimationSpeed: 1.5
+  _maxAnimationSpeed: 3
+  _randomPositionTimerMax: 8
+  _randomPositionTimerMin: 4
+  _acceleration: 0.07
+  _brake: 0.01
+  _positionSphere: 2
+  _positionSphereDepth: 1
+  _positionSphereHeight: 0.5
+  _childTriggerPos: 1
+  _forceChildWaypoints: 1
+  _autoRandomPosition: 0
+  _forcedRandomDelay: 0
+  _schoolSpeed: 0
+  _roamers: []
+  _posBuffer: {x: 0.96, y: 0.845, z: 0.828}
+  _posOffset: {x: 0.96, y: 0.17, z: 0}
+  _avoidance: 1
+  _avoidAngle: 0.574
+  _avoidDistance: 0.1
+  _avoidSpeed: 125
+  _stopDistance: 0.1
+  _stopSpeedMultiplier: 2
+  _avoidanceMask:
+    serializedVersion: 2
+    m_Bits: 1792
+  _push: 1
+  _pushDistance: 0.1
+  _pushForce: 0.025
+  _bubbles: {fileID: 0}
+  _updateDivisor: 1
+  _newDelta: 0
+  _updateCounter: 0
+  _activeChildren: 0
+--- !u!114 &114802202322264416
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1271059956810552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd308086043c5446a9c6d26a0f8e42c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isObjective: 0
+  _childPrefab:
+  - {fileID: 114199452006281556, guid: 72fc25840276b424e88b705c59a9b53e, type: 2}
+  _groupChildToNewTransform: 0
+  _groupTransform: {fileID: 0}
+  _groupName: 
+  _groupChildToSchool: 1
+  _childAmount: 7
+  _spawnSphere: 0.2
+  _spawnSphereDepth: 0.2
+  _spawnSphereHeight: 0.2
+  _childSpeedMultipler: 0.71
+  _minSpeed: 0.18
+  _maxSpeed: 0.4
+  _speedCurveMultiplier:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0.0018929662
+      value: 0.5007333
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.8876724
+      value: 0.50154257
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.8947088
+      value: 0.8969612
+      inSlope: 1.8519163
+      outSlope: 1.8519163
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: -0.08889813
+      outSlope: -0.08889813
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _minScale: 0.15
+  _maxScale: 0.2
+  _minDamping: 0.75
+  _maxDamping: 1
+  _waypointDistance: 0.05
+  _minAnimationSpeed: 1.5
+  _maxAnimationSpeed: 3
+  _randomPositionTimerMax: 8
+  _randomPositionTimerMin: 4
+  _acceleration: 0.07
+  _brake: 0.01
+  _positionSphere: 2
+  _positionSphereDepth: 1
+  _positionSphereHeight: 0.5
+  _childTriggerPos: 1
+  _forceChildWaypoints: 1
+  _autoRandomPosition: 0
+  _forcedRandomDelay: 0
+  _schoolSpeed: 0
+  _roamers: []
+  _posBuffer: {x: 0.96, y: 0.845, z: -0.891}
+  _posOffset: {x: 0.96, y: 0.17, z: 0}
+  _avoidance: 1
+  _avoidAngle: 0.574
+  _avoidDistance: 0.1
+  _avoidSpeed: 125
+  _stopDistance: 0.1
+  _stopSpeedMultiplier: 2
+  _avoidanceMask:
+    serializedVersion: 2
+    m_Bits: 1792
+  _push: 1
+  _pushDistance: 0.1
+  _pushForce: 0.025
+  _bubbles: {fileID: 0}
+  _updateDivisor: 1
+  _newDelta: 0
+  _updateCounter: 0
+  _activeChildren: 0
+--- !u!114 &114835475824683574
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1451618269338132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd308086043c5446a9c6d26a0f8e42c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isObjective: 0
+  _childPrefab:
+  - {fileID: 114937126538709132, guid: 13ffd8387c647c54491f975cd77fffcb, type: 2}
+  _groupChildToNewTransform: 0
+  _groupTransform: {fileID: 0}
+  _groupName: 
+  _groupChildToSchool: 1
+  _childAmount: 8
+  _spawnSphere: 0.1
+  _spawnSphereDepth: 0.1
+  _spawnSphereHeight: 0.1
+  _childSpeedMultipler: 0.71
+  _minSpeed: 0.3
+  _maxSpeed: 0.6
+  _speedCurveMultiplier:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0.0018929662
+      value: 0.5007333
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.8876724
+      value: 0.50154257
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.8947088
+      value: 0.8969612
+      inSlope: 1.8519163
+      outSlope: 1.8519163
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: -0.08889813
+      outSlope: -0.08889813
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _minScale: 0.08
+  _maxScale: 0.1
+  _minDamping: 0.75
+  _maxDamping: 1
+  _waypointDistance: 0.05
+  _minAnimationSpeed: 1.5
+  _maxAnimationSpeed: 3
+  _randomPositionTimerMax: 8
+  _randomPositionTimerMin: 4
+  _acceleration: 0.07
+  _brake: 0.01
+  _positionSphere: 1
+  _positionSphereDepth: 1
+  _positionSphereHeight: 0.5
+  _childTriggerPos: 1
+  _forceChildWaypoints: 1
+  _autoRandomPosition: 0
+  _forcedRandomDelay: 0
+  _schoolSpeed: 0
+  _roamers: []
+  _posBuffer: {x: -1.67, y: 0.875, z: -1.938}
+  _posOffset: {x: -1.67, y: 0.2, z: -1.92}
+  _avoidance: 1
+  _avoidAngle: 0.574
+  _avoidDistance: 0.1
+  _avoidSpeed: 125
+  _stopDistance: 0.1
+  _stopSpeedMultiplier: 2
+  _avoidanceMask:
+    serializedVersion: 2
+    m_Bits: 1792
+  _push: 1
+  _pushDistance: 0.1
+  _pushForce: 0.025
+  _bubbles: {fileID: 0}
+  _updateDivisor: 1
+  _newDelta: 0
+  _updateCounter: 0
+  _activeChildren: 0

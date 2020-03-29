@@ -1,0 +1,19 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:dcbad92157a90f2867ffe75734c41723:0140a0ec64c513fd7bf5188ee63dbb20:b0245f7f0cf44dc60916f09b4065570b$
+#
+:format=40300
+:texture=Phylum.png
+:size=512x1024
+:pivotpoints=enabled
+:borders=disabled
+
+Chordata;224;576;224;224; 0.5;0.5; 0;0;0;0
+Cnidarians;0;352;224;224; 0.5;0.5; 0;0;0;0
+Crustaceans;0;576;224;224; 0.5;0.5; 0;0;0;0
+Echinoderms;0;800;224;224; 0.5;0.5; 0;0;0;0
+Molluscs;224;800;224;224; 0.5;0.5; 0;0;0;0

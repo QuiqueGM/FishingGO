@@ -1,0 +1,1327 @@
+fileFormatVersion: 2
+guid: 3bcf6bbf9c4c1b14883dae5a6580771e
+timeCreated: 1504637536
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Aquarium_DOWN
+    21300002: Cards_DOWN
+    21300004: Aquarium_IDLE
+    21300006: NewObjective_IDLE
+    21300008: NewObjective_DOWN
+    21300010: Cards_IDLE
+    21300012: Continue_DOWN
+    21300014: Menu_IDLE
+    21300016: Share_IDLE
+    21300018: ShowCard_IDLE
+    21300020: Menu_DOWN
+    21300022: ShowCard_DOWN
+    21300024: Continue_IDLE
+    21300026: Share_DOWN
+    21300028: Replace_DOWN
+    21300030: Replace_IDLE
+    21300032: CurrentPicture
+    21300034: NewPicture
+    21300036: Shadows_DES_IDLE
+    21300038: Music_ACT_DOWN
+    21300040: Shadows_DES_DOWN
+    21300042: Effects_ACT_IDLE
+    21300044: Effects_ACT_DOWN
+    21300046: Shadows_ACT_IDLE
+    21300048: Effects_DES_DOWN
+    21300050: Music_ACT_IDLE
+    21300052: Effects_DES_IDLE
+    21300054: Lighting_ACT_DOWN
+    21300056: Shadows_ACT_DOWN
+    21300058: Music_DES_IDLE
+    21300060: Lighting_ACT_IDLE
+    21300062: Lighting_DES_IDLE
+    21300064: Lighting_DES_DOWN
+    21300066: Music_DES_DOWN
+    21300068: Sesttings_DOWN
+    21300070: Close_DOWN
+    21300072: Close_IDLE
+    21300074: Settings
+    21300076: Settings_IDLE
+    21300078: Checkmark
+    21300080: Settings_DOWN
+    21300082: Back_IDLE
+    21300084: Back_DOWN
+    21300086: Bracket
+    21300088: ShowCards
+    21300090: Arrow_DOWN
+    21300092: Arrow_IDLE
+    21300094: Cards
+    21300096: Cards_ALL
+    21300098: Cards_MISSING
+    21300100: Cards_MINE
+    21300102: Cards_PHYLUM
+    21300104: Brackets
+    21300106: Gradient
+    21300108: GradientCorner
+    21300110: More_DOWN
+    21300112: More_IDLE
+    21300114: Question_DOWN
+    21300116: Question_IDLE
+    21300118: Share2_DOWN
+    21300120: Share2_IDLE
+    21300122: HeaderBlackInGame
+    21300124: ShowAquarium
+    21300126: AquariumLocked
+    21300128: Camera
+    21300130: Scan
+    21300132: Surface
+    21300134: BeamsLight
+    21300136: CardIG_DOWN
+    21300138: CloseIG_IDLE
+    21300140: CloseIG_DOWN
+    21300142: Place_DOWN
+    21300144: CardIG_IDLE
+    21300146: Place_IDLE
+    21300148: Answer
+    21300150: aim
+    21300152: BlackInGame
+    21300154: ResetGame_DOWN
+    21300156: ResetGame_IDLE
+    21300158: Arrow_AIM
+    21300160: Circle
+    21300162: Help_DOWN
+    21300164: Help_IDLE
+    21300166: walk
+    21300168: wlak
+    21300170: BlackInGameFull
+    21300172: HelpSettings_DOWN
+    21300174: HelpSettings_IDLE
+    21300176: ArrowButtons
+    21300178: Chordata_DOWN
+    21300180: Chordata_IDLE
+    21300182: Cnidarians_DOWN
+    21300184: Cnidarians_IDLE
+    21300186: Crustaceans_DOWN
+    21300188: Crustaceans_IDLE
+    21300190: Echinoderms_DOWN
+    21300192: Echinoderms_IDLE
+    21300194: Molluscs_DOWN
+    21300196: Molluscs_IDLE
+    21300198: WhiteCircle
+    21300200: Later_DOWN
+    21300202: Later_IDLE
+    21300204: Rate_DOWN
+    21300206: Rate_IDLE
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Answer
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 1322
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Aquarium_DOWN
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1134
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Aquarium_IDLE
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1648
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: AquariumLocked
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 5
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Arrow_AIM
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 17
+        width: 186
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Arrow_DOWN
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 1566
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Arrow_IDLE
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 1566
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ArrowButtons
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 361
+        width: 186
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Back_DOWN
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 510
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Back_IDLE
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 166
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BeamsLight
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 1668
+        width: 380
+        height: 380
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BlackInGame
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 72
+        width: 8
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 2, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BlackInGameFull
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 8
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Bracket
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 1563
+        width: 52
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 13, y: 20, z: 13, w: 21}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Brackets
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 930
+        width: 224
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Camera
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 1457
+        width: 144
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Cards_ALL
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 5
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Cards_DOWN
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 1648
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Cards_IDLE
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 732
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Cards_MINE
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 5
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Cards_MISSING
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1574
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Cards_PHYLUM
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 704
+        width: 224
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Checkmark
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1338
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Chordata_DOWN
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 510
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Chordata_IDLE
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 166
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Circle
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 167
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Close_DOWN
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 574
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Close_IDLE
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 380
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CloseIG_DOWN
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 962
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CloseIG_IDLE
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 768
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Cnidarians_DOWN
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 186
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Cnidarians_IDLE
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1380
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Continue_DOWN
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 18
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Continue_IDLE
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 37
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crustaceans_DOWN
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1186
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crustaceans_IDLE
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 992
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CurrentPicture
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1558
+        width: 87
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Echinoderms_DOWN
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 798
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Echinoderms_IDLE
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 604
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Effects_ACT_DOWN
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1279
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Effects_ACT_IDLE
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 1279
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Gradient
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 1327
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 61, y: 61, z: 61, w: 62}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Help_DOWN
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 410
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Help_IDLE
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 216
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: HelpSettings_DOWN
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1208
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: HelpSettings_IDLE
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1149
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Later_DOWN
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 360
+        width: 148
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Later_IDLE
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 360
+        width: 148
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Lighting_ACT_DOWN
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 1197
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Lighting_ACT_IDLE
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1078
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Menu_DOWN
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1901
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Menu_IDLE
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1752
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Molluscs_DOWN
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 22
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Molluscs_IDLE
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 1474
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: More_DOWN
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 1280
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: More_IDLE
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 1086
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Music_ACT_DOWN
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 948
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Music_ACT_IDLE
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 1149
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: NewObjective_DOWN
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 330
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: NewObjective_IDLE
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1156
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: NewPicture
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1558
+        width: 87
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Place_DOWN
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 892
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Place_IDLE
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 698
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Question_DOWN
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 504
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Question_IDLE
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 310
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Rate_DOWN
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 16
+        width: 148
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Rate_IDLE
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 16
+        width: 148
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Replace_DOWN
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 1470
+        width: 129
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 64, y: 32, z: 65, w: 33}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Replace_IDLE
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 1470
+        width: 129
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 64, y: 32, z: 64, w: 33}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ResetGame_DOWN
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 1149
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ResetGame_IDLE
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 948
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Scan
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1540
+        width: 148
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Settings
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 116
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Settings_DOWN
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1856
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Settings_IDLE
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1662
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Shadows_ACT_DOWN
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1019
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Shadows_ACT_IDLE
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 818
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Share2_DOWN
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1468
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Share2_IDLE
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 1409
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Share_DOWN
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 1901
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Share_IDLE
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 1752
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ShowAquarium
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 1574
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ShowCard_DOWN
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 1603
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ShowCard_IDLE
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 1603
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Surface
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1540
+        width: 149
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: walk
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 79
+        width: 182
+        height: 249
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WhiteCircle
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

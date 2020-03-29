@@ -1,0 +1,428 @@
+fileFormatVersion: 2
+guid: efeccea3020cfb049872ff9126c71b49
+timeCreated: 1504087972
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Antenna_L_1
+    100004: Antenna_L_10
+    100006: Antenna_L_11
+    100008: Antenna_L_2
+    100010: Antenna_L_3
+    100012: Antenna_L_4
+    100014: Antenna_L_5
+    100016: Antenna_L_6
+    100018: Antenna_L_7
+    100020: Antenna_L_8
+    100022: Antenna_L_9
+    100024: Antenna_R_1
+    100026: Antenna_R_10
+    100028: Antenna_R_11
+    100030: Antenna_R_2
+    100032: Antenna_R_3
+    100034: Antenna_R_4
+    100036: Antenna_R_5
+    100038: Antenna_R_6
+    100040: Antenna_R_7
+    100042: Antenna_R_8
+    100044: Antenna_R_9
+    100046: Arm_L_1
+    100048: Arm_L_3
+    100050: Arm_L_5
+    100052: Arm_R_1
+    100054: Arm_R_3
+    100056: Arm_R_5
+    100058: Chest
+    100060: Finger_Grab_A_L
+    100062: Finger_Grab_A_R
+    100064: Finger_Grab_B_L
+    100066: Finger_Grab_B_R
+    100068: Finger_Grab_Base_A_L
+    100070: Finger_Grab_Base_A_R
+    100072: Finger_Grab_Base_B_L
+    100074: Finger_Grab_Base_B_R
+    100076: Grab_01_L
+    100078: Grab_01_R
+    100080: Grab_05_L
+    100082: Grab_05_R
+    100084: Grab_06_L
+    100086: Grab_06_R
+    100088: Head
+    100090: Leg_A_01_L
+    100092: Leg_A_01_R
+    100094: Leg_A_02_L
+    100096: Leg_A_02_R
+    100098: Leg_A_03_L
+    100100: Leg_A_03_R
+    100102: Leg_B_01_L
+    100104: Leg_B_01_R
+    100106: Leg_B_02_L
+    100108: Leg_B_02_R
+    100110: Leg_B_03_L
+    100112: Leg_B_03_R
+    100114: Leg_C_01_L
+    100116: Leg_C_01_R
+    100118: Leg_C_02_L
+    100120: Leg_C_02_R
+    100122: Leg_C_03_L
+    100124: Leg_C_03_R
+    100126: Leg_D_01_L
+    100128: Leg_D_01_R
+    100130: Leg_D_02_L
+    100132: Leg_D_02_R
+    100134: Leg_D_03_L
+    100136: Leg_D_03_R
+    100138: Root
+    100140: Tail_01
+    100142: Tail_02
+    100144: Tail_03
+    100146: Tail_04
+    100148: Tail_05
+    100150: Tail_C
+    100152: Tail_L
+    100154: Tail_R
+    100156: left
+    100158: NorwayLobster_Mesh
+    400000: //RootNode
+    400002: Antenna_L_1
+    400004: Antenna_L_10
+    400006: Antenna_L_11
+    400008: Antenna_L_2
+    400010: Antenna_L_3
+    400012: Antenna_L_4
+    400014: Antenna_L_5
+    400016: Antenna_L_6
+    400018: Antenna_L_7
+    400020: Antenna_L_8
+    400022: Antenna_L_9
+    400024: Antenna_R_1
+    400026: Antenna_R_10
+    400028: Antenna_R_11
+    400030: Antenna_R_2
+    400032: Antenna_R_3
+    400034: Antenna_R_4
+    400036: Antenna_R_5
+    400038: Antenna_R_6
+    400040: Antenna_R_7
+    400042: Antenna_R_8
+    400044: Antenna_R_9
+    400046: Arm_L_1
+    400048: Arm_L_3
+    400050: Arm_L_5
+    400052: Arm_R_1
+    400054: Arm_R_3
+    400056: Arm_R_5
+    400058: Chest
+    400060: Finger_Grab_A_L
+    400062: Finger_Grab_A_R
+    400064: Finger_Grab_B_L
+    400066: Finger_Grab_B_R
+    400068: Finger_Grab_Base_A_L
+    400070: Finger_Grab_Base_A_R
+    400072: Finger_Grab_Base_B_L
+    400074: Finger_Grab_Base_B_R
+    400076: Grab_01_L
+    400078: Grab_01_R
+    400080: Grab_05_L
+    400082: Grab_05_R
+    400084: Grab_06_L
+    400086: Grab_06_R
+    400088: Head
+    400090: Leg_A_01_L
+    400092: Leg_A_01_R
+    400094: Leg_A_02_L
+    400096: Leg_A_02_R
+    400098: Leg_A_03_L
+    400100: Leg_A_03_R
+    400102: Leg_B_01_L
+    400104: Leg_B_01_R
+    400106: Leg_B_02_L
+    400108: Leg_B_02_R
+    400110: Leg_B_03_L
+    400112: Leg_B_03_R
+    400114: Leg_C_01_L
+    400116: Leg_C_01_R
+    400118: Leg_C_02_L
+    400120: Leg_C_02_R
+    400122: Leg_C_03_L
+    400124: Leg_C_03_R
+    400126: Leg_D_01_L
+    400128: Leg_D_01_R
+    400130: Leg_D_02_L
+    400132: Leg_D_02_R
+    400134: Leg_D_03_L
+    400136: Leg_D_03_R
+    400138: Root
+    400140: Tail_01
+    400142: Tail_02
+    400144: Tail_03
+    400146: Tail_04
+    400148: Tail_05
+    400150: Tail_C
+    400152: Tail_L
+    400154: Tail_R
+    400156: left
+    400158: NorwayLobster_Mesh
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: NorwayLobster_Mesh
+    7400000: Idle
+    11100000: //RootNode
+    13700000: //RootNode
+    13700002: NorwayLobster_Mesh
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: 1
+      lastFrame: 120
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Chest
+        weight: 1
+      - path: Root/Chest/Leg_A_01_L
+        weight: 1
+      - path: Root/Chest/Leg_A_01_L/Leg_A_02_L
+        weight: 1
+      - path: Root/Chest/Leg_A_01_L/Leg_A_02_L/Leg_A_03_L
+        weight: 1
+      - path: Root/Chest/Leg_A_01_R
+        weight: 1
+      - path: Root/Chest/Leg_A_01_R/Leg_A_02_R
+        weight: 1
+      - path: Root/Chest/Leg_A_01_R/Leg_A_02_R/Leg_A_03_R
+        weight: 1
+      - path: Root/Chest/Leg_B_01_L
+        weight: 1
+      - path: Root/Chest/Leg_B_01_L/Leg_B_02_L
+        weight: 1
+      - path: Root/Chest/Leg_B_01_L/Leg_B_02_L/Leg_B_03_L
+        weight: 1
+      - path: Root/Chest/Leg_B_01_R
+        weight: 1
+      - path: Root/Chest/Leg_B_01_R/Leg_B_02_R
+        weight: 1
+      - path: Root/Chest/Leg_B_01_R/Leg_B_02_R/Leg_B_03_R
+        weight: 1
+      - path: Root/Chest/Leg_C_01_L
+        weight: 1
+      - path: Root/Chest/Leg_C_01_L/Leg_C_02_L
+        weight: 1
+      - path: Root/Chest/Leg_C_01_L/Leg_C_02_L/Leg_C_03_L
+        weight: 1
+      - path: Root/Chest/Leg_C_01_R
+        weight: 1
+      - path: Root/Chest/Leg_C_01_R/Leg_C_02_R
+        weight: 1
+      - path: Root/Chest/Leg_C_01_R/Leg_C_02_R/Leg_C_03_R
+        weight: 1
+      - path: Root/Chest/Leg_D_01_L
+        weight: 1
+      - path: Root/Chest/Leg_D_01_L/Leg_D_02_L
+        weight: 1
+      - path: Root/Chest/Leg_D_01_L/Leg_D_02_L/Leg_D_03_L
+        weight: 1
+      - path: Root/Chest/Leg_D_01_R
+        weight: 1
+      - path: Root/Chest/Leg_D_01_R/Leg_D_02_R
+        weight: 1
+      - path: Root/Chest/Leg_D_01_R/Leg_D_02_R/Leg_D_03_R
+        weight: 1
+      - path: Root/Head
+        weight: 1
+      - path: Root/Head/Antenna_L_1
+        weight: 1
+      - path: Root/Head/Antenna_L_1/Antenna_L_2
+        weight: 1
+      - path: Root/Head/Antenna_L_1/Antenna_L_2/Antenna_L_3
+        weight: 1
+      - path: Root/Head/Antenna_L_1/Antenna_L_2/Antenna_L_3/Antenna_L_4
+        weight: 1
+      - path: Root/Head/Antenna_L_1/Antenna_L_2/Antenna_L_3/Antenna_L_4/Antenna_L_5
+        weight: 1
+      - path: Root/Head/Antenna_L_1/Antenna_L_2/Antenna_L_3/Antenna_L_4/Antenna_L_5/Antenna_L_6
+        weight: 1
+      - path: Root/Head/Antenna_L_1/Antenna_L_2/Antenna_L_3/Antenna_L_4/Antenna_L_5/Antenna_L_6/Antenna_L_7
+        weight: 1
+      - path: Root/Head/Antenna_L_1/Antenna_L_2/Antenna_L_3/Antenna_L_4/Antenna_L_5/Antenna_L_6/Antenna_L_7/Antenna_L_8
+        weight: 1
+      - path: Root/Head/Antenna_L_1/Antenna_L_2/Antenna_L_3/Antenna_L_4/Antenna_L_5/Antenna_L_6/Antenna_L_7/Antenna_L_8/Antenna_L_9
+        weight: 1
+      - path: Root/Head/Antenna_L_1/Antenna_L_2/Antenna_L_3/Antenna_L_4/Antenna_L_5/Antenna_L_6/Antenna_L_7/Antenna_L_8/Antenna_L_9/Antenna_L_10
+        weight: 1
+      - path: Root/Head/Antenna_L_1/Antenna_L_2/Antenna_L_3/Antenna_L_4/Antenna_L_5/Antenna_L_6/Antenna_L_7/Antenna_L_8/Antenna_L_9/Antenna_L_10/Antenna_L_11
+        weight: 1
+      - path: Root/Head/Antenna_R_1
+        weight: 1
+      - path: Root/Head/Antenna_R_1/Antenna_R_2
+        weight: 1
+      - path: Root/Head/Antenna_R_1/Antenna_R_2/Antenna_R_3
+        weight: 1
+      - path: Root/Head/Antenna_R_1/Antenna_R_2/Antenna_R_3/Antenna_R_4
+        weight: 1
+      - path: Root/Head/Antenna_R_1/Antenna_R_2/Antenna_R_3/Antenna_R_4/Antenna_R_5
+        weight: 1
+      - path: Root/Head/Antenna_R_1/Antenna_R_2/Antenna_R_3/Antenna_R_4/Antenna_R_5/Antenna_R_6
+        weight: 1
+      - path: Root/Head/Antenna_R_1/Antenna_R_2/Antenna_R_3/Antenna_R_4/Antenna_R_5/Antenna_R_6/Antenna_R_7
+        weight: 1
+      - path: Root/Head/Antenna_R_1/Antenna_R_2/Antenna_R_3/Antenna_R_4/Antenna_R_5/Antenna_R_6/Antenna_R_7/Antenna_R_8
+        weight: 1
+      - path: Root/Head/Antenna_R_1/Antenna_R_2/Antenna_R_3/Antenna_R_4/Antenna_R_5/Antenna_R_6/Antenna_R_7/Antenna_R_8/Antenna_R_9
+        weight: 1
+      - path: Root/Head/Antenna_R_1/Antenna_R_2/Antenna_R_3/Antenna_R_4/Antenna_R_5/Antenna_R_6/Antenna_R_7/Antenna_R_8/Antenna_R_9/Antenna_R_10
+        weight: 1
+      - path: Root/Head/Antenna_R_1/Antenna_R_2/Antenna_R_3/Antenna_R_4/Antenna_R_5/Antenna_R_6/Antenna_R_7/Antenna_R_8/Antenna_R_9/Antenna_R_10/Antenna_R_11
+        weight: 1
+      - path: Root/Head/Arm_L_1
+        weight: 1
+      - path: Root/Head/Arm_L_1/Arm_L_3
+        weight: 1
+      - path: Root/Head/Arm_L_1/Arm_L_3/Arm_L_5
+        weight: 1
+      - path: Root/Head/Arm_R_1
+        weight: 1
+      - path: Root/Head/Arm_R_1/Arm_R_3
+        weight: 1
+      - path: Root/Head/Arm_R_1/Arm_R_3/Arm_R_5
+        weight: 1
+      - path: Root/Head/Grab_01_L
+        weight: 1
+      - path: Root/Head/Grab_01_L/Grab_05_L
+        weight: 1
+      - path: Root/Head/Grab_01_L/Grab_05_L/Grab_06_L
+        weight: 1
+      - path: Root/Head/Grab_01_L/Grab_05_L/Grab_06_L/Finger_Grab_Base_A_L
+        weight: 1
+      - path: Root/Head/Grab_01_L/Grab_05_L/Grab_06_L/Finger_Grab_Base_A_L/Finger_Grab_A_L
+        weight: 1
+      - path: Root/Head/Grab_01_L/Grab_05_L/Grab_06_L/Finger_Grab_Base_B_L
+        weight: 1
+      - path: Root/Head/Grab_01_L/Grab_05_L/Grab_06_L/Finger_Grab_Base_B_L/Finger_Grab_B_L
+        weight: 1
+      - path: Root/Head/Grab_01_R
+        weight: 1
+      - path: Root/Head/Grab_01_R/Grab_05_R
+        weight: 1
+      - path: Root/Head/Grab_01_R/Grab_05_R/Grab_06_R
+        weight: 1
+      - path: Root/Head/Grab_01_R/Grab_05_R/Grab_06_R/Finger_Grab_Base_A_R
+        weight: 1
+      - path: Root/Head/Grab_01_R/Grab_05_R/Grab_06_R/Finger_Grab_Base_A_R/Finger_Grab_A_R
+        weight: 1
+      - path: Root/Head/Grab_01_R/Grab_05_R/Grab_06_R/Finger_Grab_Base_B_R
+        weight: 1
+      - path: Root/Head/Grab_01_R/Grab_05_R/Grab_06_R/Finger_Grab_Base_B_R/Finger_Grab_B_R
+        weight: 1
+      - path: Root/Tail_01
+        weight: 1
+      - path: Root/Tail_01/Tail_02
+        weight: 1
+      - path: Root/Tail_01/Tail_02/Tail_03
+        weight: 1
+      - path: Root/Tail_01/Tail_02/Tail_03/Tail_04
+        weight: 1
+      - path: Root/Tail_01/Tail_02/Tail_03/Tail_04/Tail_05
+        weight: 1
+      - path: Root/Tail_01/Tail_02/Tail_03/Tail_04/Tail_05/Tail_C
+        weight: 1
+      - path: Root/Tail_01/Tail_02/Tail_03/Tail_04/Tail_05/Tail_L
+        weight: 1
+      - path: Root/Tail_01/Tail_02/Tail_03/Tail_04/Tail_05/Tail_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

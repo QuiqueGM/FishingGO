@@ -1,0 +1,222 @@
+fileFormatVersion: 2
+guid: 568d540a11d588d48bc4fa085aba0df9
+timeCreated: 1504086797
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Antenna_01_L
+    100002: Antenna_01_R
+    100004: Antenna_02_L
+    100006: Antenna_02_R
+    100008: Antenna_03_L
+    100010: Antenna_03_R
+    100012: Antenna_04_L
+    100014: Antenna_04_R
+    100016: Antenna_05_L
+    100018: Antenna_05_R
+    100020: Antenna_06_L
+    100022: Antenna_06_R
+    100024: Antenna_07_L
+    100026: Antenna_07_R
+    100028: Arm_01_L
+    100030: Arm_01_R
+    100032: Arm_02_L
+    100034: Arm_02_R
+    100036: Arm_03_L
+    100038: Arm_03_R
+    100040: Arm_S_01_L
+    100042: Arm_S_01_R
+    100044: Arm_S_02_L
+    100046: Arm_S_02_R
+    100048: Arm_S_03_L
+    100050: Arm_S_03_R
+    100052: Chest
+    100054: Finger_A_Base_L
+    100056: Finger_A_Base_R
+    100058: Finger_A_L
+    100060: Finger_A_R
+    100062: Finger_B_Base_L
+    100064: Finger_B_Base_R
+    100066: Finger_B_L
+    100068: Finger_B_R
+    100070: Head
+    100072: Leg_A_01_L
+    100074: Leg_A_01_R
+    100076: Leg_A_02_L
+    100078: Leg_A_02_R
+    100080: Leg_A_03_L
+    100082: Leg_A_03_R
+    100084: Leg_B_01_L
+    100086: Leg_B_01_R
+    100088: Leg_B_02_L
+    100090: Leg_B_02_R
+    100092: Leg_C_01_L
+    100094: Leg_C_01_R
+    100096: Leg_C_02_L
+    100098: Leg_C_02_R
+    100100: Leg_C_03_L
+    100102: Leg_C_03_L 1
+    100104: Leg_C_03_R
+    100106: Leg_C_03_R 1
+    100108: Leg_D_01_L
+    100110: Leg_D_01_R
+    100112: Leg_D_02_L
+    100114: Leg_D_02_R
+    100116: Leg_D_03_L
+    100118: Leg_D_03_R
+    100120: //RootNode
+    100122: Root
+    100124: Tail_01
+    100126: Tail_02
+    100128: Tail_03
+    100130: Tail_04
+    100132: Tail_05
+    100134: Tail_Center
+    100136: Tail_L
+    100138: Tail_R
+    400000: Antenna_01_L
+    400002: Antenna_01_R
+    400004: Antenna_02_L
+    400006: Antenna_02_R
+    400008: Antenna_03_L
+    400010: Antenna_03_R
+    400012: Antenna_04_L
+    400014: Antenna_04_R
+    400016: Antenna_05_L
+    400018: Antenna_05_R
+    400020: Antenna_06_L
+    400022: Antenna_06_R
+    400024: Antenna_07_L
+    400026: Antenna_07_R
+    400028: Arm_01_L
+    400030: Arm_01_R
+    400032: Arm_02_L
+    400034: Arm_02_R
+    400036: Arm_03_L
+    400038: Arm_03_R
+    400040: Arm_S_01_L
+    400042: Arm_S_01_R
+    400044: Arm_S_02_L
+    400046: Arm_S_02_R
+    400048: Arm_S_03_L
+    400050: Arm_S_03_R
+    400052: Chest
+    400054: Finger_A_Base_L
+    400056: Finger_A_Base_R
+    400058: Finger_A_L
+    400060: Finger_A_R
+    400062: Finger_B_Base_L
+    400064: Finger_B_Base_R
+    400066: Finger_B_L
+    400068: Finger_B_R
+    400070: Head
+    400072: Leg_A_01_L
+    400074: Leg_A_01_R
+    400076: Leg_A_02_L
+    400078: Leg_A_02_R
+    400080: Leg_A_03_L
+    400082: Leg_A_03_R
+    400084: Leg_B_01_L
+    400086: Leg_B_01_R
+    400088: Leg_B_02_L
+    400090: Leg_B_02_R
+    400092: Leg_C_01_L
+    400094: Leg_C_01_R
+    400096: Leg_C_02_L
+    400098: Leg_C_02_R
+    400100: Leg_C_03_L
+    400102: Leg_C_03_L 1
+    400104: Leg_C_03_R
+    400106: Leg_C_03_R 1
+    400108: Leg_D_01_L
+    400110: Leg_D_01_R
+    400112: Leg_D_02_L
+    400114: Leg_D_02_R
+    400116: Leg_D_03_L
+    400118: Leg_D_03_R
+    400120: //RootNode
+    400122: Root
+    400124: Tail_01
+    400126: Tail_02
+    400128: Tail_03
+    400130: Tail_04
+    400132: Tail_05
+    400134: Tail_Center
+    400136: Tail_L
+    400138: Tail_R
+    4300000: Lobster_A
+    7400000: Idle
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

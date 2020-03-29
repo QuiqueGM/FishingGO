@@ -1,0 +1,278 @@
+fileFormatVersion: 2
+guid: b8e60a2731b9ec8408ce4f015636cd0e
+timeCreated: 1504087726
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Arm_01_L
+    100002: Arm_01_R
+    100004: Arm_02_L
+    100006: Arm_02_R
+    100008: Arm_03_L
+    100010: Arm_03_R
+    100012: Chest
+    100014: //RootNode
+    100016: Finger_A_Base_L
+    100018: Finger_A_Base_R
+    100020: Finger_A_L
+    100022: Finger_A_R
+    100024: Finger_B_Base_L
+    100026: Finger_B_Base_R
+    100028: Finger_B_L
+    100030: Finger_B_R
+    100032: Head
+    100034: Leg_A_01_L
+    100036: Leg_A_01_R
+    100038: Leg_A_02_L
+    100040: Leg_A_02_R
+    100042: Leg_A_03_L
+    100044: Leg_A_03_R
+    100046: Leg_B_01_L
+    100048: Leg_B_01_R
+    100050: Leg_B_02_L
+    100052: Leg_B_02_R
+    100054: Leg_B_03_L
+    100056: Leg_B_03_R
+    100058: Leg_C_01_L
+    100060: Leg_C_01_R
+    100062: Leg_C_02_L
+    100064: Leg_C_02_R
+    100066: Leg_C_03_L
+    100068: Leg_C_03_R
+    100070: Leg_D_01_L
+    100072: Leg_D_01_R
+    100074: Leg_D_02_L
+    100076: Leg_D_02_R
+    100078: Leg_D_03_L
+    100080: Leg_D_03_R
+    100082: Root
+    400000: Arm_01_L
+    400002: Arm_01_R
+    400004: Arm_02_L
+    400006: Arm_02_R
+    400008: Arm_03_L
+    400010: Arm_03_R
+    400012: Chest
+    400014: //RootNode
+    400016: Finger_A_Base_L
+    400018: Finger_A_Base_R
+    400020: Finger_A_L
+    400022: Finger_A_R
+    400024: Finger_B_Base_L
+    400026: Finger_B_Base_R
+    400028: Finger_B_L
+    400030: Finger_B_R
+    400032: Head
+    400034: Leg_A_01_L
+    400036: Leg_A_01_R
+    400038: Leg_A_02_L
+    400040: Leg_A_02_R
+    400042: Leg_A_03_L
+    400044: Leg_A_03_R
+    400046: Leg_B_01_L
+    400048: Leg_B_01_R
+    400050: Leg_B_02_L
+    400052: Leg_B_02_R
+    400054: Leg_B_03_L
+    400056: Leg_B_03_R
+    400058: Leg_C_01_L
+    400060: Leg_C_01_R
+    400062: Leg_C_02_L
+    400064: Leg_C_02_R
+    400066: Leg_C_03_L
+    400068: Leg_C_03_R
+    400070: Leg_D_01_L
+    400072: Leg_D_01_R
+    400074: Leg_D_02_L
+    400076: Leg_D_02_R
+    400078: Leg_D_03_L
+    400080: Leg_D_03_R
+    400082: Root
+    4300000: Crab_A
+    7400000: Idle
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: 1
+      lastFrame: 90
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Chest
+        weight: 1
+      - path: Root/Chest/Leg_A_01_L
+        weight: 1
+      - path: Root/Chest/Leg_A_01_L/Leg_A_02_L
+        weight: 1
+      - path: Root/Chest/Leg_A_01_L/Leg_A_02_L/Leg_A_03_L
+        weight: 1
+      - path: Root/Chest/Leg_A_01_R
+        weight: 1
+      - path: Root/Chest/Leg_A_01_R/Leg_A_02_R
+        weight: 1
+      - path: Root/Chest/Leg_A_01_R/Leg_A_02_R/Leg_A_03_R
+        weight: 1
+      - path: Root/Chest/Leg_B_01_L
+        weight: 1
+      - path: Root/Chest/Leg_B_01_L/Leg_B_02_L
+        weight: 1
+      - path: Root/Chest/Leg_B_01_L/Leg_B_02_L/Leg_B_03_L
+        weight: 1
+      - path: Root/Chest/Leg_B_01_R
+        weight: 1
+      - path: Root/Chest/Leg_B_01_R/Leg_B_02_R
+        weight: 1
+      - path: Root/Chest/Leg_B_01_R/Leg_B_02_R/Leg_B_03_R
+        weight: 1
+      - path: Root/Chest/Leg_C_01_L
+        weight: 1
+      - path: Root/Chest/Leg_C_01_L/Leg_C_02_L
+        weight: 1
+      - path: Root/Chest/Leg_C_01_L/Leg_C_02_L/Leg_C_03_L
+        weight: 1
+      - path: Root/Chest/Leg_C_01_R
+        weight: 1
+      - path: Root/Chest/Leg_C_01_R/Leg_C_02_R
+        weight: 1
+      - path: Root/Chest/Leg_C_01_R/Leg_C_02_R/Leg_C_03_R
+        weight: 1
+      - path: Root/Chest/Leg_D_01_L
+        weight: 1
+      - path: Root/Chest/Leg_D_01_L/Leg_D_02_L
+        weight: 1
+      - path: Root/Chest/Leg_D_01_L/Leg_D_02_L/Leg_D_03_L
+        weight: 1
+      - path: Root/Chest/Leg_D_01_R
+        weight: 1
+      - path: Root/Chest/Leg_D_01_R/Leg_D_02_R
+        weight: 1
+      - path: Root/Chest/Leg_D_01_R/Leg_D_02_R/Leg_D_03_R
+        weight: 1
+      - path: Root/Head
+        weight: 1
+      - path: Root/Head/Arm_01_L
+        weight: 1
+      - path: Root/Head/Arm_01_L/Arm_02_L
+        weight: 1
+      - path: Root/Head/Arm_01_L/Arm_02_L/Arm_03_L
+        weight: 1
+      - path: Root/Head/Arm_01_L/Arm_02_L/Arm_03_L/Finger_A_Base_L
+        weight: 1
+      - path: Root/Head/Arm_01_L/Arm_02_L/Arm_03_L/Finger_A_Base_L/Finger_A_L
+        weight: 1
+      - path: Root/Head/Arm_01_L/Arm_02_L/Arm_03_L/Finger_B_Base_L
+        weight: 1
+      - path: Root/Head/Arm_01_L/Arm_02_L/Arm_03_L/Finger_B_Base_L/Finger_B_L
+        weight: 1
+      - path: Root/Head/Arm_01_R
+        weight: 1
+      - path: Root/Head/Arm_01_R/Arm_02_R
+        weight: 1
+      - path: Root/Head/Arm_01_R/Arm_02_R/Arm_03_R
+        weight: 1
+      - path: Root/Head/Arm_01_R/Arm_02_R/Arm_03_R/Finger_A_Base_R
+        weight: 1
+      - path: Root/Head/Arm_01_R/Arm_02_R/Arm_03_R/Finger_A_Base_R/Finger_A_R
+        weight: 1
+      - path: Root/Head/Arm_01_R/Arm_02_R/Arm_03_R/Finger_B_Base_R
+        weight: 1
+      - path: Root/Head/Arm_01_R/Arm_02_R/Arm_03_R/Finger_B_Base_R/Finger_B_R
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

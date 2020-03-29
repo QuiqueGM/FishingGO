@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: 1d9a2f242e5d9314381cb1275309ea82
+timeCreated: 1503945467
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Arm_01_L
+    100004: Arm_01_R
+    100006: Arm_02_L
+    100008: Arm_02_R
+    100010: Arm_03_L
+    100012: Arm_03_R
+    100014: Chest
+    100016: Crab_A 1
+    100018: Finger_A_Base_L
+    100020: Finger_A_Base_R
+    100022: Finger_A_L
+    100024: Finger_A_R
+    100026: Finger_B_Base_L
+    100028: Finger_B_Base_R
+    100030: Finger_B_L
+    100032: Finger_B_R
+    100034: Head
+    100036: Leg_A_01_L
+    100038: Leg_A_01_R
+    100040: Leg_A_02_L
+    100042: Leg_A_02_R
+    100044: Leg_A_03_L
+    100046: Leg_A_03_R
+    100048: Leg_B_01_L
+    100050: Leg_B_01_R
+    100052: Leg_B_02_L
+    100054: Leg_B_02_R
+    100056: Leg_B_03_L
+    100058: Leg_B_03_R
+    100060: Leg_C_01_L
+    100062: Leg_C_01_R
+    100064: Leg_C_02_L
+    100066: Leg_C_02_R
+    100068: Leg_C_03_L
+    100070: Leg_C_03_R
+    100072: Leg_D_01_L
+    100074: Leg_D_01_R
+    100076: Leg_D_02_L
+    100078: Leg_D_02_R
+    100080: Leg_D_03_L
+    100082: Leg_D_03_R
+    100084: Root
+    400000: //RootNode
+    400002: Arm_01_L
+    400004: Arm_01_R
+    400006: Arm_02_L
+    400008: Arm_02_R
+    400010: Arm_03_L
+    400012: Arm_03_R
+    400014: Chest
+    400016: Crab_A 1
+    400018: Finger_A_Base_L
+    400020: Finger_A_Base_R
+    400022: Finger_A_L
+    400024: Finger_A_R
+    400026: Finger_B_Base_L
+    400028: Finger_B_Base_R
+    400030: Finger_B_L
+    400032: Finger_B_R
+    400034: Head
+    400036: Leg_A_01_L
+    400038: Leg_A_01_R
+    400040: Leg_A_02_L
+    400042: Leg_A_02_R
+    400044: Leg_A_03_L
+    400046: Leg_A_03_R
+    400048: Leg_B_01_L
+    400050: Leg_B_01_R
+    400052: Leg_B_02_L
+    400054: Leg_B_02_R
+    400056: Leg_B_03_L
+    400058: Leg_B_03_R
+    400060: Leg_C_01_L
+    400062: Leg_C_01_R
+    400064: Leg_C_02_L
+    400066: Leg_C_02_R
+    400068: Leg_C_03_L
+    400070: Leg_C_03_R
+    400072: Leg_D_01_L
+    400074: Leg_D_01_R
+    400076: Leg_D_02_L
+    400078: Leg_D_02_R
+    400080: Leg_D_03_L
+    400082: Leg_D_03_R
+    400084: Root
+    4300000: Crab_A
+    7400000: Idle
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Crab_A 1
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
