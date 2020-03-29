@@ -83,7 +83,7 @@ namespace VFG.Core
         public void LoadMainScene()
         {
             Debug.Log("<color=#1bc71b>[Loading...]</color> All modules succesfully loaded! Selecting proper SDK...");
-            if (sceneToLoad == Scenes.GameAR) VRSettings.LoadDeviceByName(string.Empty);
+            if (sceneToLoad == Scenes.GameAR) UnityEngine.XR.XRSettings.LoadDeviceByName(string.Empty);
             GameIsInitializeEvent(sceneToLoad);
         }
         
