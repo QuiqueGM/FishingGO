@@ -322,7 +322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isObjective: 0
   _childPrefab:
-  - {fileID: 114186952581546690, guid: 5fc843c53dd8fca498fca3ac87f77fc5, type: 2}
+  - {fileID: 114348523878478116, guid: c404b820fa6b58a4a896ebea7e708dc5, type: 2}
   _groupChildToNewTransform: 0
   _groupTransform: {fileID: 0}
   _groupName: 
@@ -510,14 +510,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isObjective: 0
   _childPrefab:
-  - {fileID: 114009075178055850, guid: 18f47dfae2a789d4690db8205e7167e5, type: 2}
-  - {fileID: 114443272687345726, guid: 1239deb99651c5047be1792fcce82c0e, type: 2}
-  - {fileID: 114679083769700166, guid: 97e1bf61216cc5a49b26a594e436b323, type: 2}
+  - {fileID: 114064801757912162, guid: deaf28475798dbd49b303951dece7b7d, type: 2}
+  - {fileID: 114318147311939156, guid: 9211852a9900dbd4daf7e58e39c21f23, type: 2}
+  - {fileID: 114398657913001970, guid: b55189cbff7f4b24c922ecafd47d4097, type: 2}
   _groupChildToNewTransform: 0
   _groupTransform: {fileID: 0}
   _groupName: 
   _groupChildToSchool: 1
-  _childAmount: 25
+  _childAmount: 12
   _spawnSphere: 0.29
   _spawnSphereDepth: 0.26
   _spawnSphereHeight: 0.26
@@ -606,7 +606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isObjective: 0
   _childPrefab:
-  - {fileID: 114343873731021238, guid: c2f0f90acb93dc843929aab9bcabdbb9, type: 2}
+  - {fileID: 114110033175544044, guid: 12557c24e5613514dae8d998c447f394, type: 2}
   _groupChildToNewTransform: 0
   _groupTransform: {fileID: 0}
   _groupName: 
@@ -700,7 +700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isObjective: 0
   _childPrefab:
-  - {fileID: 114389316604046326, guid: 89e83c692071119499451ce238d6406e, type: 2}
+  - {fileID: 114767234244786516, guid: c1b76a8889b690f4a9ac36de30367589, type: 2}
   _groupChildToNewTransform: 0
   _groupTransform: {fileID: 0}
   _groupName: 
@@ -888,7 +888,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isObjective: 0
   _childPrefab:
-  - {fileID: 114733643182780980, guid: 21d791a9840d0844886e9b8abe39d9c5, type: 2}
+  - {fileID: 114187130405486166, guid: 9700393fb112ccc40a2a81c62ff8bda3, type: 2}
   _groupChildToNewTransform: 0
   _groupTransform: {fileID: 0}
   _groupName: 

@@ -6,35 +6,14 @@ ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
-    100002: LaevigataLinckia_LOD0
-    100004: LaevigataLinckia_LOD1
-    100006: LaevigataLinckia_LOD2
-    100008: LaevigataLinckia_LOD3
     400000: //RootNode
-    400002: LaevigataLinckia_LOD0
-    400004: LaevigataLinckia_LOD1
-    400006: LaevigataLinckia_LOD2
-    400008: LaevigataLinckia_LOD3
     2300000: //RootNode
-    2300002: LaevigataLinckia_LOD0
-    2300004: LaevigataLinckia_LOD1
-    2300006: LaevigataLinckia_LOD2
-    2300008: LaevigataLinckia_LOD3
     3300000: //RootNode
-    3300002: LaevigataLinckia_LOD0
-    3300004: LaevigataLinckia_LOD1
-    3300006: LaevigataLinckia_LOD2
-    3300008: LaevigataLinckia_LOD3
     4300000: LaevigataLinckia_Mesh
     4300002: LaevigataLinckia
-    4300004: LaevigataLinckia_LOD0
-    4300006: LaevigataLinckia_LOD1
-    4300008: LaevigataLinckia_LOD2
-    4300010: LaevigataLinckia_LOD3
     9500000: //RootNode
     11100000: //RootNode
     13700000: //RootNode
-    20500000: //RootNode
   materials:
     importMaterials: 0
     materialName: 0
@@ -60,11 +39,7 @@ ModelImporter:
     clipAnimations: []
     isReadable: 1
   meshes:
-    lODScreenPercentages:
-    - 0.25
-    - 0.125
-    - 0.0625
-    - 0.01
+    lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
     addColliders: 0
@@ -100,10 +75,10 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

@@ -6,37 +6,11 @@ ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
-    100002: ProtoreasterLinckii_LOD0
-    100004: ProtoreasterLinckii_LOD1
-    100006: ProtoreasterLinckii_LOD2
-    100008: ProtoreasterLinckii_LOD3
-    100010: ProtoreasterLinckii_LOD4
     400000: //RootNode
-    400002: ProtoreasterLinckii_LOD0
-    400004: ProtoreasterLinckii_LOD1
-    400006: ProtoreasterLinckii_LOD2
-    400008: ProtoreasterLinckii_LOD3
-    400010: ProtoreasterLinckii_LOD4
     2300000: //RootNode
-    2300002: ProtoreasterLinckii_LOD0
-    2300004: ProtoreasterLinckii_LOD1
-    2300006: ProtoreasterLinckii_LOD2
-    2300008: ProtoreasterLinckii_LOD3
-    2300010: ProtoreasterLinckii_LOD4
     3300000: //RootNode
-    3300002: ProtoreasterLinckii_LOD0
-    3300004: ProtoreasterLinckii_LOD1
-    3300006: ProtoreasterLinckii_LOD2
-    3300008: ProtoreasterLinckii_LOD3
-    3300010: ProtoreasterLinckii_LOD4
     4300000: ProtoreasterLinckii_Mesh1
     4300002: ProtoreasterLinckii
-    4300004: ProtoreasterLinckii_LOD0
-    4300006: ProtoreasterLinckii_LOD1
-    4300008: ProtoreasterLinckii_LOD2
-    4300010: ProtoreasterLinckii_LOD3
-    4300012: ProtoreasterLinckii_LOD4
-    20500000: //RootNode
   materials:
     importMaterials: 0
     materialName: 0
@@ -62,12 +36,7 @@ ModelImporter:
     clipAnimations: []
     isReadable: 1
   meshes:
-    lODScreenPercentages:
-    - 0.25
-    - 0.125
-    - 0.0625
-    - 0.03125
-    - 0.01
+    lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
     addColliders: 0

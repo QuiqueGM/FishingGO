@@ -27,32 +27,10 @@ namespace VFG.Core.Localization
         {
             GetComponent<TMP_Text>().text = LoadLocalization.Instance.GetKey(key);
         }
-        
-        /// <summary>
-        /// Set the default key as initial key to localize
-        /// </summary>
-        public void SetInitKey()
-        {
-            GetComponent<TMP_Text>().text = key;
-        }
 
-        /// <summary>
-        /// Set an alternate key as initial key to localize
-        /// </summary>
-        /// <param name="newKey">Alternate key</param>
-        public void SetInitKey(string newKey)
-        {
-            GetComponent<TMP_Text>().text = newKey;
-        }
-
-        /// <summary>
-        /// Set a new key as initial key to localize
-        /// </summary>
-        /// <param name="newKey"></param>
         public void SetNewInitKey(string newKey)
         {
             key = newKey;
         }
-
     }
 }

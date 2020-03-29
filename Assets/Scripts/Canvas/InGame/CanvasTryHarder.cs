@@ -28,7 +28,7 @@ namespace VFG.Canvas
 
             ShowCanvas(typeOfDetection == GameState.ObjectDetection.NoDetected ? true : false);
             _canvas.alpha = 1;
-            Handheld.Vibrate();
+            //Handheld.Vibrate();
             AudioManager.Instance.PlayEffect(AudiosData.WRONG_OBJECTIVE);
 
             if (sequence != null) sequence.Kill();

@@ -24,25 +24,8 @@ GameObject:
   - component: {fileID: 114539096073510964}
   - component: {fileID: 114958424717348360}
   - component: {fileID: 205507636822911636}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PomacentrusCaeruleus
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1123604158122726
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4524280643951670}
-  - component: {fileID: 33359030912654496}
-  - component: {fileID: 23051822031911540}
-  m_Layer: 8
-  m_Name: Pomacentridae_A_XS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4270325784258902}
   - component: {fileID: 137365541770877948}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pomacentridae_A_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,8 +57,8 @@ GameObject:
   - component: {fileID: 4861865701580942}
   - component: {fileID: 33924625496539388}
   - component: {fileID: 23905015294911280}
-  m_Layer: 8
-  m_Name: Pomacentridae_a_XXS
+  m_Layer: 0
+  m_Name: Pomacentridae_A_XS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90,7 +73,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4676881610536950}
   - component: {fileID: 137183058726969356}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pomacentridae_A_M
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4652891972274828}
   - component: {fileID: 137894563511829600}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Pomacentridae_A_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,23 +122,9 @@ Transform:
   - {fileID: 4270325784258902}
   - {fileID: 4676881610536950}
   - {fileID: 4652891972274828}
-  - {fileID: 4524280643951670}
   - {fileID: 4861865701580942}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4524280643951670
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1123604158122726}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4376086984478876}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4652891972274828
 Transform:
@@ -189,46 +158,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1687072451240242}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4376086984478876}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23051822031911540
-MeshRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1123604158122726}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: f1f95d56d55621745b096f90b440d317, type: 2}
-  - {fileID: 2100000, guid: dfdca0027c6fd2c418d125ffd4f70bf4, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
 --- !u!23 &23905015294911280
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -238,6 +174,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -254,6 +191,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -262,20 +200,13 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33359030912654496
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1123604158122726}
-  m_Mesh: {fileID: 4300016, guid: cde9ab49dd2301744802737e5fbfafc1, type: 3}
 --- !u!33 &33924625496539388
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1687072451240242}
-  m_Mesh: {fileID: 4300014, guid: cde9ab49dd2301744802737e5fbfafc1, type: 3}
+  m_Mesh: {fileID: 4300006, guid: cde9ab49dd2301744802737e5fbfafc1, type: 3}
 --- !u!65 &65488083741117994
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -337,6 +268,7 @@ SkinnedMeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -353,6 +285,7 @@ SkinnedMeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -365,7 +298,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300010, guid: cde9ab49dd2301744802737e5fbfafc1, type: 3}
+  m_Mesh: {fileID: 4300002, guid: cde9ab49dd2301744802737e5fbfafc1, type: 3}
   m_Bones: []
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 0}
@@ -382,6 +315,7 @@ SkinnedMeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -398,6 +332,7 @@ SkinnedMeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -410,7 +345,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300008, guid: cde9ab49dd2301744802737e5fbfafc1, type: 3}
+  m_Mesh: {fileID: 4300000, guid: cde9ab49dd2301744802737e5fbfafc1, type: 3}
   m_Bones: []
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 0}
@@ -427,6 +362,7 @@ SkinnedMeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -443,6 +379,7 @@ SkinnedMeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -455,7 +392,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300012, guid: cde9ab49dd2301744802737e5fbfafc1, type: 3}
+  m_Mesh: {fileID: 4300004, guid: cde9ab49dd2301744802737e5fbfafc1, type: 3}
   m_Bones: []
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 0}
@@ -470,8 +407,8 @@ LODGroup:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1112600105102332}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0.009295851, z: -0.005721569}
-  m_Size: 1.0210493
+  m_LocalReferencePoint: {x: 0, y: 0.018591702, z: -0.011443138}
+  m_Size: 1.0096061
   m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LODs:
@@ -487,11 +424,7 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 137894563511829600}
-  - screenRelativeHeight: 0.00915564
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 23051822031911540}
-  - screenRelativeHeight: 0.0012168741
+  - screenRelativeHeight: 0.0044233515
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 23905015294911280}

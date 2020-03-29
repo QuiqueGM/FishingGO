@@ -1,42 +1,36 @@
 fileFormatVersion: 2
-guid: f7376ff64e17fa943a07479300e0d30e
-timeCreated: 1510680410
+guid: c8a6179944122e748912e6e246ed23bd
+timeCreated: 1508150896
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Pomacanthidae_E_LOD0
-    100002: Pomacanthidae_E_LOD1
-    100004: Pomacanthidae_E_LOD2
-    100006: Pomacanthidae_E_LOD3
-    100008: Pomacanthidae_E_LOD4
-    100010: //RootNode
-    400000: Pomacanthidae_E_LOD0
-    400002: Pomacanthidae_E_LOD1
-    400004: Pomacanthidae_E_LOD2
-    400006: Pomacanthidae_E_LOD3
-    400008: Pomacanthidae_E_LOD4
-    400010: //RootNode
-    2300000: Pomacanthidae_E_LOD3
-    2300002: Pomacanthidae_E_LOD4
-    2300004: Pomacanthidae_E_LOD0
-    2300006: Pomacanthidae_E_LOD1
-    2300008: Pomacanthidae_E_LOD2
-    3300000: Pomacanthidae_E_LOD3
-    3300002: Pomacanthidae_E_LOD4
-    3300004: Pomacanthidae_E_LOD0
-    3300006: Pomacanthidae_E_LOD1
-    3300008: Pomacanthidae_E_LOD2
-    4300000: Pomacanthidae_E_LOD0
-    4300002: Pomacanthidae_E_LOD1
-    4300004: Pomacanthidae_E_LOD2
-    4300006: Pomacanthidae_E_LOD4
-    4300008: Pomacanthidae_E_LOD3
+    100000: //RootNode
+    100002: Pomacanthidae_E_L
+    100004: Pomacanthidae_E_M
+    100006: Pomacanthidae_E_S
+    100008: Pomacanthidae_E_XS
+    400000: //RootNode
+    400002: Pomacanthidae_E_L
+    400004: Pomacanthidae_E_M
+    400006: Pomacanthidae_E_S
+    400008: Pomacanthidae_E_XS
+    2300000: Pomacanthidae_E_XS
+    2300002: Pomacanthidae_E_L
+    2300004: Pomacanthidae_E_M
+    2300006: Pomacanthidae_E_S
+    3300000: Pomacanthidae_E_XS
+    3300002: Pomacanthidae_E_L
+    3300004: Pomacanthidae_E_M
+    3300006: Pomacanthidae_E_S
+    4300000: Pomacanthidae_E_XS
+    4300002: Pomacanthidae_E_L
+    4300004: Pomacanthidae_E_M
+    4300006: Pomacanthidae_E_S
     9500000: //RootNode
-    13700000: Pomacanthidae_E_LOD0
-    13700002: Pomacanthidae_E_LOD1
-    13700004: Pomacanthidae_E_LOD2
-    20500000: //RootNode
+    13700000: Pomacanthidae_E_L
+    13700002: Pomacanthidae_E_M
+    13700004: Pomacanthidae_E_S
   materials:
     importMaterials: 0
     materialName: 0
@@ -62,12 +56,7 @@ ModelImporter:
     clipAnimations: []
     isReadable: 1
   meshes:
-    lODScreenPercentages:
-    - 0.25
-    - 0.125
-    - 0.0625
-    - 0.03125
-    - 0.01
+    lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
     addColliders: 0

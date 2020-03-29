@@ -11,24 +11,13 @@ namespace VFG.Core
     {
         public event GameIsInitializedRequest GameIsInitializeEvent;
         public Scenes sceneToLoad;
-
-        private bool deleteAllKeys;
-        private bool allAquariumsUnlocked;
-        private bool allObjectvesUnlocked;
-        private bool deleteRateKey;
-
+        public bool deleteAllKeys;
+        public bool allAquariumsUnlocked;
+        public bool allObjectvesUnlocked;
         private LoadJSON loadJSON;
         private LoadSprites loadSprites;
         private LoadUserPreferences userPreferences;
         private LoadLocalization localizationTexts;
-
-        private void Awake()
-        {
-			deleteAllKeys           = false;
-            allAquariumsUnlocked    = false;
-            allObjectvesUnlocked    = false;
-            deleteRateKey           = false;
-        }   
 
         void Start()
         {
@@ -90,13 +79,11 @@ namespace VFG.Core
         #region FAKE
         private void LoadFakeValues()
         {
+            
             //GameState.AquariumsState = GameState.FIRST_TIME_USER_XPERIENCE;
             //GameState.Language = "English";
             //GameState.AquariumsState = "1,1,1,1,1,1,1,1,1,1";
             //GameState.ObjectivesState = "AcroporaCervicornis,2,AcroporaHorrida,2,AcroporaHumilis,2,AcroporaRobusta,1,CryptodendrumAdhaesivum,0,DiploriaStrigosa,0,DiscosomaCarlgreni,0,DiscosomaMalaccensis,0,DiscosomaMutabilis,0,DiscosomaSp,0,FaviaRotundata,0,GorgoniaFlabellum,0,HelioporaCoerulea,0,PocilloporaVerrucosa,0,PodabaciaCrustacea,0,PodabaciaSinai,0,PoritesNodifera,0,PoritesProfundus,0,Sarcophyton,0,CulcitaSchmideliana,0,DavidasterRubiginosus,0,EchinothrixDiadema,0,LinckiaLaevigata,0,ProtoreasterLinckii,0,CaulerpaProlifera,0,CaulerpaRacemosa,0,CaulerpaSertularioides,0,CaulerpaTaxifolia,0,CymodoceaNodosa,0,PenicillusSp,0,PosidoniaOceanica,0,ZosteraMarina,0,AcanthurusAchilles,0,AcanthurusGuttatus,0,AcanthurusJaponicus,0,AcanthurusLeucosternon,0,AcanthurusNigricans,0,AcanthurusPyroferus,0,AcanthurusTennentii,0,AcanthurusTriostegus,0,AcanthurusTristis,0,CtenochaetusStrigosus,0,ZebrasomaFlavescens,0,ZebrasomaVeliferum,0,ZebrasomaXanthurum,0,ZebrasomaScopas,0,ZebrasomaDesjardinii,0";
-
-            if (deleteRateKey) PlayerPrefs.DeleteKey("GameHasBeenRated");
-
             if (allAquariumsUnlocked)
             {
                 GameState.aquariumsState.Clear();
@@ -125,11 +112,15 @@ namespace VFG.Core
 
         private void Update()
         {
-            //Debug.Log("Play from New Objective: " + GameState.playFromNewObjective);
+//            Debug.Log("Play from New Objective: " + GameState.playFromNewObjective);
+//            Debug.Log("Next Aquarium: " + GameState.NextAquarium);
             //Debug.Log("Current Aquarium: " + GameState.currentAquarium);
+//            Debug.Log("Next Objective: " + GameState.NextObjective);
             //Debug.Log("Current Objective: " + GameState.currentObjective);
             //Debug.Log("Aquarium Name: " + GameState.currentAquariumName);
             //Debug.Log("Objective name: " + GameState.currentObjectiveName);
+
+            //Debug.Log("Scene to load: " + GameState.sceneToLoad);
             //Debug.Log("Can I Press a button? " + GameState.canPressAButton);
         }
     }

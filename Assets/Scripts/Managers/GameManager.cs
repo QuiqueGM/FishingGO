@@ -34,7 +34,6 @@ namespace VFG.Managers
         private Coroutine hideObjectToFind;
         private Coroutine hideCompassArrow;
 		private int _currentAquarium;
-        private int _numberOfObjectivesInARow = 0;
 
         void Awake()
 		{
@@ -62,7 +61,8 @@ namespace VFG.Managers
 
             _typeOfItem = objective.TypeOfItem;
             CM.CNV_Buttons.GetComponent<CanvasShowButtons>().SetCardButton(_typeOfItem);
-
+			Debug.Log("======== " + pathItem);
+			;
             if (_typeOfItem == TypeOfItem.Fish)
                 CreteFishSchoolObjective(objective, pathItem);
             else
@@ -250,12 +250,6 @@ namespace VFG.Managers
 
         public void CloseObjectiveSolved(bool backToMenu)
         {
-            _numberOfObjectivesInARow++;
-            Debug.Log("Number of Objecties in a Row: " + _numberOfObjectivesInARow);
-
-            if (_numberOfObjectivesInARow == GameState.NUMBER_OF_CATHES_BEFORE_RATING && GameState.GameHasBeenRated == (int)GameState.Toggle.Off)
-                CM.ShowCanvasRate();
-
             if (GameState.newAquariumIsUnlocked)
             {
                 ShowPopup(TypeOfAction.NewAquarium, ref GameState.newAquariumIsUnlocked, AudiosData.NEW_AQUARIUM);
@@ -270,11 +264,7 @@ namespace VFG.Managers
                 ShowPopup(TypeOfAction.EndGame, ref GameState.allObjectivesUnlockedInGame, AudiosData.ALL_OBJECTIVES);
             else
             {
-                if (backToMenu)
-                {
-                    CM.SetCurrentCanvas(CM.CNV_ObjectiveSolved);
-                    BackToMenu();
-                }
+                if (backToMenu) BackToMenu();
                 else Continue(null);
             }
         }
@@ -313,12 +303,8 @@ namespace VFG.Managers
 
             CM.CNV_BackgroundMenu.SetActive(false);
             CM.CNV_ObjectiveSolved.SetActive(false);
+            CM.CNV_ObjectiveTofind.GetComponent<CanvasObjectiveToFind>().ShowObjectToFind();
             CM.CNV_Buttons.SetActive(true);
-
-            if (!CM.CNV_Rate.activeSelf)
-                CM.CNV_ObjectiveTofind.GetComponent<CanvasObjectiveToFind>().ShowObjectToFind();
-            else
-                CM.HasToShowObjectiveFind = true;
         }
 
 		private void CheckToChangeAquarium()

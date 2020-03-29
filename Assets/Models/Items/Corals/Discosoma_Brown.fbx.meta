@@ -1,33 +1,17 @@
 fileFormatVersion: 2
-guid: 5eda1f0fd11241e43a92a15af48f66e4
-timeCreated: 1509642361
+guid: 1913f5750b918e242bb05d396e96d70a
+timeCreated: 1490799262
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Discosoma_Brown_LOD0
-    100002: Discosoma_Brown_LOD1
-    100004: Discosoma_Brown_LOD2
-    100006: //RootNode
-    100008: Discosoma_Brown_LOD3
-    400000: Discosoma_Brown_LOD0
-    400002: Discosoma_Brown_LOD1
-    400004: Discosoma_Brown_LOD2
-    400006: //RootNode
-    400008: Discosoma_Brown_LOD3
-    2300000: Discosoma_Brown_LOD0
-    2300002: Discosoma_Brown_LOD1
-    2300004: Discosoma_Brown_LOD2
-    2300006: Discosoma_Brown_LOD3
-    3300000: Discosoma_Brown_LOD0
-    3300002: Discosoma_Brown_LOD1
-    3300004: Discosoma_Brown_LOD2
-    3300006: Discosoma_Brown_LOD3
-    4300000: Discosoma_Brown_LOD0
-    4300002: Discosoma_Brown_LOD1
-    4300004: Discosoma_Brown_LOD2
-    4300006: Discosoma_Brown_LOD3
-    20500000: //RootNode
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Discosoma_Brown_Mesh
+    4300002: Discosoma_Brown
+    6400000: //RootNode
   materials:
     importMaterials: 0
     materialName: 0
@@ -53,19 +37,15 @@ ModelImporter:
     clipAnimations: []
     isReadable: 1
   meshes:
-    lODScreenPercentages:
-    - 0.25
-    - 0.125
-    - 0.0625
-    - 0.01
+    lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
-    importBlendShapes: 1
+    addColliders: 1
+    importBlendShapes: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
+    optimizeMeshForGPU: 0
     keepQuads: 0
     weldVertices: 1
     secondaryUVAngleDistortion: 8

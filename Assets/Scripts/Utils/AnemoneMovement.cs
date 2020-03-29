@@ -31,10 +31,10 @@ namespace VFG.Utils
             if (moveBody) MoveMainDirection(3);
         }
 
-        void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.A)) MoveMainDirection(1);
-        }
+        //void Update()
+        //{
+        //    if (Input.GetKeyDown(KeyCode.A)) MoveMainDirection(1);
+        //}
 
         private void MoveMainDirection(float duration)
         {

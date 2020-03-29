@@ -9,19 +9,18 @@ namespace VFG.Managers
 {
     public class ARKitManager : MonoBehaviour
     {
-        [Header("Managers")]
+        [Header("Canvas Manager")]
         public CanvasManager canvasManager;
 
         [Header("ARKit")]
 		public UnityARCameraManager ARManager;
-        public Camera mainCamera;
+        public Camera camera;
         public GameObject container;
         public PlaceAquarium placeAquarium;
         public UnityARGeneratePlane unityARGeneratePlane;
         public PointsCloudGenerator pointsCloudGenerator;
 
         private CanvasManager CM;
-		private bool planeIsDetected = true;
 
         private void Awake()
         {
@@ -30,6 +29,7 @@ namespace VFG.Managers
             AddListeners();
             
             CM.CNV_Scannig.SetActive(false);
+            CM.CNV_TimesUp.SetActive(false);
             CM.CNV_PlaceAquarium.SetActive(false);
             CM.CNV_Buttons.SetActive(false);
 
@@ -42,14 +42,16 @@ namespace VFG.Managers
         private void AddListeners()
         {
             CM.CNV_Scannig.GetComponent<CanvasScanningObjects>().ShowWarningTimesUpEvent += ShowWarningCanvas;
-			placeAquarium.SendHitEvent += HideCanvasPlaceAquarium;
+            CM.CNV_TimesUp.GetComponent<CanvasWarning>().HideWarningEvent += HideWarningCanvas;
+            placeAquarium.SendHitEvent += HideCanvasPlaceAquarium;
             UnityARUtility.SurfaceDetectedEvent += ShowCanvasPlaceAquarium;
         }
 
         void OnDestroy()
         {
             CM.CNV_Scannig.GetComponent<CanvasScanningObjects>().ShowWarningTimesUpEvent -= ShowWarningCanvas;
-			placeAquarium.SendHitEvent -= HideCanvasPlaceAquarium;
+            CM.CNV_TimesUp.GetComponent<CanvasWarning>().HideWarningEvent -= HideWarningCanvas;
+            placeAquarium.SendHitEvent -= HideCanvasPlaceAquarium;
             UnityARUtility.SurfaceDetectedEvent -= ShowCanvasPlaceAquarium;
         }
 
@@ -57,10 +59,14 @@ namespace VFG.Managers
         {
 #if UNITY_EDITOR
             CM.CNV_Scannig.SetActive(false);
+            CM.CNV_TimesUp.SetActive(false);
             CM.CNV_PlaceAquarium.SetActive(true);
             return;
 #endif
 			Screen.sleepTimeout = SleepTimeout.NeverSleep;
+
+//			if (!ARManager.enabled)
+//				ARManager.enabled = true;
 
             if (GameState.isFirstUseApp)
                 ScanningSurfaces();
@@ -70,10 +76,11 @@ namespace VFG.Managers
 
         private void ScanningSurfaces()
         {
-            mainCamera.GetComponent<BloomOptimized>().enabled = false;
+            camera.GetComponent<BloomOptimized>().enabled = false;
             container.SetActive(false);
 
             CM.CNV_Scannig.SetActive(true);
+            CM.CNV_TimesUp.SetActive(false);
             CM.CNV_PlaceAquarium.SetActive(false);
             CM.CNV_Buttons.SetActive(false);
 
@@ -92,12 +99,17 @@ namespace VFG.Managers
 
         private void ShowWarningCanvas()
         {
-			ShowCanvasPlaceAquarium();
+            CM.CNV_Scannig.SetActive(false);
+            CM.CNV_TimesUp.SetActive(true);
+
+            pointsCloudGenerator.ContainerVisibility(false);
         }
 
         private void HideWarningCanvas()
         {
             CM.CNV_Scannig.SetActive(true);
+            CM.CNV_TimesUp.SetActive(false);
+
             pointsCloudGenerator.ContainerVisibility(true);
         }
 
@@ -106,6 +118,7 @@ namespace VFG.Managers
             if (GameState.isInScene == GameState.Scene.Scanning)
             {
                 CM.CNV_Scannig.SetActive(false);
+                CM.CNV_TimesUp.SetActive(false);
                 CM.CNV_PlaceAquarium.SetActive(true);
                 placeAquarium.canvasPlaceAquariumIsOn = true;
 
@@ -114,11 +127,11 @@ namespace VFG.Managers
             }
         }
 
-		public void HideCanvasPlaceAquarium()
+        public void HideCanvasPlaceAquarium()
         {
             GameState.isFirstUseApp = false;
 
-            mainCamera.GetComponent<SetCameraEffects>().SetEffects();
+            camera.GetComponent<SetCameraEffects>().SetEffects();
 
             CM.CNV_PlaceAquarium.SetActive(false);
             CM.CNV_Buttons.SetActive(true);
@@ -126,6 +139,7 @@ namespace VFG.Managers
 
             placeAquarium.canvasPlaceAquariumIsOn = false;
             container.SetActive(true);
+
             pointsCloudGenerator.ContainerVisibility(false);
             unityARGeneratePlane.ContainerVisibility(false);
 

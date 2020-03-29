@@ -13,7 +13,6 @@ namespace VFG.Core.Localization
 
         const int FIRST_ELEMENT = 1;
         const int LAST_ELEMENT = 2;
-		const int NUM_LANGUAGES = 11;
 
         const string PATH_LANGUAGES = "Localization/Languages";
         const string PATH_GENERIC_KEYS = "Localization/GenericKeys";
@@ -145,9 +144,9 @@ namespace VFG.Core.Localization
             {
                 languages = new List<string>();
                 languages = SplitCsvLine(lang[0]).ToList();
-
-				if (languages.Count > NUM_LANGUAGES+FIRST_ELEMENT)
-					languages.Remove(languages.Last());
+                #if UNITY_EDITOR
+                languages.Remove(languages.Last());
+                #endif
             }
         }
 

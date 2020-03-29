@@ -11,8 +11,6 @@ namespace VFG.Canvas
 {
     public class CardsMenu : CanvasBase
     {
-		const int FILTERPOS_LOWRES = 158;
-		const int FILTERPOS_BIGRES = 45;
         const int CELLSIZE_LOWRES = 360;
         const int CELLSIZE_BIGRES = 350;
 
@@ -43,7 +41,6 @@ namespace VFG.Canvas
             Depth
         }
 
-		public GameObject filters;
         public Image IMG_Cards;
         public Sprite[] cards;
         [Space]
@@ -72,11 +69,11 @@ namespace VFG.Canvas
         public override void Initialize()
         {
             _cards = transform.Find("Cards/Buttons").gameObject;
-			_TXT_CardsCollection = filters.transform.Find("Collections/TXT_CardsCollection").GetComponent<TMP_Text>();
-			_popupPhylum = filters.transform.Find("Phylum/PopupPhylum").gameObject;
-			_TXT_CardsPhylum = filters.transform.Find("Phylum/TXT_Phylum").GetComponent<TMP_Text>();
-			_popupOrderBy = filters.transform.Find("OrderBy/PopupOrderBy").gameObject;
-			_BTN_OrderBy = filters.transform.Find("OrderBy/BTN_OrderBy").GetComponent<TMP_Text>();
+            _TXT_CardsCollection = transform.Find("Collections/TXT_CardsCollection").GetComponent<TMP_Text>();
+            _popupPhylum = transform.Find("Phylum/PopupPhylum").gameObject;
+            _TXT_CardsPhylum = transform.Find("Phylum/TXT_Phylum").GetComponent<TMP_Text>();
+            _popupOrderBy = transform.Find("OrderBy/PopupOrderBy").gameObject;
+            _BTN_OrderBy = transform.Find("OrderBy/BTN_OrderBy").GetComponent<TMP_Text>();
             _TXT_CardsPhylum.text = LoadLocalization.Instance.GetKey("#ALL#");
             initButtonsPosition = _cards.transform.position;
             gameObject.GetComponent<CanvasGroup>().alpha = 0;
@@ -92,7 +89,6 @@ namespace VFG.Canvas
         {
             float screenResolution = (float)Screen.width / (float)Screen.height;
             _cards.GetComponent<GridLayoutGroup>().cellSize = (screenResolution > 2) ? new Vector2(CELLSIZE_BIGRES, CELLSIZE_BIGRES) : new Vector2(CELLSIZE_LOWRES, CELLSIZE_LOWRES);
-			filters.transform.localPosition = (screenResolution > 2) ? new Vector2 (FILTERPOS_BIGRES, 0) : new Vector2 (FILTERPOS_LOWRES, 0);
         }
 
         public void Populate(List<Objective> listResult)

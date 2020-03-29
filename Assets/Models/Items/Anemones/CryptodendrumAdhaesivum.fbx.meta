@@ -1,33 +1,16 @@
 fileFormatVersion: 2
-guid: d1b6fab6c8a5c1f41a724ce9a29ee0d9
-timeCreated: 1508407583
+guid: 86b4b2ba121345145b34c83e4e4e845b
+timeCreated: 1509027313
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
-    100002: CryptodendrumAdhaesivum_LOD0
-    100004: CryptodendrumAdhaesivum_LOD1
-    100006: CryptodendrumAdhaesivum_LOD2
-    100008: CryptodendrumAdhaesivum_LOD3
     400000: //RootNode
-    400002: CryptodendrumAdhaesivum_LOD0
-    400004: CryptodendrumAdhaesivum_LOD1
-    400006: CryptodendrumAdhaesivum_LOD2
-    400008: CryptodendrumAdhaesivum_LOD3
-    2300000: CryptodendrumAdhaesivum_LOD0
-    2300002: CryptodendrumAdhaesivum_LOD1
-    2300004: CryptodendrumAdhaesivum_LOD2
-    2300006: CryptodendrumAdhaesivum_LOD3
-    3300000: CryptodendrumAdhaesivum_LOD0
-    3300002: CryptodendrumAdhaesivum_LOD1
-    3300004: CryptodendrumAdhaesivum_LOD2
-    3300006: CryptodendrumAdhaesivum_LOD3
-    4300000: CryptodendrumAdhaesivum_LOD0
-    4300002: CryptodendrumAdhaesivum_LOD1
-    4300004: CryptodendrumAdhaesivum_LOD2
-    4300006: CryptodendrumAdhaesivum_LOD3
-    20500000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: CryptodendrumAdhaesivum
+    9500000: //RootNode
   materials:
     importMaterials: 0
     materialName: 0
@@ -53,11 +36,7 @@ ModelImporter:
     clipAnimations: []
     isReadable: 1
   meshes:
-    lODScreenPercentages:
-    - 0.25
-    - 0.125
-    - 0.0625
-    - 0.01
+    lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
     addColliders: 0

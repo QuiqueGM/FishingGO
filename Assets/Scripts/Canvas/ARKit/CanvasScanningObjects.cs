@@ -15,7 +15,7 @@ namespace VFG.Canvas
 
 		public void OnEnable()
 		{
-			int TIMES_UP = 15;
+			int TIMES_UP = 10;
 			int n = 0;
 
 			sequence = DOTween.Sequence();

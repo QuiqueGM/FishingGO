@@ -104,10 +104,6 @@ TextureImporter:
     21300194: Molluscs_DOWN
     21300196: Molluscs_IDLE
     21300198: WhiteCircle
-    21300200: Later_DOWN
-    21300202: Later_IDLE
-    21300204: Rate_DOWN
-    21300206: Rate_IDLE
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -193,8 +189,8 @@ TextureImporter:
       name: Answer
       rect:
         serializedVersion: 2
-        x: 1192
-        y: 1322
+        x: 1210
+        y: 1134
         width: 144
         height: 144
       alignment: 0
@@ -245,8 +241,8 @@ TextureImporter:
       name: Arrow_AIM
       rect:
         serializedVersion: 2
-        x: 790
-        y: 17
+        x: 590
+        y: 361
         width: 186
         height: 147
       alignment: 0
@@ -284,7 +280,7 @@ TextureImporter:
       name: ArrowButtons
       rect:
         serializedVersion: 2
-        x: 702
+        x: 402
         y: 361
         width: 186
         height: 147
@@ -311,7 +307,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 452
-        y: 166
+        y: 167
         width: 192
         height: 192
       alignment: 0
@@ -388,8 +384,8 @@ TextureImporter:
       name: Camera
       rect:
         serializedVersion: 2
-        x: 1858
-        y: 1457
+        x: 1210
+        y: 988
         width: 144
         height: 144
       alignment: 0
@@ -479,8 +475,8 @@ TextureImporter:
       name: Checkmark
       rect:
         serializedVersion: 2
-        x: 1664
-        y: 1338
+        x: 1372
+        y: 884
         width: 128
         height: 128
       alignment: 0
@@ -506,7 +502,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 646
-        y: 166
+        y: 167
         width: 192
         height: 192
       alignment: 0
@@ -544,7 +540,7 @@ TextureImporter:
       name: Close_IDLE
       rect:
         serializedVersion: 2
-        x: 890
+        x: 927
         y: 380
         width: 192
         height: 192
@@ -609,7 +605,7 @@ TextureImporter:
       name: Continue_DOWN
       rect:
         serializedVersion: 2
-        x: 978
+        x: 490
         y: 18
         width: 147
         height: 147
@@ -622,8 +618,8 @@ TextureImporter:
       name: Continue_IDLE
       rect:
         serializedVersion: 2
-        x: 1127
-        y: 37
+        x: 639
+        y: 18
         width: 147
         height: 147
       alignment: 0
@@ -700,8 +696,8 @@ TextureImporter:
       name: Effects_ACT_DOWN
       rect:
         serializedVersion: 2
-        x: 1472
-        y: 1279
+        x: 1372
+        y: 754
         width: 128
         height: 128
       alignment: 0
@@ -713,8 +709,8 @@ TextureImporter:
       name: Effects_ACT_IDLE
       rect:
         serializedVersion: 2
-        x: 1338
-        y: 1279
+        x: 1386
+        y: 1577
         width: 128
         height: 128
       alignment: 0
@@ -726,8 +722,8 @@ TextureImporter:
       name: Gradient
       rect:
         serializedVersion: 2
-        x: 1794
-        y: 1327
+        x: 1494
+        y: 1726
         width: 128
         height: 128
       alignment: 0
@@ -739,7 +735,7 @@ TextureImporter:
       name: Help_DOWN
       rect:
         serializedVersion: 2
-        x: 1084
+        x: 1121
         y: 410
         width: 192
         height: 192
@@ -765,8 +761,8 @@ TextureImporter:
       name: HelpSettings_DOWN
       rect:
         serializedVersion: 2
-        x: 1664
-        y: 1208
+        x: 1584
+        y: 1920
         width: 128
         height: 128
       alignment: 0
@@ -778,36 +774,10 @@ TextureImporter:
       name: HelpSettings_IDLE
       rect:
         serializedVersion: 2
-        x: 1472
-        y: 1149
+        x: 1386
+        y: 1447
         width: 128
         height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: Later_DOWN
-      rect:
-        serializedVersion: 2
-        x: 402
-        y: 360
-        width: 148
-        height: 148
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: Later_IDLE
-      rect:
-        serializedVersion: 2
-        x: 552
-        y: 360
-        width: 148
-        height: 148
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -817,8 +787,8 @@ TextureImporter:
       name: Lighting_ACT_DOWN
       rect:
         serializedVersion: 2
-        x: 1794
-        y: 1197
+        x: 1386
+        y: 1317
         width: 128
         height: 128
       alignment: 0
@@ -830,8 +800,8 @@ TextureImporter:
       name: Lighting_ACT_IDLE
       rect:
         serializedVersion: 2
-        x: 1664
-        y: 1078
+        x: 1487
+        y: 1187
         width: 128
         height: 128
       alignment: 0
@@ -843,8 +813,8 @@ TextureImporter:
       name: Menu_DOWN
       rect:
         serializedVersion: 2
-        x: 1472
-        y: 1901
+        x: 778
+        y: 361
         width: 147
         height: 147
       alignment: 0
@@ -856,8 +826,8 @@ TextureImporter:
       name: Menu_IDLE
       rect:
         serializedVersion: 2
-        x: 1472
-        y: 1752
+        x: 788
+        y: 18
         width: 147
         height: 147
       alignment: 0
@@ -869,7 +839,7 @@ TextureImporter:
       name: Molluscs_DOWN
       rect:
         serializedVersion: 2
-        x: 1276
+        x: 1235
         y: 22
         width: 192
         height: 192
@@ -921,8 +891,8 @@ TextureImporter:
       name: Music_ACT_DOWN
       rect:
         serializedVersion: 2
-        x: 1210
-        y: 948
+        x: 1487
+        y: 1057
         width: 128
         height: 128
       alignment: 0
@@ -934,8 +904,8 @@ TextureImporter:
       name: Music_ACT_IDLE
       rect:
         serializedVersion: 2
-        x: 1340
-        y: 1149
+        x: 1714
+        y: 1920
         width: 128
         height: 128
       alignment: 0
@@ -1012,7 +982,7 @@ TextureImporter:
       name: Question_DOWN
       rect:
         serializedVersion: 2
-        x: 1278
+        x: 1315
         y: 504
         width: 192
         height: 192
@@ -1035,37 +1005,11 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: Rate_DOWN
-      rect:
-        serializedVersion: 2
-        x: 490
-        y: 16
-        width: 148
-        height: 148
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: Rate_IDLE
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 16
-        width: 148
-        height: 148
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
       name: Replace_DOWN
       rect:
         serializedVersion: 2
-        x: 1192
-        y: 1470
+        x: 1356
+        y: 1147
         width: 129
         height: 131
       alignment: 0
@@ -1077,8 +1021,8 @@ TextureImporter:
       name: Replace_IDLE
       rect:
         serializedVersion: 2
-        x: 1323
-        y: 1470
+        x: 1356
+        y: 1014
         width: 129
         height: 131
       alignment: 0
@@ -1090,8 +1034,8 @@ TextureImporter:
       name: ResetGame_DOWN
       rect:
         serializedVersion: 2
-        x: 1210
-        y: 1149
+        x: 1844
+        y: 1920
         width: 128
         height: 128
       alignment: 0
@@ -1103,8 +1047,8 @@ TextureImporter:
       name: ResetGame_IDLE
       rect:
         serializedVersion: 2
-        x: 1340
-        y: 948
+        x: 1502
+        y: 927
         width: 128
         height: 128
       alignment: 0
@@ -1129,7 +1073,7 @@ TextureImporter:
       name: Settings
       rect:
         serializedVersion: 2
-        x: 1470
+        x: 1429
         y: 116
         width: 192
         height: 192
@@ -1142,8 +1086,8 @@ TextureImporter:
       name: Settings_DOWN
       rect:
         serializedVersion: 2
-        x: 1664
-        y: 1856
+        x: 1192
+        y: 1474
         width: 192
         height: 192
       alignment: 0
@@ -1155,8 +1099,8 @@ TextureImporter:
       name: Settings_IDLE
       rect:
         serializedVersion: 2
-        x: 1664
-        y: 1662
+        x: 1192
+        y: 1280
         width: 192
         height: 192
       alignment: 0
@@ -1168,8 +1112,8 @@ TextureImporter:
       name: Shadows_ACT_DOWN
       rect:
         serializedVersion: 2
-        x: 1472
-        y: 1019
+        x: 1502
+        y: 797
         width: 128
         height: 128
       alignment: 0
@@ -1181,8 +1125,8 @@ TextureImporter:
       name: Shadows_ACT_IDLE
       rect:
         serializedVersion: 2
-        x: 1372
-        y: 818
+        x: 1509
+        y: 667
         width: 128
         height: 128
       alignment: 0
@@ -1194,8 +1138,8 @@ TextureImporter:
       name: Share2_DOWN
       rect:
         serializedVersion: 2
-        x: 1664
-        y: 1468
+        x: 1196
+        y: 1856
         width: 192
         height: 192
       alignment: 0
@@ -1207,8 +1151,8 @@ TextureImporter:
       name: Share2_IDLE
       rect:
         serializedVersion: 2
-        x: 1454
-        y: 1409
+        x: 1390
+        y: 1856
         width: 192
         height: 192
       alignment: 0
@@ -1220,8 +1164,8 @@ TextureImporter:
       name: Share_DOWN
       rect:
         serializedVersion: 2
-        x: 1858
-        y: 1901
+        x: 937
+        y: 18
         width: 147
         height: 147
       alignment: 0
@@ -1233,8 +1177,8 @@ TextureImporter:
       name: Share_IDLE
       rect:
         serializedVersion: 2
-        x: 1858
-        y: 1752
+        x: 1086
+        y: 37
         width: 147
         height: 147
       alignment: 0
@@ -1259,8 +1203,8 @@ TextureImporter:
       name: ShowCard_DOWN
       rect:
         serializedVersion: 2
-        x: 1472
-        y: 1603
+        x: 1196
+        y: 1707
         width: 147
         height: 147
       alignment: 0
@@ -1272,8 +1216,8 @@ TextureImporter:
       name: ShowCard_IDLE
       rect:
         serializedVersion: 2
-        x: 1858
-        y: 1603
+        x: 1345
+        y: 1707
         width: 147
         height: 147
       alignment: 0

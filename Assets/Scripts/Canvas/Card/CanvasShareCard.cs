@@ -25,13 +25,13 @@ namespace VFG.Canvas
         public override void Initialize()
         {
 			_image = GetComponent<Image> ();
-			_IMG_BackgroundCircle = transform.Find("Container/IMG_BackgroundCircle").GetComponent<Image>();
-			_TXT_ScientificName = transform.Find("Container/TXT_ScientificName").GetComponent<TMP_Text>();
-			_RAW_Picture = transform.Find("Container/RAW_Picture").GetComponent<RawImage>();
-			_IMG_Family = transform.Find("Container/IMG_Family").GetComponent<Image>();
-			_TXT_Size = transform.Find("Container/TXT_Size").GetComponent<TMP_Text>();
-			_TXT_Depth = transform.Find("Container/TXT_Depth").GetComponent<TMP_Text>();
-			_TXT_Place = transform.Find("Container/TXT_Place").GetComponent<TMP_Text>();
+            _IMG_BackgroundCircle = transform.Find("IMG_BackgroundCircle").GetComponent<Image>();
+            _TXT_ScientificName = transform.Find("TXT_ScientificName").GetComponent<TMP_Text>();
+            _RAW_Picture = transform.Find("RAW_Picture").GetComponent<RawImage>();
+            _IMG_Family = transform.Find("IMG_Family").GetComponent<Image>();
+            _TXT_Size = transform.Find("TXT_Size").GetComponent<TMP_Text>();
+            _TXT_Depth = transform.Find("TXT_Depth").GetComponent<TMP_Text>();
+            _TXT_Place = transform.Find("TXT_Place").GetComponent<TMP_Text>();
 
             base.Initialize();
         }

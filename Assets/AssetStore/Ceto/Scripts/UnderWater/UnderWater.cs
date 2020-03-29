@@ -364,7 +364,8 @@ namespace Ceto
 				Shader.SetGlobalFloat("Ceto_MaxDepthDist", Mathf.Max(0.0f, MAX_DEPTH_DIST));
 				Shader.SetGlobalFloat("Ceto_DepthBlend", Mathf.Clamp01(depthBlend));
                 Shader.SetGlobalFloat("Ceto_EdgeFade", Mathf.Lerp(20.0f, 2.0f, Mathf.Clamp01(edgeFade)));
-
+#if UNITY_540_OR_HIGHER && CETO_USE_STEAM_VR
+#endif
                 Shader.SetGlobalTexture("Ceto_CausticTexture", ((causticTexture.tex != null) ? causticTexture.tex : Texture2D.blackTexture));
                 Shader.SetGlobalVector("Ceto_CausticTextureScale", causticParam);
                 Shader.SetGlobalVector("Ceto_CausticDistortion", causticDistortion);
@@ -873,7 +874,9 @@ namespace Ceto
 
             //Note - position rotation and projection set before rendering.
             //Update other settings here.
+#if !CETO_USE_STEAM_VR
             data.cam.fieldOfView = cam.fieldOfView;
+#endif
             data.cam.nearClipPlane = cam.nearClipPlane;
             data.cam.farClipPlane = cam.farClipPlane;
             data.cam.orthographic = cam.orthographic;

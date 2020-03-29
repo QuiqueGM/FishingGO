@@ -1,42 +1,36 @@
 fileFormatVersion: 2
-guid: 51e22ffe7f82b0840a6ecb8f000691de
-timeCreated: 1510680403
+guid: 1efaaf3eb6abe0b4eb72c03a1632aac2
+timeCreated: 1507731518
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Holocentridae_A_LOD0
-    100002: Holocentridae_A_LOD1
-    100004: Holocentridae_A_LOD2
-    100006: Holocentridae_A_LOD3
-    100008: Holocentridae_A_LOD4
-    100010: //RootNode
-    400000: Holocentridae_A_LOD0
-    400002: Holocentridae_A_LOD1
-    400004: Holocentridae_A_LOD2
-    400006: Holocentridae_A_LOD3
-    400008: Holocentridae_A_LOD4
-    400010: //RootNode
-    2300000: Holocentridae_A_LOD3
-    2300002: Holocentridae_A_LOD4
-    2300004: Holocentridae_A_LOD0
-    2300006: Holocentridae_A_LOD1
-    2300008: Holocentridae_A_LOD2
-    3300000: Holocentridae_A_LOD3
-    3300002: Holocentridae_A_LOD4
-    3300004: Holocentridae_A_LOD0
-    3300006: Holocentridae_A_LOD1
-    3300008: Holocentridae_A_LOD2
-    4300000: Holocentridae_A_LOD0
-    4300002: Holocentridae_A_LOD1
-    4300004: Holocentridae_A_LOD2
-    4300006: Holocentridae_A_LOD3
-    4300008: Holocentridae_A_LOD4
+    100000: //RootNode
+    100002: Holocentridae_A_L
+    100004: Holocentridae_A_M
+    100006: Holocentridae_A_S
+    100008: Holocentridae_A_XS
+    400000: //RootNode
+    400002: Holocentridae_A_L
+    400004: Holocentridae_A_M
+    400006: Holocentridae_A_S
+    400008: Holocentridae_A_XS
+    2300000: Holocentridae_A_XS
+    2300002: Holocentridae_A_L
+    2300004: Holocentridae_A_M
+    2300006: Holocentridae_A_S
+    3300000: Holocentridae_A_XS
+    3300002: Holocentridae_A_L
+    3300004: Holocentridae_A_M
+    3300006: Holocentridae_A_S
+    4300000: Holocentridae_A_XS
+    4300002: Holocentridae_A_L
+    4300004: Holocentridae_A_M
+    4300006: Holocentridae_A_S
     9500000: //RootNode
-    13700000: Holocentridae_A_LOD0
-    13700002: Holocentridae_A_LOD1
-    13700004: Holocentridae_A_LOD2
-    20500000: //RootNode
+    13700000: Holocentridae_A_L
+    13700002: Holocentridae_A_M
+    13700004: Holocentridae_A_S
   materials:
     importMaterials: 0
     materialName: 0
@@ -62,12 +56,7 @@ ModelImporter:
     clipAnimations: []
     isReadable: 1
   meshes:
-    lODScreenPercentages:
-    - 0.25
-    - 0.125
-    - 0.0625
-    - 0.03125
-    - 0.01
+    lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
     addColliders: 0

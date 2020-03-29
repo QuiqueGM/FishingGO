@@ -11,6 +11,8 @@ namespace VFG.Core.Localization
 
         public override void SetLanguageKey()
         {
+            key = GetComponent<TMP_Text>().text;
+
             if (parameters.Count > 0)
                 GetComponent<TMP_Text>().text = string.Format(LoadLocalization.Instance.GetKey(key), parameters.ToArray());
         }

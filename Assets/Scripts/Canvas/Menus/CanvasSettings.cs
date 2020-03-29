@@ -3,7 +3,7 @@ using UnityEngine;
 using VFG.Core;
 using UnityEngine.UI;
 using VFG.Core.Audio;
-using UnityEngine.iOS;
+//using UnityEngine.iOS;
 using VFG.Core.Localization;
 
 namespace VFG.Canvas
@@ -57,14 +57,14 @@ namespace VFG.Canvas
             if (GameState.FirstTimeIstUsed == (int)GameState.Toggle.On)
             {
                 GameState.FirstTimeIstUsed = (int)GameState.Toggle.Off;
-                _TGL_Shadows.isOn = !(Device.generation == DeviceGeneration.iPadUnknown || Device.generation == DeviceGeneration.iPhoneUnknown);
-                _TGL_Lighting.isOn = !(Device.generation == DeviceGeneration.iPadUnknown || Device.generation == DeviceGeneration.iPhoneUnknown);
+                //_TGL_Shadows.isOn = !(Device.generation == DeviceGeneration.iPadUnknown || Device.generation == DeviceGeneration.iPhoneUnknown);
+                //_TGL_Lighting.isOn = !(Device.generation == DeviceGeneration.iPadUnknown || Device.generation == DeviceGeneration.iPhoneUnknown);
 				_TGL_Help.isOn = false;
             }
             else
             {
-                _TGL_Shadows.isOn = GameState.AdvancedShadows == (int)GameState.Toggle.On ? false : true;
-                _TGL_Lighting.isOn = GameState.AdvancedLighting == (int)GameState.Toggle.On ? false : true;
+                //_TGL_Shadows.isOn = GameState.AdvancedShadows == (int)GameState.Toggle.On ? false : true;
+                //_TGL_Lighting.isOn = GameState.AdvancedLighting == (int)GameState.Toggle.On ? false : true;
 				_TGL_Help.isOn = GameState.ShowHelpAtTheBeginning == (int)GameState.Toggle.On ? false : true;
             }
 

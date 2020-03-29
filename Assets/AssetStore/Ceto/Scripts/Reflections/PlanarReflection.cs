@@ -413,8 +413,9 @@ namespace Ceto
                     data.cam.layerCullSpherical = true;
                 }
             }
-
-			data.cam.fieldOfView = cam.fieldOfView;
+#if !CETO_USE_STEAM_VR
+            data.cam.fieldOfView = cam.fieldOfView;
+#endif
 			data.cam.nearClipPlane = cam.nearClipPlane;
 			data.cam.farClipPlane = cam.farClipPlane;
 			data.cam.orthographic = cam.orthographic;

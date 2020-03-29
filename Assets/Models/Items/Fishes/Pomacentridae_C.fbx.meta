@@ -10,53 +10,27 @@ ModelImporter:
     100004: Pomacentridae_C_M
     100006: Pomacentridae_C_S
     100008: Pomacentridae_C_XS
-    100010: Pomacentridae_C_LOD0
-    100012: Pomacentridae_C_LOD1
-    100014: Pomacentridae_C_LOD2
-    100016: Pomacentridae_C_LOD3
-    100018: Pomacentridae_C_LOD4
     400000: //RootNode
     400002: Pomacentridae_C_L
     400004: Pomacentridae_C_M
     400006: Pomacentridae_C_S
     400008: Pomacentridae_C_XS
-    400010: Pomacentridae_C_LOD0
-    400012: Pomacentridae_C_LOD1
-    400014: Pomacentridae_C_LOD2
-    400016: Pomacentridae_C_LOD3
-    400018: Pomacentridae_C_LOD4
     2300000: Pomacentridae_C_XS
     2300002: Pomacentridae_C_L
     2300004: Pomacentridae_C_M
     2300006: Pomacentridae_C_S
-    2300008: Pomacentridae_C_LOD0
-    2300010: Pomacentridae_C_LOD1
-    2300012: Pomacentridae_C_LOD2
-    2300014: Pomacentridae_C_LOD3
-    2300016: Pomacentridae_C_LOD4
     3300000: Pomacentridae_C_XS
     3300002: Pomacentridae_C_L
     3300004: Pomacentridae_C_M
     3300006: Pomacentridae_C_S
-    3300008: Pomacentridae_C_LOD0
-    3300010: Pomacentridae_C_LOD1
-    3300012: Pomacentridae_C_LOD2
-    3300014: Pomacentridae_C_LOD3
-    3300016: Pomacentridae_C_LOD4
     4300000: Pomacentridae_C_L
     4300002: Pomacentridae_C_M
     4300004: Pomacentridae_C_S
     4300006: Pomacentridae_C_XS
-    4300008: Pomacentridae_C_LOD0
-    4300010: Pomacentridae_C_LOD1
-    4300012: Pomacentridae_C_LOD2
-    4300014: Pomacentridae_C_LOD3
-    4300016: Pomacentridae_C_LOD4
     9500000: //RootNode
     13700000: Pomacentridae_C_L
     13700002: Pomacentridae_C_M
     13700004: Pomacentridae_C_S
-    20500000: //RootNode
   materials:
     importMaterials: 0
     materialName: 0
@@ -82,12 +56,7 @@ ModelImporter:
     clipAnimations: []
     isReadable: 1
   meshes:
-    lODScreenPercentages:
-    - 0.25
-    - 0.125
-    - 0.0625
-    - 0.03125
-    - 0.01
+    lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
     addColliders: 0

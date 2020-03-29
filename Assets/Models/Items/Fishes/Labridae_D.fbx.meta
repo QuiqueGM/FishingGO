@@ -1,42 +1,36 @@
 fileFormatVersion: 2
-guid: 15f5295b49056564198a6b28989afa86
-timeCreated: 1510680402
+guid: 8cef6b87b543519448d6bf35463d6313
+timeCreated: 1507732505
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Labridae_D_LOD0
-    100002: Labridae_D_LOD1
-    100004: Labridae_D_LOD2
-    100006: Labridae_D_LOD3
-    100008: Labridae_D_LOD4
-    100010: //RootNode
-    400000: Labridae_D_LOD0
-    400002: Labridae_D_LOD1
-    400004: Labridae_D_LOD2
-    400006: Labridae_D_LOD3
-    400008: Labridae_D_LOD4
-    400010: //RootNode
-    2300000: Labridae_D_LOD3
-    2300002: Labridae_D_LOD4
-    2300004: Labridae_D_LOD0
-    2300006: Labridae_D_LOD1
-    2300008: Labridae_D_LOD2
-    3300000: Labridae_D_LOD3
-    3300002: Labridae_D_LOD4
-    3300004: Labridae_D_LOD0
-    3300006: Labridae_D_LOD1
-    3300008: Labridae_D_LOD2
-    4300000: Labridae_D_LOD0
-    4300002: Labridae_D_LOD1
-    4300004: Labridae_D_LOD2
-    4300006: Labridae_D_LOD3
-    4300008: Labridae_D_LOD4
+    100000: //RootNode
+    100002: Labridae_D_L
+    100004: Labridae_D_M
+    100006: Labridae_D_S
+    100008: Labridae_D_XS
+    400000: //RootNode
+    400002: Labridae_D_L
+    400004: Labridae_D_M
+    400006: Labridae_D_S
+    400008: Labridae_D_XS
+    2300000: Labridae_D_XS
+    2300002: Labridae_D_L
+    2300004: Labridae_D_M
+    2300006: Labridae_D_S
+    3300000: Labridae_D_XS
+    3300002: Labridae_D_L
+    3300004: Labridae_D_M
+    3300006: Labridae_D_S
+    4300000: Labridae_D_L
+    4300002: Labridae_D_M
+    4300004: Labridae_D_S
+    4300006: Labridae_D_XS
     9500000: //RootNode
-    13700000: Labridae_D_LOD0
-    13700002: Labridae_D_LOD1
-    13700004: Labridae_D_LOD2
-    20500000: //RootNode
+    13700000: Labridae_D_L
+    13700002: Labridae_D_M
+    13700004: Labridae_D_S
   materials:
     importMaterials: 0
     materialName: 0
@@ -62,12 +56,7 @@ ModelImporter:
     clipAnimations: []
     isReadable: 1
   meshes:
-    lODScreenPercentages:
-    - 0.25
-    - 0.125
-    - 0.0625
-    - 0.03125
-    - 0.01
+    lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
     addColliders: 0

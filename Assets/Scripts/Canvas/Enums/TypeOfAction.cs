@@ -23,6 +23,7 @@
         ShowMainCard            = 3001,
         ShowMoreCard            = 3002,
         ShowClassCard           = 3003,
+        ShowQuizCard            = 3004,
         ShowPicture             = 3005,
         SharePicture            = 3006,
 		ShowMoreCardFromInGame  = 3007,
@@ -30,9 +31,6 @@
         CloseCard               = 3100,
         ClosePicture            = 3101,
         CloseARCanvas           = 3200,
-
-        ShowNewName             = 3300,
-        SendNewName             = 3400,
 
         ObjectiveToFind         = 4000,
         CloseObjectiveToFind    = 4001,
@@ -44,8 +42,6 @@
         GoToAquariumFinished    = 6201,
         EndGame                 = 6300,
 
-        Continue                = 7000,
-
-        Rate                    = 8000
+        Continue                = 7000
     }
 }
