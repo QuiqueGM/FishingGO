@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 205348606818756438}
   - component: {fileID: 64774322086561372}
   - component: {fileID: 54807748589118998}
+  - component: {fileID: 114536888640375002}
   - component: {fileID: 114832549825122558}
   m_Layer: 0
   m_Name: AcroporaHumilis_blue
@@ -422,6 +423,17 @@ MeshCollider:
   m_InflateMesh: 1
   m_SkinWidth: 1.00000005e-20
   m_Mesh: {fileID: 4300008, guid: 1df727269c372bc42bcc8e8c6d399136, type: 3}
+--- !u!114 &114536888640375002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1098902156083470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114832549825122558
 MonoBehaviour:
   m_ObjectHideFlags: 1

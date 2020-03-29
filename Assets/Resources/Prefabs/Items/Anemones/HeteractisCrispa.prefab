@@ -88,9 +88,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4054128868328672}
   - component: {fileID: 205568954589950182}
-  - component: {fileID: 114373463581078582}
-  - component: {fileID: 54974798119869506}
   - component: {fileID: 64435193393541534}
+  - component: {fileID: 54974798119869506}
+  - component: {fileID: 114679486070982382}
+  - component: {fileID: 114373463581078582}
   m_Layer: 0
   m_Name: HeteractisCrispa
   m_TagString: Untagged
@@ -260,6 +261,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveTentacles: 1
   moveBody: 1
+--- !u!114 &114679486070982382
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1985620218297056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!137 &137020706124108496
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

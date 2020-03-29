@@ -37,7 +37,7 @@ namespace VFG.Canvas
             _image.color = isUnlocked ? Color.white : colorSecondaryButtonDisabledBlack;
         }
 
-        public override void SendAction(TypeOfAction action)
+        public override void SendAction(TypeOfARAction action)
         {
             GameState.currentObjectiveName = gameObject.name;
             base.SendAction(action);

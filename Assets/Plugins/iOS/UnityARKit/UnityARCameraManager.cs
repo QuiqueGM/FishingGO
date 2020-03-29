@@ -16,7 +16,9 @@ public class UnityARCameraManager : MonoBehaviour {
 	public bool enableLightEstimation = true;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
+		Debug.Log ("==============================================================");
 
 		m_session = UnityARSessionNativeInterface.GetARSessionNativeInterface();
 

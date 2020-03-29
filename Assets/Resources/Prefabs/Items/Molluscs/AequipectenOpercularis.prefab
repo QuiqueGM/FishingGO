@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 54789870482647956}
   - component: {fileID: 64590998424854230}
   - component: {fileID: 114658970269683608}
+  - component: {fileID: 114765476779628380}
   m_Layer: 0
   m_Name: AequipectenOpercularis
   m_TagString: Untagged
@@ -294,6 +295,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeOfItem: 10
+--- !u!114 &114765476779628380
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1565237167705014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!205 &205837102712831168
 LODGroup:
   m_ObjectHideFlags: 1

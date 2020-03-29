@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 205290626643330416}
   - component: {fileID: 64929125984117796}
   - component: {fileID: 54282001110288716}
+  - component: {fileID: 114124693148702824}
   - component: {fileID: 114941043934517636}
   m_Layer: 0
   m_Name: AcroporaHumilis_GRP_pink
@@ -352,6 +353,17 @@ MeshCollider:
   m_InflateMesh: 1
   m_SkinWidth: 1.00000005e-20
   m_Mesh: {fileID: 4300006, guid: 363115c05792f8e4691b14868ebf44e6, type: 3}
+--- !u!114 &114124693148702824
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1838027354024466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114941043934517636
 MonoBehaviour:
   m_ObjectHideFlags: 1

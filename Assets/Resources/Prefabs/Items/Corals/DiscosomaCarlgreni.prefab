@@ -88,9 +88,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4802983143120404}
   - component: {fileID: 205004480154225038}
-  - component: {fileID: 54354579962641080}
-  - component: {fileID: 114611822098962816}
   - component: {fileID: 65329124914339654}
+  - component: {fileID: 54354579962641080}
+  - component: {fileID: 114093196705542788}
+  - component: {fileID: 114611822098962816}
   m_Layer: 0
   m_Name: DiscosomaCarlgreni
   m_TagString: Untagged
@@ -350,6 +351,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.07830727, z: 1}
   m_Center: {x: 0, y: -0.0011786819, z: 0}
+--- !u!114 &114093196705542788
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1444056040497268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114611822098962816
 MonoBehaviour:
   m_ObjectHideFlags: 1

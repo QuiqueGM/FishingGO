@@ -9,6 +9,9 @@ namespace VFG.Managers
 {
     public class CanvasManager : MonoBehaviour
     {
+		//public TMP_Text aquarium;
+		//public TMP_Text objective;
+
         public enum MenuState
         {
             Hide = 0,
@@ -34,12 +37,13 @@ namespace VFG.Managers
         public GameObject CNV_MainSide;
         public GameObject CNV_MoreSide;
         public GameObject CNV_Classification;
+        public GameObject CNV_QuizSide;
         public GameObject CNV_Picture;
         public GameObject CNV_Share;
-        
 
         [Header("Canvas ARKit")]
         public GameObject CNV_Scannig;
+        public GameObject CNV_TimesUp;
         public GameObject CNV_PlaceAquarium;
 
         [Header("Canvas InGame")]
@@ -54,22 +58,17 @@ namespace VFG.Managers
         public GameObject CNV_AllObjectives;
         public GameObject CNV_EndGame;
 
-        [Header("Other canvas...")]
-        public GameObject CNV_Rate;
-
         private GameObject _currentCanvas;
         private GameObject _formerCanvas;
         private GameObject _cardCanvas;
         private bool _canPress = true;
 
-        public bool HasToShowObjectiveFind { get; set; }
-
         void Awake()
         {
             AddListeners();
-            InitializeCanvas();
+            InitializeMenus();
 
-            GoToSelectedScreen(TypeOfAction.MainMenu);
+            GoToSelectedScreen(TypeOfARAction.MainMenu);
         }
 
         private void AddListeners()
@@ -78,13 +77,12 @@ namespace VFG.Managers
                 baseButton.sendAction += GoToSelectedScreen;
         }
 
-        private void InitializeCanvas()
+        private void InitializeMenus()
         {
-            InitializeCanvas(CNV_BackgroundMenu, CNV_Settings, CNV_Reset, CNV_Aquariums, CNV_Objectives, CNV_Cards);
-            InitializeCanvas(CNV_BackgroundCard, CNV_MainSide, CNV_MoreSide, CNV_Classification, CNV_Picture, CNV_Share);
-            InitializeCanvas(CNV_ObjectiveSolved, CNV_ComparePictures);
-            InitializeCanvas(CNV_NewAquarium, CNV_AllObjectives, CNV_EndGame);
-            InitializeCanvas(CNV_Rate);
+            InitializeMenus(CNV_BackgroundMenu, CNV_Settings, CNV_Reset, CNV_Aquariums, CNV_Objectives, CNV_Cards);
+            InitializeMenus(CNV_BackgroundCard, CNV_MainSide, CNV_MoreSide, CNV_Classification, CNV_Picture, CNV_Share);
+            InitializeMenus(CNV_ObjectiveSolved, CNV_ComparePictures);
+            InitializeMenus(CNV_NewAquarium, CNV_AllObjectives, CNV_EndGame);
 
             CNV_TryAgain.SetActive(false);
             CNV_ObjectiveTofind.SetActive(false);
@@ -93,17 +91,15 @@ namespace VFG.Managers
 
             _currentCanvas = CNV_MainMenu;
             _formerCanvas = _currentCanvas;
-
-            HasToShowObjectiveFind = false;
         }
 
-        private void InitializeCanvas(params GameObject[] menu)
+        private void InitializeMenus(params GameObject[] menu)
         {
             foreach (GameObject m in menu)
                 m.GetComponent<IMenusScreen>().Initialize();
         }
 
-        public void GoToSelectedScreen(TypeOfAction action)
+        public void GoToSelectedScreen(TypeOfARAction action)
         {
             if (GameState.canPressAButton)
             {
@@ -111,142 +107,132 @@ namespace VFG.Managers
 
                 switch (action)
                 {
-                    case TypeOfAction.MainMenu:
+                    case TypeOfARAction.MainMenu:
                         MenuVisibility(CNV_MainMenu, MenuState.Show, 0.5f);
                         break;
-                    case TypeOfAction.BackToMainMenu:
+                    case TypeOfARAction.BackToMainMenu:
                         CNV_Buttons.SetActive(false);
                         MenuVisibility(_currentCanvas, CNV_MainMenu, 0.5f);
                         break;
-                    case TypeOfAction.CloseARCanvas:
+                    case TypeOfARAction.CloseARCanvas:
                         AudioManager.Instance.ChangeMusicWithFade(AudiosData.MUSIC_MENUS, 1, 1);
                         MenuVisibility(CNV_BackgroundMenu, MenuState.Show, 0.45f);
                         MenuVisibility(CNV_MainMenu, MenuState.Show, 0.5f);
                         break;
-                    case TypeOfAction.Settings:
+                    case TypeOfARAction.Settings:
                         MenuVisibility(CNV_Settings, MenuState.Show, 0.2f);
                         break;
-                    case TypeOfAction.Reset:
+                    case TypeOfARAction.Reset:
                         SetFormerCanvas();
                         MenuVisibility(CNV_Reset, MenuState.Show, 0.2f);
                         break;
-                    case TypeOfAction.Aquariums:
+                    case TypeOfARAction.Aquariums:
                         MenuVisibility(CNV_MainMenu, CNV_Aquariums);
                         PopulateCanvas(CNV_Aquariums);
                         break;
-                    case TypeOfAction.Objectives:
+                    case TypeOfARAction.Objectives:
                         MenuVisibility(CNV_Aquariums, CNV_Objectives);
                         PopulateCanvas(CNV_Objectives);
                         AudioManager.Instance.PlayEffect(AudiosData.BUTTON_UP);
                         break;
-                    case TypeOfAction.Cards:
+                    case TypeOfARAction.Cards:
                         MenuVisibility(CNV_MainMenu, CNV_Cards);
                         PopulateCanvas(CNV_Cards);
                         break;
 
-                    case TypeOfAction.BackButtonAquariums:
+                    case TypeOfARAction.BackButtonAquariums:
                         MenuVisibility(CNV_Aquariums, CNV_MainMenu, 0.5f);
                         break;
-                    case TypeOfAction.BackButtonObjectives:
+                    case TypeOfARAction.BackButtonObjectives:
                         MenuVisibility(CNV_Objectives, CNV_Aquariums, 0.5f);
                         break;
-                    case TypeOfAction.BackButtonCards:
+                    case TypeOfARAction.BackButtonCards:
                         MenuVisibility(CNV_Cards, CNV_MainMenu, 0.5f);
                         break;
 
-                    case TypeOfAction.NewObjective:
+                    case TypeOfARAction.NewObjective:
                         GameState.playFromNewObjective = true;
                         OpenNewObjective();
                         break;
 
-                    case TypeOfAction.ShowCard:
+                    case TypeOfARAction.ShowCard:
                         SetBackGroundCard(true);
                         SetFormerCanvas();
                         MenuVisibility(CNV_MainSide, MenuState.Show, 0.1f);
                         PopulateCanvas(CNV_MainSide);
                         break;
-                    case TypeOfAction.ShowMainCard:
+                    case TypeOfARAction.ShowMainCard:
                         MenuVisibility(CNV_Classification, CNV_MainSide, 0.1f);
                         PopulateCanvas(CNV_MainSide);
                         break;
-                    case TypeOfAction.ShowMoreCard:
+                    case TypeOfARAction.ShowMoreCard:
                         SetBackGroundCard(true);
                         MenuVisibility(CNV_MainSide, CNV_MoreSide, 0.1f);
                         PopulateCanvas(CNV_MoreSide);
                         break;
-				    case TypeOfAction.ShowMoreCardFromInGame:
+				case TypeOfARAction.ShowMoreCardFromInGame:
 						SetFormerCanvas ();
 						SetBackGroundCard(true);
 						MenuVisibility(CNV_MainSide, CNV_MoreSide, 0.1f);
 						PopulateCanvas(CNV_MoreSide);
 						break;
-                    case TypeOfAction.ShowClassCard:
+                    case TypeOfARAction.ShowClassCard:
                         MenuVisibility(CNV_MoreSide, CNV_Classification, 0.1f);
                         PopulateCanvas(CNV_Classification);
                         break;
-                    case TypeOfAction.ShowPicture:
+                    case TypeOfARAction.ShowPicture:
                         SetCardCanvas();
                         MenuVisibility(CNV_Picture, MenuState.Show, 0.1f);
                         PopulateCanvas(CNV_Picture);
                         break;
-                    case TypeOfAction.CloseCard:
+                    case TypeOfARAction.CloseCard:
                         MenuVisibility(_formerCanvas, 0.2f);
                         SetBackGroundCard(false);
                         break;
-                    case TypeOfAction.ClosePicture:
+                    case TypeOfARAction.ClosePicture:
                         MenuVisibility(_cardCanvas, 0.2f);
                         break;
 
-                    case TypeOfAction.Play:
+                    case TypeOfARAction.Play:
                         CNV_BackgroundMenu.SetActive(false);
                         MenuVisibility(CNV_Objectives, MenuState.Hide, 0.5f);
                         GameState.playFromNewObjective = false;
                         Play();
                         break;
 
-                    case TypeOfAction.Continue:
+                    case TypeOfARAction.Continue:
                         MenuVisibility(CNV_BackgroundMenu, MenuState.Hide, 0.5f);
                         break;
 
-                    case TypeOfAction.NewAquarium:
+                    case TypeOfARAction.NewAquarium:
                         MenuVisibility(_currentCanvas, CNV_NewAquarium, 0.5f);
 						PopulateCanvas(CNV_NewAquarium);
                         break;
-                    case TypeOfAction.GoToMyNewAquarium:
+                    case TypeOfARAction.GoToMyNewAquarium:
                         GoToMyNewAquarium();
                         break;
-                    case TypeOfAction.AllObjectives:
+                    case TypeOfARAction.AllObjectives:
                         MenuVisibility(_currentCanvas, CNV_AllObjectives, 0.2f);
                         break;
-                    case TypeOfAction.GoToAquariumFinished:
+                    case TypeOfARAction.GoToAquariumFinished:
                         GoToAquariumFinished();
                         break;
 
-                    case TypeOfAction.EndGame:
+                    case TypeOfARAction.EndGame:
                         MenuVisibility(_currentCanvas, CNV_EndGame, 0.2f);
                         break;
 
-                    case TypeOfAction.ReplacePictures:
+                    case TypeOfARAction.ReplacePictures:
                         MenuVisibility(CNV_ComparePictures, CNV_ObjectiveSolved, 0.3f);
                         break;
 
-                    case TypeOfAction.SharePicture:
+                    case TypeOfARAction.SharePicture:
                         Share();
                         break;
 
-                    case TypeOfAction.ShowNewName:
-                        ShowNewName();
-                        break;
-
-                    case TypeOfAction.Rate:
-                        Rate();
-                        break;
-
-                    case TypeOfAction.None:
+                    case TypeOfARAction.None:
                         CanPressAButton();
                         break;
-
-
                 }
             }
         }
@@ -277,7 +263,7 @@ namespace VFG.Managers
 
             if (GameState.AllObjectivesSolved == (int)GameState.Toggle.On)
             {
-                GoToSelectedScreen(TypeOfAction.EndGame);
+                GoToSelectedScreen(TypeOfARAction.EndGame);
                 return;
             }
 
@@ -376,23 +362,6 @@ namespace VFG.Managers
             CNV_Share.GetComponent<CanvasShareCard>().Share();
         }
 
-        public void ShowCanvasRate()
-        {
-            MenuVisibility(CNV_Rate, MenuState.Show, 0.2f);
-            CNV_Rate.GetComponent<IMenusScreen>().Populate();
-        }
-
-        private void Rate()
-        {
-            CanPressAButton();
-            CNV_Rate.GetComponent<CanvasRate>().Rate();
-        }
-
-        public void ShowNewName()
-        {
-            CanPressAButton();
-        }
-
         private void SetBackGroundCard(bool state)
         {
             if (state)
@@ -418,12 +387,12 @@ namespace VFG.Managers
 
         private void Update()
         {
-            //            VFG.Utils.Console.Clear();
-//            Debug.Log(string.Format("Former: <color=red>{0}</color> | Current : <color=green>{1}</color>", _formerCanvas.name, _currentCanvas.name));
-            //            Debug.Log("CanPressAButton: " + GameState.canPressAButton);
+//            VFG.Utils.Console.Clear();
+//            Debug.Log(string.Format("Former CNV: {0} | Current CNV: {1}", _formerCanvas.name, _currentCanvas.name));
+//            Debug.Log("CanPressAButton: " + GameState.canPressAButton);
             //WriteButtonState(_canPress);
-            //aquarium.text = string.Format("Aquarium: {0}", (int)GameManager.GetNewObjective().x);
-            //objective.text = string.Format("Objective: {0}", (int)GameManager.GetNewObjective().y);
+			//aquarium.text = string.Format("Aquarium: {0}", (int)GameManager.GetNewObjective().x);
+			//objective.text = string.Format("Objective: {0}", (int)GameManager.GetNewObjective().y);
         }
 
         //private void WriteButtonState(bool state)
@@ -434,8 +403,6 @@ namespace VFG.Managers
         //        _canPress = GameState.canPressAButton;
         //        Debug.Log(state ? "<color=red>FALSE</color>" : "<color=green>TRUE</color>");
         //    }
-
-        // ¿Te gusta Fishing GO? 
         //}
     }
 }

@@ -31,7 +31,7 @@ namespace VFG.Canvas
 		public override void Initialize()
 		{
             difficulty = (GameState.Level)GameState.LevelOfDifficulty;
-            _TXT_Difficulty.GetComponent<LocalizeText>().SetNewInitKey(ChangeTextDifficulty(difficulty));
+            _TXT_Difficulty.GetComponent<LocalizeText>().SetInitKey(ChangeTextDifficulty(difficulty));
 
             SetToggles ();
 
@@ -97,7 +97,7 @@ namespace VFG.Canvas
                 difficulty = GameState.Level.VeryEasy;
 
             _TXT_Difficulty.GetComponent<TMP_Text>().text = LoadLocalization.Instance.GetKey(ChangeTextDifficulty(difficulty));
-            _TXT_Difficulty.GetComponent<LocalizeText>().SetNewInitKey(ChangeTextDifficulty(difficulty));
+            _TXT_Difficulty.GetComponent<LocalizeText>().SetInitKey(ChangeTextDifficulty(difficulty));
 
             GameState.LevelOfDifficulty = (int)difficulty;
 		}

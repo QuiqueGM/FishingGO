@@ -28,7 +28,7 @@ namespace VFG.Canvas
             GetComponent<Image>().color = isUnlocked ? Color.white : colorSecondaryButtonDisabledBlack;
         }
 
-        public override void SendAction(TypeOfAction action)
+        public override void SendAction(TypeOfARAction action)
         {
             GameState.currentAquariumName = transform.parent.name;
             Aquarium aquarium = new Aquarium();

@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 205978723738183908}
   - component: {fileID: 64524858617326572}
   - component: {fileID: 54519036368475846}
+  - component: {fileID: 114434003010962030}
   - component: {fileID: 114480021430608704}
   m_Layer: 0
   m_Name: PocilloporaVerrucosa
@@ -422,6 +423,17 @@ MeshCollider:
   m_InflateMesh: 1
   m_SkinWidth: 1.00000005e-20
   m_Mesh: {fileID: 4300008, guid: 50f0628de51535b47a7ecbd56fbc0027, type: 3}
+--- !u!114 &114434003010962030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1831705411338702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114480021430608704
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -43,7 +43,6 @@ namespace VFG.Utils
                 Debug.Log(str);
             }
             else Debug.Log("<color=red>Nothing selected!!!</color> Please, select at least one object to export to JSON.");
-
         }
     }
 }

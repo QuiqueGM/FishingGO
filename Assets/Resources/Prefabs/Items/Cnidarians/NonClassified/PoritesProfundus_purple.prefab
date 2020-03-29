@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 205338161540750178}
   - component: {fileID: 64799209499323134}
   - component: {fileID: 54459623874684796}
+  - component: {fileID: 114239710619437226}
   - component: {fileID: 114379111933292554}
   m_Layer: 0
   m_Name: PoritesProfundus_purple
@@ -352,6 +353,17 @@ MeshCollider:
   m_InflateMesh: 1
   m_SkinWidth: 1.00000005e-20
   m_Mesh: {fileID: 4300006, guid: d01da5829102c99469f30ae617b17159, type: 3}
+--- !u!114 &114239710619437226
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1852971672572132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114379111933292554
 MonoBehaviour:
   m_ObjectHideFlags: 1

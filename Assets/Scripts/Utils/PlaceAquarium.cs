@@ -28,7 +28,7 @@ namespace UnityEngine.XR.iOS
 
 				if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved)
 				{
-					SendHitEvent();
+					SendHitEvent ();
 
                     var screenPosition = Camera.main.ScreenToViewportPoint(touch.position);
 					ARPoint point = new ARPoint {

@@ -54,9 +54,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4654530523156212}
   - component: {fileID: 205874180988002386}
-  - component: {fileID: 114827701951295524}
-  - component: {fileID: 54940905393000874}
   - component: {fileID: 64560823598566040}
+  - component: {fileID: 54940905393000874}
+  - component: {fileID: 114827701951295524}
+  - component: {fileID: 114563919532521314}
   m_Layer: 0
   m_Name: EchinothrixDiadema
   m_TagString: Untagged
@@ -282,6 +283,17 @@ MeshCollider:
   m_InflateMesh: 1
   m_SkinWidth: 1.00000005e-20
   m_Mesh: {fileID: 4300006, guid: 0e95812566e60c54a817657c0691b17f, type: 3}
+--- !u!114 &114563919532521314
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1803754929995800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114827701951295524
 MonoBehaviour:
   m_ObjectHideFlags: 1

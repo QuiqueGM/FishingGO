@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 205828201128338592}
   - component: {fileID: 64535167636490450}
   - component: {fileID: 54445815738584916}
+  - component: {fileID: 114223957549022140}
   - component: {fileID: 114339723504775412}
   m_Layer: 0
   m_Name: AcroporaHumilis_GRP_yellow
@@ -352,6 +353,17 @@ MeshCollider:
   m_InflateMesh: 1
   m_SkinWidth: 1.00000005e-20
   m_Mesh: {fileID: 4300006, guid: 363115c05792f8e4691b14868ebf44e6, type: 3}
+--- !u!114 &114223957549022140
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1617717343781618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114339723504775412
 MonoBehaviour:
   m_ObjectHideFlags: 1

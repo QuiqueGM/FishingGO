@@ -12,6 +12,7 @@ namespace VFG.Core
         public const string TEMPORARY = "Temp";
         public const string SHARE = "Share";
 
+        public const string OBJECTIVE = "Objective";
         public const string PATH_AQUARIUMS = "Aquariums";
         public const string PATH_FIHSSCHOOL = "Fishschools/FishSchool";
         public const string PATH_PREFABS = "Prefabs/Items";
@@ -73,10 +74,9 @@ namespace VFG.Core
         }
 
         public static string FIRST_TIME_USER_XPERIENCE = "First Time User Experience";
-		public static int NUMBER_OF_CATHES_BEFORE_RATING = 8;
+        public static bool isFirstUseApp = true;
+        public static Scene isInScene = Scene.MainMenu;
         public static int NUMBER_OF_COMING_SOON_AQUARIUMS = 4;
-		public static bool isFirstUseApp = true;
-		public static Scene isInScene = Scene.MainMenu;
 
         public static List<Aquarium> aquariums = new List<Aquarium>();
         public static List<Objective> objectives = new List<Objective>();
@@ -99,6 +99,7 @@ namespace VFG.Core
         public static string newAquariumUnlockedName = string.Empty;
         public static int currentObjective = 0;
         public static string currentObjectiveName = string.Empty;
+        //public static GameObject currentItem = null;
 
         public static int resWidth;
         public static int resHeight;
@@ -115,12 +116,6 @@ namespace VFG.Core
             set { PlayerPrefs.SetInt("ShowHelpAtTheBeginning", value); }
         }
 
-        public static int GameHasBeenRated
-        {
-            get { return PlayerPrefs.GetInt("GameHasBeenRated", (int)Toggle.Off); }
-            set { PlayerPrefs.SetInt("GameHasBeenRated", value); }
-        }
-
         public static string AquariumsState
         {
             get { return PlayerPrefs.GetString("AquariumsState", FIRST_TIME_USER_XPERIENCE); }
@@ -132,6 +127,18 @@ namespace VFG.Core
             get { return PlayerPrefs.GetString("ObjectivesState"); }
             set { PlayerPrefs.SetString("ObjectivesState", value); }
         }
+
+//        public static int NextAquarium
+//        {
+//            get { return PlayerPrefs.GetInt("NextAquarium", 0); }
+//            set { PlayerPrefs.SetInt("NextAquarium", value); }
+//        }
+//
+//        public static int NextObjective
+//        {
+//            get { return PlayerPrefs.GetInt("NextObjective", 0); }
+//            set { PlayerPrefs.SetInt("NextObjective", value); }
+//        }
 
         public static int AllObjectivesSolved
         {

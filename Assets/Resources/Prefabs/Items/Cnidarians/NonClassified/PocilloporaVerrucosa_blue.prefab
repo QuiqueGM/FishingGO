@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 205062076447283966}
   - component: {fileID: 64456086437847084}
   - component: {fileID: 54676603860340222}
+  - component: {fileID: 114286845988002020}
   - component: {fileID: 114209183157916472}
   m_Layer: 0
   m_Name: PocilloporaVerrucosa_blue
@@ -434,6 +435,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeOfItem: 18
+--- !u!114 &114286845988002020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1363375081757436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!205 &205062076447283966
 LODGroup:
   m_ObjectHideFlags: 1

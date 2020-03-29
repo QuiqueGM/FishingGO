@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using VRMiddlewareController;
-using System.Linq;
-using VFG.Core;
+using VFG.Canvas.LevelEditor;
 using VFG.Core.Audio;
+using VRMiddlewareController;
 
 namespace VFG.LevelEditor
 {
@@ -12,41 +11,98 @@ namespace VFG.LevelEditor
     {
         [Space]
         [Header("Properties")]
-        public string editorLevelName;
-        [Space]
-        public GameObject wheelActionSelector;
+        public GameObject wheelMenuActions;
+        public GameObject wheelMenuFreeze;
+        public GameObject wheelMenuChangeSize;
+        public GameObject wheelMenuFile;
         public GameObject wheelItemsSelector;
         public GameObject menuItems;
+        [Space]
+        public GameObject containerItems;
 
         private Transform leftSelector;
         private Transform rightSelector;
+
         private WheelSelector wheelActions;
+        private WheelSelector wheelFrezze;
+        private WheelSelector wheelChangeSize;
+        private WheelSelector wheelFile;
         private WheelSelector wheelItems;
+        private GameObject currentWheel;
         private MenuItems menuItemsScrips;
-        private float currentDistanceBetweenControllers;
+        
         private bool LTriggerIsPressed, RTriggerIsPressed;
         private bool wheelItemsIsEnabled = false;
-        private string str = string.Empty;
-        private List<EditorState.GameObjects> gameObjects = new List<EditorState.GameObjects>();
+        private bool wheelFileIsEnabled = false;
+        public bool FileDialogIsOpen { get; set; }
+
+        private BasicActionsModule basicActionsModule;
+        private UndoModule undoModule;
+        private FreezeModule freezeModule;
+        private SizeModule sizeModule;
+        private FlyingModule flyingModule;
+        private MaterialsModule matModule;
+        private FileMenuModule fileModule;
 
         #region LIFE CICLE
 
         public override void Awake()
         {
             base.Awake();
+
+            InitControllers();
+            InitModules();
+            InitWheels();
+            AddListeners();
+        }
+
+        private void InitControllers()
+        {
             leftSelector = leftController.transform.Find("Reference/ObjectSelector");
             rightSelector = rightController.transform.Find("Reference/ObjectSelector");
-            wheelItems = wheelItemsSelector.GetComponent<WheelSelector>();
-            wheelActions = wheelActionSelector.GetComponent<WheelSelector>();
+        }
 
+        private void InitModules()
+        {
+            basicActionsModule = GetComponent<BasicActionsModule>();
+            undoModule = GetComponent<UndoModule>();
+            sizeModule = GetComponent<SizeModule>();
+            freezeModule = GetComponent<FreezeModule>();
+            flyingModule = GetComponent<FlyingModule>();
+            matModule = GetComponent<MaterialsModule>();
+            fileModule = GetComponent<FileMenuModule>();
+
+            basicActionsModule.Init(containerItems, leftSelector, rightSelector, undoModule);
+            fileModule.Init(containerItems);
+        }
+
+        private void InitWheels()
+        {
+            wheelItems = wheelItemsSelector.GetComponent<WheelSelector>();
+            wheelFrezze = wheelMenuFreeze.GetComponent<WheelSelector>();
+            wheelActions = wheelMenuActions.GetComponent<WheelSelector>();
+            wheelChangeSize = wheelMenuChangeSize.GetComponent<WheelSelector>();
+            wheelFile = wheelMenuFile.GetComponent<WheelSelector>();
+
+            currentWheel = wheelMenuActions;
+        }
+
+        private void AddListeners()
+        {
             wheelActions.SendActionEvent += SetVibration;
+            wheelFrezze.SendActionEvent += SetVibration;
             wheelItems.SendActionEvent += SetVibration;
+            wheelFile.SendActionEvent += SetVibration;
+            wheelChangeSize.SendActionEvent += SetVibration;
         }
 
         private void OnDestroy()
         {
             wheelActions.SendActionEvent -= SetVibration;
+            wheelFrezze.SendActionEvent -= SetVibration;
             wheelItems.SendActionEvent -= SetVibration;
+            wheelFile.SendActionEvent -= SetVibration;
+            wheelChangeSize.SendActionEvent -= SetVibration;
         }
 
         private void Update()
@@ -54,31 +110,26 @@ namespace VFG.LevelEditor
             //Debug.Log("Action: " + EditorState.currentAction);
             //Debug.Log("RTriggerIsPressed: " + RTriggerIsPressed);
             //Debug.Log("LTriggerIsPressed: " + LTriggerIsPressed);
-
-            if (Input.GetKeyDown(KeyCode.A))
-            {
-                ParseStringToStructData();
-                InstantiateObjectsInScene();
-            }
         }
 
         #endregion
 
-        #region BUTTONS BEHAVIOUR
+        #region CONTROLLER BEHAVIOUR
 
         public override void LPadTouched(SenderInfo sender, EventArguments e)
         {
+            if (wheelFileIsEnabled) return;
+
             wheelItemsSelector.SetActive(true);
             menuItemsScrips = menuItems.GetComponent<MenuItems>();
             AudioManager.Instance.PlayEffect(AudiosData.WHEEL_SELECTOR);
-            
         }
 
         public override void LPadTouchedHolded(SenderInfo sender, EventArguments e)
         {
             wheelItems.SetTexture(GetAngle(e));
             wheelItemsIsEnabled = true;
-            ActionsWheelVisibility(false);
+            CurrentWheelVisibility(false);
             wheelActions.SetTexture(90);
         }
 
@@ -97,14 +148,29 @@ namespace VFG.LevelEditor
 
         public override void RPadClicked(SenderInfo sender, EventArguments e)
         {
-            SaveEditor();
+            switch (EditorState.currentAction)
+            {
+                case EditorState.TypeOfAction.Undo: basicActionsModule.UndoAction(); break;
+                case EditorState.TypeOfAction.ShowFreezeMenu: ShowFreezeMenu(); break;
+                case EditorState.TypeOfAction.HideFreezeMenu: HideFreezeMenu(); break;
+                case EditorState.TypeOfAction.UnfreezeAll: freezeModule.UnfreezeAllObject(); break;
+                case EditorState.TypeOfAction.ShowChangeSizeMenu: ShowChangeSizeMenu(); break;
+                case EditorState.TypeOfAction.HideChangeSizeMenu: HideChangeSizeMenu(); break;
+                case EditorState.TypeOfAction.ShowFileMenu: ShowFileMenu(); break;
+                case EditorState.TypeOfAction.HideFileMenu: HideFileMenu(); break;
+                case EditorState.TypeOfAction.NewLevel: if (!FileDialogIsOpen) fileModule.NewLevel(); break;
+                case EditorState.TypeOfAction.Save: if (!FileDialogIsOpen) fileModule.Save(); break;
+                case EditorState.TypeOfAction.SaveAs: if (!FileDialogIsOpen) fileModule.SaveAs(); break;
+                case EditorState.TypeOfAction.Load: if (!FileDialogIsOpen) fileModule.Load(); break;
+                case EditorState.TypeOfAction.Import: if (!FileDialogIsOpen) fileModule.Import(); break;
+            }
         }
 
         public override void RPadTouched(SenderInfo sender, EventArguments e)
         {
             if (!wheelItemsIsEnabled)
             {
-                ActionsWheelVisibility(true);
+                CurrentWheelVisibility(true);
                 AudioManager.Instance.PlayEffect(AudiosData.WHEEL_SELECTOR);
             }
         }
@@ -112,41 +178,35 @@ namespace VFG.LevelEditor
         public override void RPadTouchedHolded(SenderInfo sender, EventArguments e)
         {
             if (!wheelItemsIsEnabled)
-                wheelActions.SetTexture(GetAngle(e));
+                currentWheel.GetComponent<WheelActions>().SetTexture(GetAngle(e));
         }
 
         public override void RPadUntouched(SenderInfo sender, EventArguments e)
         {
-            ActionsWheelVisibility(false);
+            CurrentWheelVisibility(false);
+
+            //if (EditorState.currentAction == EditorState.TypeOfAction.Undo || EditorState.currentAction == EditorState.TypeOfAction.Save)
+            //    wheelActions.SetTexture(90);
         }
 
         public override void RPadHolded(SenderInfo sender, EventArguments e)
         {
-            ChangeSize();
+            sizeModule.ChangeSize(leftSelector, rightSelector);
         }
 
         public override void RTriggerPressed(SenderInfo sender, EventArguments e)
         {
             RTriggerIsPressed = true;
 
-            if (EditorState.itemSelected.Count == 0) return;
-
-            foreach (KeyValuePair<GameObject, Material> obj in EditorState.itemSelected)
+            switch (EditorState.currentAction)
             {
-                string path = string.Format
-                    (
-                        "{0}/{1}/{2}", 
-                        GameState.PATH_PREFABS,
-                        EditorState.GetFolderFromTypeOfItem((TypeOfItem)System.Enum.Parse(typeof(TypeOfItem), EditorState.groupOfItemsToShow)), 
-                        obj.Key.name
-                    );
-
-                GameObject o = Instantiate(Resources.Load(path), rightSelector) as GameObject;
-                // OJO!!! Les noves mides estan en centímetres!!!
-                o.transform.localScale *= (GameState.collectables.Find(n => n.Id == obj.Key.name).Features.CommonSize / rightSelector.localScale.x);
-                o.name = obj.Key.name;
-                o.AddComponent<ObjectHandle>();
-                o.tag = GameState.ITEM_SCENE;
+                case EditorState.TypeOfAction.Save:
+                case EditorState.TypeOfAction.SaveAs:
+                case EditorState.TypeOfAction.Load:
+                case EditorState.TypeOfAction.NewLevel:
+                case EditorState.TypeOfAction.Import:
+                case EditorState.TypeOfAction.HideFileMenu: fileModule.SendTriggerAction(rightController.GetComponent<ButtonDetection>().objectInFocus); break;
+                case EditorState.TypeOfAction.Select: basicActionsModule.CreateNewObject(); break;
             }
         }
 
@@ -158,173 +218,104 @@ namespace VFG.LevelEditor
         public override void TriggerPressed(SenderInfo sender, EventArguments e)
         {
             if (EditorState.currentItems.Count == 0) return;
-            currentDistanceBetweenControllers = Vector3.Distance(leftSelector.position, rightSelector.position);
 
-            TransformObjects(e);
-            DeleteObjects(e);
-            DuplicateObjects(e);
-            ScaleObject();
+            switch (EditorState.currentAction)
+            {
+                case EditorState.TypeOfAction.Select: basicActionsModule.TransformObjects(e); break;
+                case EditorState.TypeOfAction.Scale: basicActionsModule.SetCurrentDistance(); break;
+                case EditorState.TypeOfAction.Delete: basicActionsModule.DeleteObjects(e); break;
+                case EditorState.TypeOfAction.Duplicate: basicActionsModule.DuplicateObjects(e); break;
+                case EditorState.TypeOfAction.Freeze: freezeModule.FreezeObject(e); break;
+                case EditorState.TypeOfAction.Unfreeze: freezeModule.UnfreezeObject(e); break;
+            }
         }
 
         public override void TriggerTouched(SenderInfo sender, EventArguments e)
         {
-            DeleteObjects(e);
-            ScaleObject();
+            basicActionsModule.DeleteObjects(e);
+            basicActionsModule.ScaleObject(LTriggerIsPressed, RTriggerIsPressed);
         }
 
         public override void RTriggerUnpressed(SenderInfo sender, EventArguments e)
         {
-            ReleaseObject(rightSelector);
+            basicActionsModule.ReleaseObject(rightSelector);
             RTriggerIsPressed = false;
         }
 
         public override void LTriggerUnpressed(SenderInfo sender, EventArguments e)
         {
-            ReleaseObject(leftSelector);
+            basicActionsModule.ReleaseObject(leftSelector);
             LTriggerIsPressed = false;
         }
 
-        #endregion
-
-        #region ACTIONS
-
-        private void TransformObjects(EventArguments e)
+        public override void LGripButtonClicked(SenderInfo sender, EventArguments e)
         {
-            if (EditorState.currentItems.Count == 0) return;
-
-            foreach (KeyValuePair<GameObject, Material> obj in EditorState.currentItems)
-            {
-                if (EditorState.currentAction == EditorState.TypeOfAction.Select && 
-                    obj.Key.transform.parent == gameObject.transform &&
-                    (int)obj.Key.GetComponent<ObjectHandle>().hand == (int)e.hand)
-                    obj.Key.transform.parent = obj.Key.GetComponent<ObjectHandle>().hand == EditorState.ActiveHand.Left ? leftSelector : rightSelector;
-            }
+            flyingModule.leftControllerIsPressed = true;
         }
 
-        private void ScaleObject()
+        public override void RGripButtonClicked(SenderInfo sender, EventArguments e)
         {
-            if (!LTriggerIsPressed || !RTriggerIsPressed || EditorState.currentAction != EditorState.TypeOfAction.Scale) return;
-
-            foreach (KeyValuePair<GameObject, Material> obj in EditorState.currentItems)
-            {
-                if (obj.Key.GetComponent<ObjectHandle>().hand != EditorState.ActiveHand.Both) return;
-
-                float newDistanceBetweenControllers = Vector3.Distance(leftSelector.position, rightSelector.position);
-                obj.Key.transform.localScale *= newDistanceBetweenControllers / currentDistanceBetweenControllers;
-                currentDistanceBetweenControllers = newDistanceBetweenControllers;
-            }
+            flyingModule.rightControllerIsPressed = true;
+            flyingModule.CreateReferences(sender.senderObject);
         }
 
-        private void DeleteObjects(EventArguments e)
+        public override void LGripButtonHolded(SenderInfo sender, EventArguments e)
         {
-            if (EditorState.currentItems.Count == 0) return;
-
-            foreach (KeyValuePair<GameObject, Material> obj in EditorState.currentItems.ToList())
-            {
-                if (EditorState.currentAction == EditorState.TypeOfAction.Delete && (int)obj.Key.GetComponent<ObjectHandle>().hand == (int)e.hand)
-                {
-                    EditorState.currentItems.Remove(obj.Key);
-                    DestroyImmediate(obj.Key.gameObject);
-                }
-            }
+            flyingModule.Fly(sender.senderObject);
         }
 
-        private void DuplicateObjects(EventArguments e)
+        public override void RGripButtonHolded(SenderInfo sender, EventArguments e)
         {
-            if (EditorState.currentItems.Count == 0) return;
-
-            foreach (KeyValuePair<GameObject, Material> obj in EditorState.currentItems)
-            {
-                if (EditorState.currentAction == EditorState.TypeOfAction.Duplicate && (int)obj.Key.GetComponent<ObjectHandle>().hand == (int)e.hand)
-                {
-                    GameObject newObject = Instantiate(obj.Key.gameObject) as GameObject;
-                    newObject.transform.localPosition = obj.Key.gameObject.transform.position;
-                    newObject.transform.localRotation = obj.Key.gameObject.transform.localRotation;
-                    newObject.transform.localScale = obj.Key.gameObject.transform.localScale;
-                    newObject.GetComponent<Renderer>().material = obj.Value;
-                    newObject.transform.parent = obj.Key.GetComponent<ObjectHandle>().hand == EditorState.ActiveHand.Left ? leftSelector : rightSelector;
-                    newObject.name = obj.Key.name;
-                }
-            }
+            flyingModule.GetAcceleration(sender.senderObject);
         }
 
-        private void ChangeSize()
+        public override void RGripButtonUnclicked(SenderInfo sender, EventArguments e)
         {
-            float INIT_POSITION = 0.135f;
-            float SCALE_SENSITIVITY = 0.15f;
-            float MIN_SIZE = 0.03f;
-            float MAX_SIZE = 2.0f;
-            float scaleFactor = SCALE_SENSITIVITY * Time.deltaTime;
-
-            if (EditorState.currentAction == EditorState.TypeOfAction.DecreaseSize)
-            {
-                leftSelector.localScale = rightSelector.localScale -= new Vector3(scaleFactor, scaleFactor, scaleFactor);
-                if (leftSelector.localScale.x < MIN_SIZE) leftSelector.localScale = rightSelector.localScale = new Vector3(MIN_SIZE, MIN_SIZE, MIN_SIZE);
-            }
-
-            if (EditorState.currentAction == EditorState.TypeOfAction.IncreaseSize)
-            {
-                leftSelector.localScale = rightSelector.localScale += new Vector3(scaleFactor, scaleFactor, scaleFactor);
-                if (leftSelector.localScale.x > MAX_SIZE) leftSelector.localScale = rightSelector.localScale = new Vector3(MAX_SIZE, MAX_SIZE, MAX_SIZE);
-            }
-
-            leftSelector.localPosition = rightSelector.localPosition = new Vector3(0, 0, (INIT_POSITION + ((leftSelector.localScale.x - MIN_SIZE) / 2)));
+            flyingModule.Stop();
         }
 
-        public void SaveEditor()
+        public override void LGripButtonUnclicked(SenderInfo sender, EventArguments e)
         {
-            if (EditorState.currentAction != EditorState.TypeOfAction.Save) return;
-
-            string str = string.Empty;
-            int childCount = transform.childCount;
-
-            for (int n = 0; n < childCount; n++)
-                str = string.Format("{0}{1}", str, GetDataChild(gameObject, n));
-
-            PlayerPrefs.SetString(editorLevelName, str);
-
-            Debug.Log(str);
+            flyingModule.leftControllerIsPressed = false;
         }
 
-        public void ParseStringToStructData()
+        private void ShowChangeSizeMenu()
         {
-            if (PlayerPrefs.HasKey(editorLevelName) && (PlayerPrefs.GetString(editorLevelName) != "" || PlayerPrefs.GetString(editorLevelName) != null || PlayerPrefs.GetString(editorLevelName) != string.Empty))
-                str = PlayerPrefs.GetString(editorLevelName);
-            else
-            {
-                Debug.LogError(string.Format("{0} not found!", editorLevelName));
-                return;
-            }
-                
-            string[] strSplit = str.Split(new[] { ',' });
+            ShowWheelMenu(wheelMenuActions, wheelMenuChangeSize);
+        }
 
-            for (int n = 0; n < strSplit.Length - 1; n = n + 11)
-            {
-                Debug.Log(strSplit[n]);
+        private void HideChangeSizeMenu()
+        {
+            ShowWheelMenu(wheelMenuChangeSize, wheelMenuActions);
+        }
 
-                TypeOfItem typeOfItem = GameState.collectables.Find(c => c.Id == strSplit[n]).TypeOfItem;
-                string path = string.Format("{0}/{1}/{2}", GameState.PATH_PREFABS, EditorState.GetFolderFromTypeOfItem(typeOfItem), strSplit[n]);
+        public void ShowFreezeMenu()
+        {
+            ShowWheelMenu(wheelMenuActions, wheelMenuFreeze);
+            freezeModule.ShowFreezeMenu(matModule.freeze);
+        }
 
-                GameObject prefab = Resources.Load(path) as GameObject;
-                Vector3 pos = new Vector3(float.Parse(strSplit[n + 1]), float.Parse(strSplit[n + 2]), float.Parse(strSplit[n + 3]));
-                Quaternion rot = new Quaternion(float.Parse(strSplit[n + 4]), float.Parse(strSplit[n + 5]), float.Parse(strSplit[n + 6]), float.Parse(strSplit[n + 7]));
-                Vector3 scl = new Vector3(float.Parse(strSplit[n + 8]), float.Parse(strSplit[n + 9]), float.Parse(strSplit[n + 10]));
+        public void HideFreezeMenu()
+        {
+            ShowWheelMenu(wheelMenuFreeze, wheelMenuActions);
+            freezeModule.HideFreezeMenu();
+        }
 
-                EditorState.GameObjects objectData = new EditorState.GameObjects()
-                {
-                    prefab = prefab,
-                    pos = pos,
-                    rot = rot,
-                    scl = scl
-                };
+        private void ShowFileMenu()
+        {
+            ShowWheelMenu(wheelMenuActions, wheelMenuFile);
+            wheelFileIsEnabled = true;
+        }
 
-                gameObjects.Add(objectData);
-            }
+        private void HideFileMenu()
+        {
+            if (FileDialogIsOpen) return;
+
+            ShowWheelMenu(wheelMenuFile, wheelMenuActions);
+            wheelFileIsEnabled = false;
         }
 
         #endregion
-
-        #region PRIVATE METHODS
 
         private void SetVibration(EditorState.ActiveHand hand)
         {
@@ -333,9 +324,16 @@ namespace VFG.LevelEditor
             AudioManager.Instance.PlayEffect(AudiosData.WHEEL_SELECTOR);
         }
 
-        private void ActionsWheelVisibility(bool state)
+        private void ShowWheelMenu(GameObject menuToHide, GameObject menuToShow)
         {
-            wheelActionSelector.SetActive(state);
+            menuToHide.SetActive(false);
+            currentWheel = menuToShow;
+            CurrentWheelVisibility(true);
+        }
+
+        private void CurrentWheelVisibility(bool state)
+        {
+            currentWheel.SetActive(state);
         }
 
         private double GetAngle(EventArguments e)
@@ -345,45 +343,5 @@ namespace VFG.LevelEditor
 
             return radians;
         }
-
-        private void ReleaseObject(Transform controller)
-        {
-            if (EditorState.currentItems.Count == 0) return;
-
-            foreach (KeyValuePair<GameObject, Material> obj in EditorState.currentItems)
-            {
-                if (controller.Find(obj.Key.name))
-                {
-                    obj.Key.GetComponent<Renderer>().material = obj.Value;
-                    obj.Key.transform.parent = gameObject.transform;
-                }
-            }
-        }
-
-        private string GetDataChild(GameObject container, int n)
-        {
-            GameObject obj = container.transform.GetChild(n).gameObject;
-
-            string name = obj.name;
-            string pos = string.Format("{0},{1},{2}", obj.transform.position.x, obj.transform.position.y, obj.transform.position.z);
-            string rot = string.Format("{0},{1},{2},{3}", obj.transform.rotation.x, obj.transform.rotation.y, obj.transform.rotation.z, obj.transform.rotation.w);
-            string scl = string.Format("{0},{1},{2}", obj.transform.localScale.x, obj.transform.localScale.y, obj.transform.localScale.z);
-
-            return string.Format("{0},{1},{2},{3},", name, pos, rot, scl);
-        }
-
-        public void InstantiateObjectsInScene()
-        {
-            for (int n = 0; n < gameObjects.Count; n++)
-            {
-                GameObject newObject = Instantiate(gameObjects[n].prefab, gameObjects[n].pos, gameObjects[n].rot, gameObject.transform) as GameObject;
-                newObject.name = gameObjects[n].prefab.name;
-                newObject.transform.localScale = gameObjects[n].scl;
-                newObject.AddComponent<ObjectHandle>();
-                newObject.tag = GameState.ITEM_SCENE;
-            }
-        }
-
-        #endregion
     }
 }

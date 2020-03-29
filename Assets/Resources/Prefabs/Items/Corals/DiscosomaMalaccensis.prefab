@@ -54,9 +54,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4896601400411658}
   - component: {fileID: 205809826658738792}
-  - component: {fileID: 54330464997275692}
-  - component: {fileID: 114133331734423614}
   - component: {fileID: 65807718640018626}
+  - component: {fileID: 54330464997275692}
+  - component: {fileID: 114519090353394922}
+  - component: {fileID: 114133331734423614}
   m_Layer: 0
   m_Name: DiscosomaMalaccensis
   m_TagString: Untagged
@@ -362,6 +363,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeOfItem: 3
+--- !u!114 &114519090353394922
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1443948915568194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!205 &205809826658738792
 LODGroup:
   m_ObjectHideFlags: 1

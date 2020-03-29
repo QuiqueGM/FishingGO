@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 205494511401333094}
   - component: {fileID: 64569693547785730}
   - component: {fileID: 54792180664727774}
+  - component: {fileID: 114509871895790324}
   - component: {fileID: 114782734654003488}
   m_Layer: 0
   m_Name: AcroporaHorrida
@@ -352,6 +353,17 @@ MeshCollider:
   m_InflateMesh: 1
   m_SkinWidth: 1.00000005e-20
   m_Mesh: {fileID: 4300006, guid: 765c3a43c0a8a124598548e326b7f3c4, type: 3}
+--- !u!114 &114509871895790324
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1366110271055196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114782734654003488
 MonoBehaviour:
   m_ObjectHideFlags: 1

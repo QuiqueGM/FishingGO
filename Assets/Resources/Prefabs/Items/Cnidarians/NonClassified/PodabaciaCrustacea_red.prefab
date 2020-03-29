@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 205700035674731950}
   - component: {fileID: 64939486693132368}
   - component: {fileID: 54388845818805134}
+  - component: {fileID: 114845959148205878}
   - component: {fileID: 114532081153842770}
   m_Layer: 0
   m_Name: PodabaciaCrustacea_red
@@ -294,6 +295,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeOfItem: 18
+--- !u!114 &114845959148205878
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1284525353765582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!205 &205700035674731950
 LODGroup:
   m_ObjectHideFlags: 1

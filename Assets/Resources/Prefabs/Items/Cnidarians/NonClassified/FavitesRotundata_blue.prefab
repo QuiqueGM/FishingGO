@@ -37,9 +37,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4670889432543130}
   - component: {fileID: 205935774511594700}
-  - component: {fileID: 54991383530051860}
-  - component: {fileID: 114570612708760038}
   - component: {fileID: 135475438040680992}
+  - component: {fileID: 54991383530051860}
+  - component: {fileID: 114227366415475502}
+  - component: {fileID: 114570612708760038}
   m_Layer: 0
   m_Name: FavitesRotundata_blue
   m_TagString: Untagged
@@ -408,6 +409,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114227366415475502
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1111652374256382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114570612708760038
 MonoBehaviour:
   m_ObjectHideFlags: 1

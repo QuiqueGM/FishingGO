@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 54070154852216412}
   - component: {fileID: 64825839546564754}
   - component: {fileID: 114542711993762196}
+  - component: {fileID: 114601568452634344}
   m_Layer: 0
   m_Name: TonnaAlanbeui
   m_TagString: Untagged
@@ -294,6 +295,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeOfItem: 10
+--- !u!114 &114601568452634344
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1205911897018754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!205 &205578483057609368
 LODGroup:
   m_ObjectHideFlags: 1

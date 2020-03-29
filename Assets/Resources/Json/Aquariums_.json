@@ -6,7 +6,7 @@
 		[
 			{"idObjective":"EunicellaCavolini"},
 			{"idObjective":"CulcitaSchmideliana"},
-			{"idObjective":"MeloMelo"}
+			{"idObjective":"HeteractisMagnifica"}
 		]
 	},
 	{
@@ -21,40 +21,12 @@
 	},
 	{
 		"idAquarium":"Madagascar",
-		"numberOfSolvedObjectivesToUnlockNextAquarium": 2,
+		"numberOfSolvedObjectivesToUnlockNextAquarium": 10,
 		"objectives":
 		[
 			{"idObjective":"PodabaciaSinai"},
 			{"idObjective":"AnnellaMollis"},
 			{"idObjective":"PygoplitesDiacanthusAdult"}
-		]
-	},
-	{
-		"idAquarium":"GalapagosIslands",
-		"numberOfSolvedObjectivesToUnlockNextAquarium": 12,
-		"objectives":
-		[
-		]
-	},
-	{
-		"idAquarium":"Thailand",
-		"numberOfSolvedObjectivesToUnlockNextAquarium": 12,
-		"objectives":
-		[
-		]
-	},
-	{
-		"idAquarium":"DominicanRepublic",
-		"numberOfSolvedObjectivesToUnlockNextAquarium": 12,
-		"objectives":
-		[
-		]
-	},
-	{
-		"idAquarium":"NewZealand",
-		"numberOfSolvedObjectivesToUnlockNextAquarium": 12,
-		"objectives":
-		[
 		]
 	}
 ]

@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 205743259973950482}
   - component: {fileID: 64819785675601850}
   - component: {fileID: 54078016372480162}
+  - component: {fileID: 114223985682744364}
   - component: {fileID: 114055924081704604}
   m_Layer: 0
   m_Name: SarcophytonElegans
@@ -434,6 +435,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeOfItem: 3
+--- !u!114 &114223985682744364
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1249358782857228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!205 &205743259973950482
 LODGroup:
   m_ObjectHideFlags: 1

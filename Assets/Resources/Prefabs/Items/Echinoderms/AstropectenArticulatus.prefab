@@ -37,9 +37,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4437725936178376}
   - component: {fileID: 205604377264337208}
-  - component: {fileID: 114295705376600546}
-  - component: {fileID: 54168795511380058}
   - component: {fileID: 64516233468850582}
+  - component: {fileID: 54168795511380058}
+  - component: {fileID: 114295705376600546}
+  - component: {fileID: 114002201815611700}
   m_Layer: 0
   m_Name: AstropectenArticulatus
   m_TagString: Untagged
@@ -422,6 +423,17 @@ MeshCollider:
   m_InflateMesh: 1
   m_SkinWidth: 1.00000005e-20
   m_Mesh: {fileID: 4300008, guid: 337200a12845c1d43b59b7a00c3ab52e, type: 3}
+--- !u!114 &114002201815611700
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1121131811084194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114295705376600546
 MonoBehaviour:
   m_ObjectHideFlags: 1

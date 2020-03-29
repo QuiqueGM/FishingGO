@@ -19,8 +19,8 @@ namespace VFG.Utils
 
             DOTween.To
                 (() => mesh.GetBlendShapeWeight(0), a => mesh.SetBlendShapeWeight(0, a), MAX_VALUE, DURATION)
-				.SetEase(Ease.Linear)
-				.SetLoops(-1, LoopType.Restart);
+                .SetEase(Ease.InOutQuad)
+                .SetLoops(-1, LoopType.Yoyo);
         }
     }
 }

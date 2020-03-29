@@ -36,7 +36,7 @@ namespace VFG.Canvas
             }
         }
 
-        public override void SendAction(TypeOfAction action)
+        public override void SendAction(TypeOfARAction action)
         {
             GameState.currentObjectiveName = transform.parent.name;
             Objective objective = new Objective();

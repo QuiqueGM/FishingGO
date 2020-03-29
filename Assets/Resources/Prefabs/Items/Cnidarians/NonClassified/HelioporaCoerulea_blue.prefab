@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 205922420520776252}
   - component: {fileID: 64684633196254750}
   - component: {fileID: 54703196653361462}
+  - component: {fileID: 114076543190876358}
   - component: {fileID: 114820987401180974}
   m_Layer: 0
   m_Name: HelioporaCoerulea_blue
@@ -422,6 +423,17 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300008, guid: 30d1550153456ef47a26e034f8f03d96, type: 3}
+--- !u!114 &114076543190876358
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1892429707115788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114820987401180974
 MonoBehaviour:
   m_ObjectHideFlags: 1

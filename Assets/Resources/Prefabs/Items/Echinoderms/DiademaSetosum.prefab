@@ -37,9 +37,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4075695152174108}
   - component: {fileID: 205218465451368566}
-  - component: {fileID: 114624723495716914}
-  - component: {fileID: 54600254850266836}
   - component: {fileID: 64077502451234094}
+  - component: {fileID: 54600254850266836}
+  - component: {fileID: 114624723495716914}
+  - component: {fileID: 114661680237241402}
   m_Layer: 0
   m_Name: DiademaSetosum
   m_TagString: Untagged
@@ -294,6 +295,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeOfItem: 8
+--- !u!114 &114661680237241402
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1536722107401568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!205 &205218465451368566
 LODGroup:
   m_ObjectHideFlags: 1

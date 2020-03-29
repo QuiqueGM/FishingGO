@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 205099460696956238}
   - component: {fileID: 64097728180850130}
   - component: {fileID: 54003554006424178}
+  - component: {fileID: 114826038013888018}
   - component: {fileID: 114624811332051192}
   m_Layer: 0
   m_Name: AcroporaCervicornis_green
@@ -364,6 +365,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeOfItem: 18
+--- !u!114 &114826038013888018
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1747427971976604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!205 &205099460696956238
 LODGroup:
   m_ObjectHideFlags: 1

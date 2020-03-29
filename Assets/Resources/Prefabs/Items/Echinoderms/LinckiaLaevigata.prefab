@@ -20,9 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4272263501423980}
   - component: {fileID: 205948207634970562}
-  - component: {fileID: 114735750102364312}
-  - component: {fileID: 54838203510592914}
   - component: {fileID: 64868504597699920}
+  - component: {fileID: 54838203510592914}
+  - component: {fileID: 114735750102364312}
+  - component: {fileID: 114391068935074380}
   m_Layer: 0
   m_Name: LinckiaLaevigata
   m_TagString: Untagged
@@ -352,6 +353,17 @@ MeshCollider:
   m_InflateMesh: 1
   m_SkinWidth: 1.00000005e-20
   m_Mesh: {fileID: 4300008, guid: a705f0690d5002a40a7c41ab771649f4, type: 3}
+--- !u!114 &114391068935074380
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1118218149938946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114735750102364312
 MonoBehaviour:
   m_ObjectHideFlags: 1

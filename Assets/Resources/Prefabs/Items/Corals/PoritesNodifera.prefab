@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 205325368798075114}
   - component: {fileID: 64336241126818358}
   - component: {fileID: 54047161054679422}
+  - component: {fileID: 114072585109270184}
   - component: {fileID: 114839479658839162}
   m_Layer: 0
   m_Name: PoritesNodifera
@@ -282,6 +283,17 @@ MeshCollider:
   m_InflateMesh: 1
   m_SkinWidth: 1.00000005e-20
   m_Mesh: {fileID: 4300004, guid: a45a12b7941143245b6e5f9a61082df1, type: 3}
+--- !u!114 &114072585109270184
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1305916347936096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114839479658839162
 MonoBehaviour:
   m_ObjectHideFlags: 1

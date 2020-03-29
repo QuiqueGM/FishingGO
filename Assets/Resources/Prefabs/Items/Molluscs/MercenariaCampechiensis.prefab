@@ -74,6 +74,7 @@ GameObject:
   - component: {fileID: 54543483330101780}
   - component: {fileID: 64517114561073112}
   - component: {fileID: 114042089106963846}
+  - component: {fileID: 114144339870218436}
   m_Layer: 0
   m_Name: MercenariaCampechiensis
   m_TagString: Untagged
@@ -294,6 +295,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeOfItem: 10
+--- !u!114 &114144339870218436
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1676857630676296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!205 &205880164938617172
 LODGroup:
   m_ObjectHideFlags: 1

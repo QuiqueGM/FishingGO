@@ -88,9 +88,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4943159463618340}
   - component: {fileID: 205887042729325762}
-  - component: {fileID: 114755687507213920}
-  - component: {fileID: 54329732731809646}
   - component: {fileID: 64912353731899900}
+  - component: {fileID: 54329732731809646}
+  - component: {fileID: 114714070470946492}
+  - component: {fileID: 114755687507213920}
   m_Layer: 0
   m_Name: EntacmaeaQuadricolor
   m_TagString: Untagged
@@ -235,6 +236,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveTentacles: 1
   moveBody: 1
+--- !u!114 &114714070470946492
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1897209139159256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114755687507213920
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -71,9 +71,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4276812891683130}
   - component: {fileID: 205273313019890958}
-  - component: {fileID: 54255942614042090}
-  - component: {fileID: 114466310199064780}
   - component: {fileID: 135978671845855996}
+  - component: {fileID: 54255942614042090}
+  - component: {fileID: 114626430806525120}
+  - component: {fileID: 114466310199064780}
   m_Layer: 0
   m_Name: FavitesRotundata_yellow
   m_TagString: Untagged
@@ -420,6 +421,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeOfItem: 18
+--- !u!114 &114626430806525120
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1191634965814198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135978671845855996
 SphereCollider:
   m_ObjectHideFlags: 1

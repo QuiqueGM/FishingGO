@@ -1,61 +1,58 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using VFG.Core;
 
 namespace VFG.LevelEditor
 {
     public class ObjectSelector : MonoBehaviour
     {
+
+        [Header("Level Edtor Controller")]
+        public LevelEditor levelEditor;
+
+        [Header("Properties")]
         public WheelSelector wheelActions;
+        public WheelSelector wheelFreeze;
         public ObjectSelector oppositeSelector;
         public EditorState.ActiveHand hand;
-
-        [Space]
-        public Material select;
-        public Material scale;
-        public Material duplicate;
-        public Material delete;
-        public Material size;
-        public Material save;
+        public MaterialsModule mat;
 
         private Renderer mesh;
         private EditorState.ActiveHand otherHand;
 
+        #region DEBUG LIST
+        private DebugListObjects dlObj;
+        #endregion
+
         private void Awake()
         {
+            #region DEBUG LIST
+            dlObj = levelEditor.GetComponent<DebugListObjects>();
+            #endregion
+
             otherHand = hand == EditorState.ActiveHand.Left ? EditorState.ActiveHand.Right : EditorState.ActiveHand.Left;
             mesh = GetComponent<MeshRenderer>();
+            mat = levelEditor.GetComponent<MaterialsModule>();
+
             wheelActions.SendActionEvent += ChangeColor;
+            wheelFreeze.SendActionEvent += ChangeColor;
         }
 
         private void OnDestroy()
         {
             wheelActions.SendActionEvent -= ChangeColor;
+            wheelFreeze.SendActionEvent -= ChangeColor;
         }
 
         public void ChangeColor(EditorState.ActiveHand hand)
         {
-            mesh.material = GetMaterialFromAction(EditorState.currentAction);
-        }
-
-        public Material GetMaterialFromAction(EditorState.TypeOfAction action)
-        {
-            switch (action)
-            {
-                case EditorState.TypeOfAction.Select: return select;
-                case EditorState.TypeOfAction.Scale: return scale;
-                case EditorState.TypeOfAction.Duplicate: return duplicate;
-                case EditorState.TypeOfAction.Delete: return delete;
-                case EditorState.TypeOfAction.IncreaseSize: return size;
-                case EditorState.TypeOfAction.DecreaseSize: return size;
-                case EditorState.TypeOfAction.Save: return save;
-                default: return select;
-            }
+            mesh.material = mat.GetMaterialFromAction(EditorState.currentAction);
         }
 
         private void OnTriggerEnter(Collider other)
         {
+            if (gameObject.GetComponent<Renderer>().material.name == "Save (Instance)") return;
+
+            EditorState.collider = other;
             switch (other.gameObject.tag)
             {
                 case GameState.ITEM_LIBRARY:  TriggerEnterInLibrary(other);   break;
@@ -65,29 +62,44 @@ namespace VFG.LevelEditor
 
         private void TriggerEnterInLibrary(Collider other)
         {
-            EditorState.itemSelected.Add(other.gameObject, other.GetComponent<Renderer>().material);
-            other.GetComponent<Renderer>().material = select;
+            EditorState.itemSelected.Add(other.gameObject, EditorState.CurrentMaterial);
+            EditorState.CurrentMaterial = mat.select;
+
+            #region DEBUG LIST
+            dlObj.itemSelected.Add(new ItemListStruct { go = other.gameObject, ma = EditorState.CurrentMaterial });
+            #endregion
         }
 
         private void TriggerEnterInScene(Collider other)
         {
             if (!EditorState.currentItems.ContainsKey(other.gameObject))
-                EditorState.currentItems.Add(other.gameObject, other.GetComponent<Renderer>().material);
+            {
+                EditorState.currentItems.Add(other.gameObject, EditorState.CurrentMaterial);
+
+                #region DEBUG LIST
+                dlObj.currentItems.Add(new ItemListStruct { go = other.gameObject, ma = EditorState.CurrentMaterial });
+                #endregion
+            }
 
             if (other.GetComponent<ObjectHandle>().hand == otherHand)
             {
                 other.GetComponent<ObjectHandle>().hand = EditorState.ActiveHand.Both;
-                ToggleSelectScale(other, EditorState.TypeOfAction.Select, EditorState.TypeOfAction.Scale, scale);
+                ToggleSelectScale(other, EditorState.TypeOfAction.Select, EditorState.TypeOfAction.Scale, mat.scale);
             }
             else
             {
                 other.GetComponent<ObjectHandle>().hand = hand;
-                other.GetComponent<Renderer>().material = GetMaterialFromAction(EditorState.currentAction);
+              
+                if (EditorState.freezedItems.ContainsKey(other.gameObject))
+                    EditorState.CurrentMaterial = EditorState.currentAction == EditorState.TypeOfAction.Unfreeze ? mat.GetMaterialFromAction(EditorState.TypeOfAction.Unfreeze) : mat.GetMaterialFromAction(EditorState.TypeOfAction.Freeze);
+                else if (EditorState.currentAction != EditorState.TypeOfAction.Unfreeze)
+                    EditorState.CurrentMaterial = mat.GetMaterialFromAction(EditorState.currentAction);
             }
         }
 
         private void OnTriggerExit(Collider other)
         {
+            EditorState.collider = other;
             switch (other.gameObject.tag)
             {
                 case GameState.ITEM_LIBRARY:  TriggerExitInLibrary(other);    break;
@@ -97,8 +109,12 @@ namespace VFG.LevelEditor
 
         private void TriggerExitInLibrary(Collider other)
         {
-            other.GetComponent<Renderer>().material = EditorState.itemSelected[other.gameObject];
+            EditorState.CurrentMaterial = EditorState.itemSelected[other.gameObject];
             EditorState.itemSelected.Remove(other.gameObject);
+
+            #region DEBUG LIST
+            dlObj.itemSelected.Remove(dlObj.itemSelected.Find(i => i.go == other.gameObject));
+            #endregion
         }
 
         private void TriggerExitInScene(Collider other)
@@ -107,16 +123,20 @@ namespace VFG.LevelEditor
 
             if (other.GetComponent<ObjectHandle>().hand == EditorState.ActiveHand.Both)
             {
-                ToggleSelectScale(other, EditorState.TypeOfAction.Scale, EditorState.TypeOfAction.Select, select);
+                ToggleSelectScale(other, EditorState.TypeOfAction.Scale, EditorState.TypeOfAction.Select, mat.select);
 
                 other.GetComponent<ObjectHandle>().hand = otherHand;
-                other.GetComponent<Renderer>().material = GetMaterialFromAction(EditorState.currentAction);
+                EditorState.CurrentMaterial = mat.GetMaterialFromAction(EditorState.currentAction);
             }
             else
             {
                 other.GetComponent<ObjectHandle>().hand = EditorState.ActiveHand.None;
-                other.GetComponent<Renderer>().material = EditorState.currentItems[other.gameObject];
+                EditorState.CurrentMaterial = EditorState.currentItems[other.gameObject];
                 EditorState.currentItems.Remove(other.gameObject);
+
+                #region DEBUG LIST
+                dlObj.currentItems.Remove(dlObj.currentItems.Find(i => i.go == other.gameObject));
+                #endregion
             }
         }
 
@@ -125,7 +145,7 @@ namespace VFG.LevelEditor
             if (EditorState.currentAction == currentAction)
             {
                 EditorState.currentAction = newAction;
-                other.GetComponent<Renderer>().material = newMaterial;
+                EditorState.CurrentMaterial = newMaterial;
                 oppositeSelector.ChangeColor(EditorState.ActiveHand.Both);
                 ChangeColor(EditorState.ActiveHand.Both);
             }

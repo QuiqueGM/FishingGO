@@ -24,20 +24,39 @@ namespace VFG.LevelEditor
 
         public enum TypeOfAction
         {
+            Null,
             Select,
             Scale,
             Duplicate,
             Delete,
+            ShowFreezeMenu,
+            Freeze,
+            Unfreeze,
+            UnfreezeAll,
+            HideFreezeMenu,
+            ShowChangeSizeMenu,
             IncreaseSize,
             DecreaseSize,
-            Save
+            HideChangeSizeMenu,
+            Undo,
+            ShowFileMenu,
+            Save,
+            SaveAs,
+            NewLevel,
+            Load,
+            Import,
+            HideFileMenu
         }
 
+        public static string ALL_FILES = "*";
+        public static string LEVEL_EXTENSION = ".json";
         public static ActiveHand activeHand = ActiveHand.None;
         public static TypeOfAction currentAction = TypeOfAction.Select;
         public static string groupOfItemsToShow;
         public static Dictionary<GameObject, Material> itemSelected = new Dictionary<GameObject, Material>();
         public static Dictionary<GameObject, Material> currentItems = new Dictionary<GameObject, Material>();
+        public static Dictionary<GameObject, Material> freezedItems = new Dictionary<GameObject, Material>();
+        public static Collider collider;
 
 		public static string GetFolderFromTypeOfItem(TypeOfItem typeOfItem)
 		{
@@ -63,5 +82,31 @@ namespace VFG.LevelEditor
                 default: return null;
 			}
 		}
+
+        public static Material CurrentMaterial
+        {
+            get
+            {
+                if (collider.GetComponent<LODGroup>() != null)
+                    return collider.transform.GetChild(0).GetComponent<Renderer>().material;
+                else
+                    return collider.GetComponent<Renderer>().material;
+            }
+            set
+            {
+                if (collider.GetComponent<LODGroup>() != null)
+                    collider.GetComponent<LODManager>().SetMaterial(value);
+                else
+                    collider.GetComponent<Renderer>().material = value;
+            }
+        }
+
+        public static void ResetMaterial(GameObject go, Material mat)
+        {
+            if (go.GetComponent<LODGroup>() != null)
+                go.GetComponent<LODManager>().SetMaterial(mat);
+            else
+                go.GetComponent<Renderer>().material = mat;
+        }
     }
 }

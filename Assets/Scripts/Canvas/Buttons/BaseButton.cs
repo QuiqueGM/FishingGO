@@ -3,13 +3,13 @@ using UnityEngine.UI;
 
 namespace VFG.Canvas
 {
-    public delegate void SendActionEvent(TypeOfAction action);
+    public delegate void SendActionEvent(TypeOfARAction action);
 
     public class BaseButton : MonoBehaviour
     {
         public event SendActionEvent sendAction;
         public bool isUnlocked = true;
-        public TypeOfAction action;
+        public TypeOfARAction action;
 
         protected float alphaDisabled = 0.3f;
         protected Color colorMainButtonDisabled = new Color32(104, 170, 191, 178);
@@ -21,7 +21,7 @@ namespace VFG.Canvas
             GetComponent<Button>().onClick.AddListener(() => SendAction(action));
         }
 
-        public virtual void SendAction(TypeOfAction action)
+        public virtual void SendAction(TypeOfARAction action)
         {
             if (!isUnlocked) return;
             if (sendAction != null) sendAction(action);

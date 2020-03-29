@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 205037260168751884}
   - component: {fileID: 64595264036843330}
   - component: {fileID: 54332467865360228}
+  - component: {fileID: 114663577831441084}
   - component: {fileID: 114401072992948272}
   m_Layer: 0
   m_Name: DistichoporaViolacea
@@ -434,6 +435,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeOfItem: 3
+--- !u!114 &114663577831441084
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1801430843066292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!205 &205037260168751884
 LODGroup:
   m_ObjectHideFlags: 1

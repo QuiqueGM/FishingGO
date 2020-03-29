@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 205367200614493788}
   - component: {fileID: 64157489811936882}
   - component: {fileID: 54782150765665982}
+  - component: {fileID: 114410716732366510}
   - component: {fileID: 114674536563091986}
   m_Layer: 0
   m_Name: CryptodendrumAdhaesivum
@@ -352,6 +353,17 @@ MeshCollider:
   m_InflateMesh: 1
   m_SkinWidth: 1.00000005e-20
   m_Mesh: {fileID: 4300004, guid: d1b6fab6c8a5c1f41a724ce9a29ee0d9, type: 3}
+--- !u!114 &114410716732366510
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1911705200119412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114674536563091986
 MonoBehaviour:
   m_ObjectHideFlags: 1

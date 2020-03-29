@@ -19,7 +19,7 @@ namespace Ceto
         {
 
 #if UNITY_540_OR_HIGHER && CETO_USE_STEAM_VR
-            OpenVRInUse = VRSettings.loadedDeviceName == "OpenVR";
+            OpenVRInUse = UnityEngine.XR.XRSettings.loadedDeviceName == "OpenVR";
 #endif
 
         }

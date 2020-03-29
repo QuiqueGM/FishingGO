@@ -88,9 +88,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4278802421318146}
   - component: {fileID: 205385187661751776}
-  - component: {fileID: 114459796134139964}
-  - component: {fileID: 54252274870469596}
   - component: {fileID: 64554889701570266}
+  - component: {fileID: 54252274870469596}
+  - component: {fileID: 114459796134139964}
+  - component: {fileID: 114176616404938504}
   m_Layer: 0
   m_Name: FromiaMonilis
   m_TagString: Untagged
@@ -352,6 +353,17 @@ MeshCollider:
   m_InflateMesh: 1
   m_SkinWidth: 1.00000005e-20
   m_Mesh: {fileID: 4300006, guid: b4163d375d43deb41add3c5f1538bf54, type: 3}
+--- !u!114 &114176616404938504
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1882713514518092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114459796134139964
 MonoBehaviour:
   m_ObjectHideFlags: 1

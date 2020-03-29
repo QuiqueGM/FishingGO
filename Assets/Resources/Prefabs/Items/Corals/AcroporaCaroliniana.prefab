@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 205389147353691660}
   - component: {fileID: 64757219754436202}
   - component: {fileID: 54401824240008078}
+  - component: {fileID: 114346117188098706}
   - component: {fileID: 114625487458433870}
   m_Layer: 0
   m_Name: AcroporaCaroliniana
@@ -352,6 +353,17 @@ MeshCollider:
   m_InflateMesh: 1
   m_SkinWidth: 1.00000005e-20
   m_Mesh: {fileID: 4300006, guid: 363115c05792f8e4691b14868ebf44e6, type: 3}
+--- !u!114 &114346117188098706
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1712547577519142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114625487458433870
 MonoBehaviour:
   m_ObjectHideFlags: 1

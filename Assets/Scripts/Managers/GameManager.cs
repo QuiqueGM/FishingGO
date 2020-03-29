@@ -34,7 +34,6 @@ namespace VFG.Managers
         private Coroutine hideObjectToFind;
         private Coroutine hideCompassArrow;
 		private int _currentAquarium;
-        private int _numberOfObjectivesInARow = 0;
 
         void Awake()
 		{
@@ -62,7 +61,8 @@ namespace VFG.Managers
 
             _typeOfItem = objective.TypeOfItem;
             CM.CNV_Buttons.GetComponent<CanvasShowButtons>().SetCardButton(_typeOfItem);
-
+			Debug.Log("======== " + pathItem);
+			;
             if (_typeOfItem == TypeOfItem.Fish)
                 CreteFishSchoolObjective(objective, pathItem);
             else
@@ -245,36 +245,26 @@ namespace VFG.Managers
 			string newPicture = Path.Combine(Application.persistentDataPath, GameState.currentObjectiveName + GameState.TEMPORARY + GameState.EXTENSION);
 
             CM.CNV_ObjectiveSolved.GetComponent<CanvasObjectiveSolved>().ReplacePicture(oldPicture, newPicture);
-            CM.GoToSelectedScreen(TypeOfAction.ReplacePictures);
+            CM.GoToSelectedScreen(TypeOfARAction.ReplacePictures);
         }
 
         public void CloseObjectiveSolved(bool backToMenu)
         {
-            _numberOfObjectivesInARow++;
-            Debug.Log("Number of Objecties in a Row: " + _numberOfObjectivesInARow);
-
-            if (_numberOfObjectivesInARow == GameState.NUMBER_OF_CATHES_BEFORE_RATING && GameState.GameHasBeenRated == (int)GameState.Toggle.Off)
-                CM.ShowCanvasRate();
-
             if (GameState.newAquariumIsUnlocked)
             {
-                ShowPopup(TypeOfAction.NewAquarium, ref GameState.newAquariumIsUnlocked, AudiosData.NEW_AQUARIUM);
+                ShowPopup(TypeOfARAction.NewAquarium, ref GameState.newAquariumIsUnlocked, AudiosData.NEW_AQUARIUM);
                 CM.CNV_NewAquarium.GetComponent<CanvasNewAquarium>().SetButtons(backToMenu);
             }
             else if (GameState.allObjectivesUnlockedInAquarium)
             {
-                ShowPopup(TypeOfAction.AllObjectives, ref GameState.allObjectivesUnlockedInAquarium, AudiosData.ALL_OBJECTIVES);
+                ShowPopup(TypeOfARAction.AllObjectives, ref GameState.allObjectivesUnlockedInAquarium, AudiosData.ALL_OBJECTIVES);
                 CM.CNV_AllObjectives.GetComponent<CanvasAllObjectives>().SetButtons(backToMenu);
             }
             else if (GameState.allObjectivesUnlockedInGame)
-                ShowPopup(TypeOfAction.EndGame, ref GameState.allObjectivesUnlockedInGame, AudiosData.ALL_OBJECTIVES);
+                ShowPopup(TypeOfARAction.EndGame, ref GameState.allObjectivesUnlockedInGame, AudiosData.ALL_OBJECTIVES);
             else
             {
-                if (backToMenu)
-                {
-                    CM.SetCurrentCanvas(CM.CNV_ObjectiveSolved);
-                    BackToMenu();
-                }
+                if (backToMenu) BackToMenu();
                 else Continue(null);
             }
         }
@@ -282,7 +272,7 @@ namespace VFG.Managers
         public void BackToMenu()
         {
             CM.CNV_BackgroundMenu.SetActive(true);
-            CM.GoToSelectedScreen(TypeOfAction.BackToMainMenu);
+            CM.GoToSelectedScreen(TypeOfARAction.BackToMainMenu);
             AudioManager.Instance.ChangeMusicWithFade(AudiosData.MUSIC_MENUS, 1, 1);
         }
 
@@ -313,12 +303,8 @@ namespace VFG.Managers
 
             CM.CNV_BackgroundMenu.SetActive(false);
             CM.CNV_ObjectiveSolved.SetActive(false);
+            CM.CNV_ObjectiveTofind.GetComponent<CanvasObjectiveToFind>().ShowObjectToFind();
             CM.CNV_Buttons.SetActive(true);
-
-            if (!CM.CNV_Rate.activeSelf)
-                CM.CNV_ObjectiveTofind.GetComponent<CanvasObjectiveToFind>().ShowObjectToFind();
-            else
-                CM.HasToShowObjectiveFind = true;
         }
 
 		private void CheckToChangeAquarium()
@@ -351,7 +337,7 @@ namespace VFG.Managers
             CM.CNV_ComparePictures.SetActive(false);
         }
 
-        private void ShowPopup(TypeOfAction action, ref bool flag, string sound)
+        private void ShowPopup(TypeOfARAction action, ref bool flag, string sound)
         {
             CM.CNV_Buttons.SetActive(false);
             AudioManager.Instance.PlayEffect(sound);

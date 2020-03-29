@@ -37,9 +37,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4207909185836910}
   - component: {fileID: 205874209086437014}
-  - component: {fileID: 54389919971731676}
-  - component: {fileID: 114738104403163048}
   - component: {fileID: 65370353254037232}
+  - component: {fileID: 54389919971731676}
+  - component: {fileID: 114129271355788928}
+  - component: {fileID: 114738104403163048}
   m_Layer: 0
   m_Name: DiscosomaMutabilis
   m_TagString: Untagged
@@ -350,6 +351,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.07830727, z: 1}
   m_Center: {x: 0, y: -0.0011786819, z: 0}
+--- !u!114 &114129271355788928
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1445110277986786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114738104403163048
 MonoBehaviour:
   m_ObjectHideFlags: 1

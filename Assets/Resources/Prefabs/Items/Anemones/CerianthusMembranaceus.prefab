@@ -37,9 +37,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4121776860536506}
   - component: {fileID: 205407631225822742}
-  - component: {fileID: 114459770173567208}
-  - component: {fileID: 54713664071427384}
   - component: {fileID: 64977132034195986}
+  - component: {fileID: 54713664071427384}
+  - component: {fileID: 114808023705163398}
+  - component: {fileID: 114459770173567208}
   m_Layer: 0
   m_Name: CerianthusMembranaceus
   m_TagString: Untagged
@@ -250,6 +251,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 116a4e5dd747ec24e997e50fb02d8c37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114808023705163398
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1077659500379088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!137 &137098049159171150

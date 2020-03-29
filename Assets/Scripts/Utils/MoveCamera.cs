@@ -19,7 +19,7 @@ public class MoveCamera : MonoBehaviour {
 
     void Update()
     {
-        if (!UnityEngine.VR.VRSettings.enabled)
+        if (!UnityEngine.XR.XRSettings.enabled)
         {
             if (Input.GetMouseButton(0))
             {

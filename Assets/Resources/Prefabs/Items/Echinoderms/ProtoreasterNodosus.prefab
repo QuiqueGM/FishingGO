@@ -105,9 +105,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4501358410890860}
   - component: {fileID: 205257676833249876}
-  - component: {fileID: 114680704256262848}
-  - component: {fileID: 54522680753907046}
   - component: {fileID: 64157655109243114}
+  - component: {fileID: 54522680753907046}
+  - component: {fileID: 114680704256262848}
+  - component: {fileID: 114132381784750158}
   m_Layer: 0
   m_Name: ProtoreasterNodosus
   m_TagString: Untagged
@@ -422,6 +423,17 @@ MeshCollider:
   m_InflateMesh: 1
   m_SkinWidth: 1.00000005e-20
   m_Mesh: {fileID: 4300008, guid: cb5785d76e0608f4485bba16230a8ae5, type: 3}
+--- !u!114 &114132381784750158
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1998122695787556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114680704256262848
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -146,10 +146,9 @@ namespace Utils
 		public UnityVideoParams videoParams;
 		public UnityARLightEstimate lightEstimation;
 		public serializablePointCloud pointCloud;
-		public serializableUnityARMatrix4x4 displayTransform;
 
 
-		public serializableUnityARCamera( serializableUnityARMatrix4x4 wt, serializableUnityARMatrix4x4 pm, ARTrackingState ats, ARTrackingStateReason atsr, UnityVideoParams uvp, UnityARLightEstimate lightEst, serializableUnityARMatrix4x4 dt, serializablePointCloud spc)
+		public serializableUnityARCamera( serializableUnityARMatrix4x4 wt, serializableUnityARMatrix4x4 pm, ARTrackingState ats, ARTrackingStateReason atsr, UnityVideoParams uvp, UnityARLightEstimate lightEst, serializablePointCloud spc)
 		{
 			worldTransform = wt;
 			projectionMatrix = pm;
@@ -157,18 +156,17 @@ namespace Utils
 			trackingReason = atsr;
 			videoParams = uvp;
 			lightEstimation = lightEst;
-			displayTransform = dt;
 			pointCloud = spc;
 		}
 
 		public static implicit operator serializableUnityARCamera(UnityARCamera rValue)
 		{
-			return new serializableUnityARCamera(rValue.worldTransform, rValue.projectionMatrix, rValue.trackingState, rValue.trackingReason, rValue.videoParams, rValue.lightEstimation, rValue.displayTransform, rValue.pointCloudData);
+			return new serializableUnityARCamera(rValue.worldTransform, rValue.projectionMatrix, rValue.trackingState, rValue.trackingReason, rValue.videoParams, rValue.lightEstimation, rValue.pointCloudData);
 		}
 
 		public static implicit operator UnityARCamera(serializableUnityARCamera rValue)
 		{
-			return new UnityARCamera (rValue.worldTransform, rValue.projectionMatrix, rValue.trackingState, rValue.trackingReason, rValue.videoParams, rValue.lightEstimation, rValue.displayTransform, rValue.pointCloud);
+			return new UnityARCamera (rValue.worldTransform, rValue.projectionMatrix, rValue.trackingState, rValue.trackingReason, rValue.videoParams, rValue.lightEstimation, rValue.pointCloud);
 		}
 
 

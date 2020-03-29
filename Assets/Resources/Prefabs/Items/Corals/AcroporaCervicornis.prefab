@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 205581575905487674}
   - component: {fileID: 64729296421426384}
   - component: {fileID: 54388110726966820}
+  - component: {fileID: 114638564184797160}
   - component: {fileID: 114693349431522282}
   m_Layer: 0
   m_Name: AcroporaCervicornis
@@ -352,6 +353,17 @@ MeshCollider:
   m_InflateMesh: 1
   m_SkinWidth: 1.00000005e-20
   m_Mesh: {fileID: 4300006, guid: 6fba3bbc95751684fab1125b28a82ddd, type: 3}
+--- !u!114 &114638564184797160
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1678628532088858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114693349431522282
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 54745154103586904}
   - component: {fileID: 64055721045562278}
   - component: {fileID: 114129862442907794}
+  - component: {fileID: 114370627593323296}
   m_Layer: 0
   m_Name: StrombusListeri
   m_TagString: Untagged
@@ -294,6 +295,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeOfItem: 10
+--- !u!114 &114370627593323296
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1448311991611032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!205 &205076879729893238
 LODGroup:
   m_ObjectHideFlags: 1

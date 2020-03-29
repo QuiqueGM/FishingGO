@@ -4,6 +4,8 @@ Shader "Unlit/ARCameraShader"
 	{
     	_textureY ("TextureY", 2D) = "white" {}
         _textureCbCr ("TextureCbCr", 2D) = "black" {}
+        _texCoordScale ("Texture Coordinate Scale", float) = 1.0
+        _isPortrait ("Device Orientation", Int) = 0
 	}
 	SubShader
 	{
@@ -20,7 +22,9 @@ Shader "Unlit/ARCameraShader"
 			
 			#include "UnityCG.cginc"
 
-			float4x4 _DisplayTransform;
+            uniform float _texCoordScale;
+            uniform int _isPortrait;
+            float4x4 _TextureRotation;
 
 			struct Vertex
 			{
@@ -38,12 +42,15 @@ Shader "Unlit/ARCameraShader"
 			{
 				TexCoordInOut o;
 				o.position = UnityObjectToClipPos(vertex.position); 
-
-				float texX = vertex.texcoord.x;
-				float texY = vertex.texcoord.y;
-				
-				o.texcoord.x = (_DisplayTransform[0].x * texX + _DisplayTransform[1].x * (texY) + _DisplayTransform[2].x);
- 			 	o.texcoord.y = (_DisplayTransform[0].y * texX + _DisplayTransform[1].y * (texY) + (_DisplayTransform[2].y));
+				if (_isPortrait == 1)
+				{
+					o.texcoord = float2(vertex.texcoord.x, -(vertex.texcoord.y - 0.5f) * _texCoordScale + 0.5f);
+				}
+				else
+				{
+					o.texcoord = float2((vertex.texcoord.x - 0.5f) * _texCoordScale + 0.5f, -vertex.texcoord.y);
+				}
+				o.texcoord = mul(_TextureRotation, float4(o.texcoord,0,1)).xy;
 	            
 				return o;
 			}

@@ -71,9 +71,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4842792467136128}
   - component: {fileID: 205263656912967244}
-  - component: {fileID: 114276537554606568}
-  - component: {fileID: 54404095011548292}
   - component: {fileID: 64788927693113436}
+  - component: {fileID: 54404095011548292}
+  - component: {fileID: 114276537554606568}
+  - component: {fileID: 114452458425949874}
   m_Layer: 0
   m_Name: PentagonasterDuebeni
   m_TagString: Untagged
@@ -434,6 +435,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeOfItem: 7
+--- !u!114 &114452458425949874
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1492137295583388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!205 &205263656912967244
 LODGroup:
   m_ObjectHideFlags: 1

@@ -37,9 +37,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4947803072080858}
   - component: {fileID: 205218550806940398}
-  - component: {fileID: 114667073725108754}
-  - component: {fileID: 54947114442981780}
   - component: {fileID: 64799107713391194}
+  - component: {fileID: 54947114442981780}
+  - component: {fileID: 114372708249804368}
+  - component: {fileID: 114667073725108754}
   m_Layer: 0
   m_Name: RadianthuMagnificas
   m_TagString: Untagged
@@ -222,6 +223,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveTentacles: 1
   moveBody: 1
+--- !u!114 &114372708249804368
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1274037044519634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114392315362592140
 MonoBehaviour:
   m_ObjectHideFlags: 1

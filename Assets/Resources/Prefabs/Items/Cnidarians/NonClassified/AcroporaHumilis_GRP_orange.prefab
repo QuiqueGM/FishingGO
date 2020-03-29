@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 205481307377665266}
   - component: {fileID: 64616171366479230}
   - component: {fileID: 54251492606249436}
+  - component: {fileID: 114349478421190724}
   - component: {fileID: 114030502860405912}
   m_Layer: 0
   m_Name: AcroporaHumilis_GRP_orange
@@ -364,6 +365,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeOfItem: 18
+--- !u!114 &114349478421190724
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1974312750097938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!205 &205481307377665266
 LODGroup:
   m_ObjectHideFlags: 1

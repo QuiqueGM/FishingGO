@@ -13,7 +13,6 @@ namespace VFG.Core.Localization
 
         const int FIRST_ELEMENT = 1;
         const int LAST_ELEMENT = 2;
-		const int NUM_LANGUAGES = 11;
 
         const string PATH_LANGUAGES = "Localization/Languages";
         const string PATH_GENERIC_KEYS = "Localization/GenericKeys";
@@ -63,12 +62,12 @@ namespace VFG.Core.Localization
 			{
 				currentLanguage = GetSystemLanguage (Application.systemLanguage);
 				GameState.Language = currentLanguage;
-				Debug.Log ("FIRST USE: " + currentLanguage);
+				//Debug.Log ("FIRST USE: " + currentLanguage);
 			}
             else
 			{
                 currentLanguage = GameState.Language;
-				Debug.Log ("SECOND USE: " + currentLanguage);
+				//Debug.Log ("SECOND USE: " + currentLanguage);
 			}
 
             indexOfLanguage = languages.IndexOf(currentLanguage.ToString()) - FIRST_ELEMENT;
@@ -145,9 +144,9 @@ namespace VFG.Core.Localization
             {
                 languages = new List<string>();
                 languages = SplitCsvLine(lang[0]).ToList();
-
-				if (languages.Count > NUM_LANGUAGES+FIRST_ELEMENT)
-					languages.Remove(languages.Last());
+                #if UNITY_EDITOR
+                languages.Remove(languages.Last());
+                #endif
             }
         }
 
@@ -184,7 +183,7 @@ namespace VFG.Core.Localization
             }
             catch
             {
-                Debug.LogError(string.Format("The given key <color=red>{0}</color> was not present in the dictionary.", key));
+                Debug.LogError(string.Format("<color=red>[LOCALIZATION]</color> The given key <color=red>{0}</color> is not present in the dictionary.", key));
                 return null;
             }
         }

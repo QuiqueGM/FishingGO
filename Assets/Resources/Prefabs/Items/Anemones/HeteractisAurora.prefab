@@ -20,9 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4929426320104956}
   - component: {fileID: 205267536472130160}
-  - component: {fileID: 114972083283288678}
-  - component: {fileID: 54470396544825584}
   - component: {fileID: 64172992028701940}
+  - component: {fileID: 54470396544825584}
+  - component: {fileID: 114942436706056386}
+  - component: {fileID: 114972083283288678}
   m_Layer: 0
   m_Name: HeteractisAurora
   m_TagString: Untagged
@@ -248,6 +249,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveTentacles: 1
   moveBody: 1
+--- !u!114 &114942436706056386
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1011405829660574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3007af9f111fd2b4580b782231be7ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114972083283288678
 MonoBehaviour:
   m_ObjectHideFlags: 1

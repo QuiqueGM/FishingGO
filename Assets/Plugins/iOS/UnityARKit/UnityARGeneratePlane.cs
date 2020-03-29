@@ -6,7 +6,7 @@ namespace UnityEngine.XR.iOS
 	public class UnityARGeneratePlane : MonoBehaviour
 	{
 		public GameObject planePrefab;
-		public GameObject container;
+        public GameObject container;
 
         private UnityARAnchorManager unityARAnchorManager;
 
@@ -31,10 +31,10 @@ namespace UnityEngine.XR.iOS
             }
         }
 
-		public void ContainerVisibility(bool state)
-		{
-			container.SetActive(state);
-		}
-	}
+        public void ContainerVisibility(bool state)
+        {
+            container.SetActive(state);
+        }
+    }
 }
 
